@@ -20,8 +20,8 @@ class Register extends Component {
 
                     <div className="register__form-first-name">
                         <TextField
-                            inputStyle={{color: 'white'}}
-                            floatingLabelStyle={{color: 'white'}}
+                            // inputStyle={{color: 'white'}}
+                            // floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="First Name"
                             ref={(inputValue) => {this.firstName = inputValue}}
                         />  
@@ -29,8 +29,8 @@ class Register extends Component {
 
                     <div className="register__form-last-name">
                         <TextField
-                            inputStyle={{color: 'white'}}
-                            floatingLabelStyle={{color: 'white'}}
+                            // inputStyle={{color: 'white'}}
+                            // floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Last Name"
                             ref={(inputValue) => {this.lastName = inputValue}}
                         />
@@ -38,8 +38,8 @@ class Register extends Component {
 
                     <div className="register__form-email">
                         <TextField
-                            inputStyle={{color: 'white'}}
-                            floatingLabelStyle={{color: 'white'}}
+                            // inputStyle={{color: 'white'}}
+                            // floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Email"
                             ref={(inputValue) => {this.email = inputValue}}
                         />
@@ -47,8 +47,8 @@ class Register extends Component {
 
                     <div className="register__form-password">
                         <TextField
-                            inputStyle={{color: 'white'}}
-                            floatingLabelStyle={{color: 'white'}}
+                            // inputStyle={{color: 'white'}}
+                            // floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Password"
                             ref={(inputValue) => {this.password = inputValue}}
                         />
@@ -56,15 +56,15 @@ class Register extends Component {
 
                     <div className="register__form-repeat-password">
                         <TextField
-                            inputStyle={{color: 'white'}}
-                            floatingLabelStyle={{color: 'white'}}
+                            // inputStyle={{color: 'white'}}
+                            // floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Repeat Password"
                             ref={(inputValue) => {this.repeatPassword = inputValue}}
                         />
                     </div>
 
                     <div className="register__form-sign-up-button">
-                        <RaisedButton label="SIGN UP" onClick={this.props.onRegisterFormCustomer}/>
+                        <RaisedButton label="SIGN UP" onClick={this.props.onRegisterForm}/>
                     </div>
 
                     <div className="register__form-forgot-password">
