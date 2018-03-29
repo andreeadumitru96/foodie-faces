@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //Attach Routes
-// require('./server/routes/location.routes')(app);
+require('./server/routes/user.routes')(app);
 
 mongoose.Promise = global.Promise;
 
