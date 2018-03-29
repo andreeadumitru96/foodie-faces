@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Alert from 'react-s-alert';
+import 'react-s-alert/dist/s-alert-default.css';
+import 'react-s-alert/dist/s-alert-css-effects/jelly.css';
 import {
     BrowserRouter as Router,
     Route,
@@ -25,6 +28,7 @@ class AppContainer extends Component {
                     <Route exact path='/login' render={(params) => <LoginContainer history={params.history}/>}/>
                     <Route exact path='/register' render={(params) => <RegisterContainer history={params.history}/>}/>
                     {/* { <Route component={NotFoundRoute} /> } */}
+                    <Alert stack={{limit: 3}} />
                 </Switch>
             </Router>
         </div>

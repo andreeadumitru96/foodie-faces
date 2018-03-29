@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Register from './Register/Register';
-// import {notificationError} from '../../../shared/notification';
+import {notificationError} from '../../../shared/notificationError';
 
 class RegisterContainer extends Component {
     constructor(props) {
@@ -24,7 +24,7 @@ class RegisterContainer extends Component {
 
     _validatePasswordForm () {
         if(this.child.password.getValue() !== this.child.repeatPassword.getValue()) {
-            // notificationError('Passwords does not match.')
+            notificationError('Passwords does not match.')
             return false;
         }
         return true;
