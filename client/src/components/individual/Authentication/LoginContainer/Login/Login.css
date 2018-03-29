@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+}
+.login {
+    height: 100vh;
+    width: auto;
+    /* background-image: url("../../../../../assets/login-background.jpg"); */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center center;
+}
+
+.login__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold; 
+    /* margin-top: 25px; */ 
+}
+
+.login__form-sign-in-button {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	margin-top: 2%;
+}
+.login__form-forgot-password {
+    font-size: 15;
+    margin-top: 2%;
+    color: white;
+    cursor: pointer;
+}
+
+.login__form-forgot-password-anchor {
+    color: white;
+}
+
+.login__redirect-register-customer, .login__redirect-register-owner {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.login__redirect-register-owner {
+    margin-left: 22%;
+}
+
+@media only screen and (max-width: 599px) {
+    body {
+        /* margin-top: 80%; */
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1300px) {
+    body {
+        /* margin-top: 60%; */
+    }
+}
