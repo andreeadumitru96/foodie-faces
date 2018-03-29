@@ -7,7 +7,7 @@ import {
 
 
 import LoginContainer from '../Authentication/LoginContainer/LoginContainer';
-// import RegisterContainer from '../Authentication/RegisterContainer/RegisterContainer';
+import RegisterContainer from '../Authentication/RegisterContainer/RegisterContainer';
 // import NotFoundRoute from '../../shared/NotFoundRoute/NotFoundRoute';
 
 class AppContainer extends Component {
@@ -22,8 +22,8 @@ class AppContainer extends Component {
         <div>
             <Router>
                 <Switch>
-                    { <Route exact path='/login' component={LoginContainer}/> }
-                    {/* { <Route exact path='/register' component={RegisterContainer}/> } */}
+                    <Route exact path='/login' render={(params) => <LoginContainer history={params.history}/>}/>
+                    <Route exact path='/register' render={(params) => <RegisterContainer history={params.history}/>}/>
                     {/* { <Route component={NotFoundRoute} /> } */}
                 </Switch>
             </Router>
