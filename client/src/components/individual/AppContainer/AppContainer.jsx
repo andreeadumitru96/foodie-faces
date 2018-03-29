@@ -5,7 +5,8 @@ import {
     Switch
 } from 'react-router-dom';
 
-// import LoginContainer from '../Authentication/LoginContainer/'
+
+import LoginContainer from '../Authentication/LoginContainer/LoginContainer';
 // import RegisterContainer from '../Authentication/RegisterContainer/RegisterContainer';
 // import NotFoundRoute from '../../shared/NotFoundRoute/NotFoundRoute';
 
@@ -21,7 +22,7 @@ class AppContainer extends Component {
         <div>
             <Router>
                 <Switch>
-                    {/* { <Route exact path='/login' component={LoginContainer}/> } */}
+                    { <Route exact path='/login' component={LoginContainer}/> }
                     {/* { <Route exact path='/register' component={RegisterContainer}/> } */}
                     {/* { <Route component={NotFoundRoute} /> } */}
                 </Switch>
