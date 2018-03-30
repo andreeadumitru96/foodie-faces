@@ -1,6 +1,6 @@
 var Location = require('../models/location.model.js');
 
-
+    
 
 // exports.findAllLocations = function(req, res) {
 //     // Retrieve and return all Locations from the database.

@@ -25,19 +25,20 @@ exports.register = function(req, res) {
 };
 
 
-// exports.login = function(req, res) {
-//     if(!req.body) {
-//         return res.status(400).send({message: req.body});
-//     }
+exports.login = function(req, res) {
+    if(!req.body) {
+        return res.status(400).send({message: req.body});
+    }
+    console.log(req.body);
 
-//     User.findOne({email: req.body.email}, function(err, user) {
-//         if(err) {
-//             console.log(err);
-//             res.status(500).send({message: "Some error occurred while trying to login."});
-//         } else if(user !== null && passwordHash.verify(req.body.password, user.password)){
-//             res.status(200).send(user);
-//         } else {
-//             res.status(403).send({message: "Credentials do not match."});
-//         }
-//     });
-// };
+    User.findOne({email: req.body.email}, function(err, user) {
+        if(err) {
+            console.log(err);
+            res.status(500).send({message: "Some error occurred while trying to login."});
+        } else if(user !== null && passwordHash.verify(req.body.password, user.password)){
+            res.status(200).send(user);
+        } else {
+            res.status(403).send({message: "Credentials do not match."});
+        }
+    });
+};
