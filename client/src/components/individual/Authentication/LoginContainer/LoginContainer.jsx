@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Login from './Login/Login'
+import {notificationError} from '../../../shared/notificationError';
 
 class LoginContainer extends Component {
     constructor(props) {
@@ -9,17 +10,22 @@ class LoginContainer extends Component {
 
         };
         this._onLogin = this._onLogin.bind(this);
+        this._toRegister = this._toRegister.bind(this);
     }
 
-    _getUserInformation() {
+    _toRegister() {
+        this.props.history.push('/register');  
+    }
+
+    _onLogin() {
         let userCredentials = {
             email: this.child.email.getValue(),
             password: this.child.password.getValue()
         }
-        this._onLogin(userCredentials);
+        this._sendUserCredentials(userCredentials);
     }
 
-    _onLogin(userCredentials) {
+    _sendUserCredentials(userCredentials) {
         fetch('http://localhost:3001/api/login', {
             headers: {
                 'Accept': 'application/json',
@@ -30,11 +36,12 @@ class LoginContainer extends Component {
         }).then(function (response) {
             if(response.status === 200) {
 				response.json().then((data) => {
-					// this._redirectToHome(data);
+                    // this._redirectToHome(data);
+                    console.log("success");
 				})
 			} else {
 				response.json().then((data) => {
-					// notificationError(data.message);
+					notificationError(data.message);
 				});
             }
         }.bind(this));
@@ -48,6 +55,7 @@ class LoginContainer extends Component {
         return (
             <Login
                 onLogin={this._onLogin}
+                toRegister={this._toRegister}
                 ref={(childInstance) => { this.child = childInstance; }}
             />
         );

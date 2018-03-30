@@ -40,13 +40,9 @@ html, body {
     color: white;
 }
 
-.login__redirect-register-customer, .login__redirect-register-owner {
+.login__redirect-register {
     cursor: pointer;
     font-size: 22px;
-}
-
-.login__redirect-register-owner {
-    margin-left: 22%;
 }
 
 @media only screen and (max-width: 599px) {

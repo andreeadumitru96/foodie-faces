@@ -21,20 +21,20 @@ class Login extends Component {
                     </div>
                     <div className="login__form-email">
                         <TextField  
-                            inputStyle={{color: 'white'}}
-                            floatingLabelStyle={{color: 'white'}}
+                            // inputStyle={{color: 'white'}}
+                            // floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Email"
-                            ref={(email) => { this.email = email }}
+                            ref={(inputValue) => {this.email = inputValue}}
                         />  
                     </div>
 
                     <div className="login__from-password">
                         <TextField
-                            inputStyle={{color: 'white'}}
-                            floatingLabelStyle={{color: 'white'}}
+                            // inputStyle={{color: 'white'}}
+                            // floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Password"
                             // type="password"
-                            ref={(password) => { this.password = password }}
+                            ref={(inputValue) => {this.password = inputValue}}
                         />
                     </div>
 
@@ -48,7 +48,7 @@ class Login extends Component {
                         <a className="login__form-forgot-password-anchor"> Forgot your password? </a>
                     </div>  
                     <div className="login__redirect-register">
-                        <p> Don't you have an account? Register here </p>     
+                        <p className="login__redirect-register-text"onClick={this.props.toRegister}> Don't you have an account? Register here </p>     
                     </div>       
                     
                 </form>
