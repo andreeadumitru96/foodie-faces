@@ -7,7 +7,6 @@ import {cookies} from '../../shared/notification';
 import {
     BrowserRouter as Router,
     Route,
-    Link,
     Switch
 } from 'react-router-dom';
 
@@ -40,7 +39,7 @@ class AppContainer extends Component {
     }
 
     _onLogin(userData) {
-        this._changeAuthenticationState;
+        this._changeAuthenticationState();
         this._createUserCookie(userData);
     }
 
@@ -50,7 +49,7 @@ class AppContainer extends Component {
             <div>
                 <Router>
                     <Switch>
-                        <Route exact path='/login' render={(params) => <LoginContainer onUserLogin={this._onUserLogin} history={params.history}/>}/>
+                        <Route exact path='/login' render={(params) => <LoginContainer onLogin={this._onLogin} history={params.history}/>}/>
                         <Route exact path='/register' render={(params) => <RegisterContainer history={params.history}/>}/>
                         <PrivateRoute exact path='/' component={HomeContainer} authenticated={this.state.authenticated} />
                         {/* { <Route component={NotFoundRoute} /> } */}

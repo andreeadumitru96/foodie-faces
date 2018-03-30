@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Login from './Login/Login'
-import {notificationError} from '../../../shared/notificationError';
+import {notificationError} from '../../../shared/notification';
 
 class LoginContainer extends Component {
     constructor(props) {
@@ -11,10 +11,17 @@ class LoginContainer extends Component {
         };
         this._onLogin = this._onLogin.bind(this);
         this._toRegister = this._toRegister.bind(this);
+        this._toHomePage = this._toHomePage.bind(this);
     }
 
     _toRegister() {
+
         this.props.history.push('/register');  
+    }
+
+    _toHomePage(data) {
+        this.props.onLogin(data);
+        this.props.history.push('/');
     }
 
     _onLogin() {
@@ -36,7 +43,7 @@ class LoginContainer extends Component {
         }).then(function (response) {
             if(response.status === 200) {
 				response.json().then((data) => {
-                    // this._redirectToHome(data);
+                    this._toHomePage(data);
                     console.log("success");
 				})
 			} else {
