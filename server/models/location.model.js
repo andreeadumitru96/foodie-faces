@@ -24,25 +24,47 @@ let LocationSchema = new Schema({
     },
     phone: Array[String],
     images: [String],
-    schedule: Array[[String]],
+    schedule: Array[{
+        dayName: String,
+        openHours: Array[String]
+    }],
     receivedReviews: [{
+        title: {
+            type: String,
+            required: true
+        },
+        content: {
+            type: String
+        },
+        createdDate: {
+            type: Date,
+            default: Date.now()
+        },
+        userName: {
+            type: String,
+            required: true
+        },
         userId: {
             type: Schema.Types.ObjectId,
-             ref: 'User'
-        },
-        reviewId: {
-            type: Schema.Types.ObjectId,
-             ref: 'Review'
+            ref: 'User'
         }
     }],
     receivedRatings: [{
+        score: {
+            type: Number,
+            required: true
+        },
+        createdDate: {
+            type: Date,
+            default: Date.now()
+        },
+        userName: {
+            type: String,
+            required: true
+        },
         userId: {
             type: Schema.Types.ObjectId,
-             ref: 'User'
-        },
-        reviewId: {
-            type: Schema.Types.ObjectId,
-             ref: 'Review'
+            ref: 'User'
         }
     }],
     price: String,
