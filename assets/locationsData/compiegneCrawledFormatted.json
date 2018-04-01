@@ -1,0 +1,5333 @@
+[
+  {
+    "name": "Les Ferlempins",
+    "address": "13 cours Guynemer, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 83 53 31",
+    "images": [],
+    "schedule": {
+      "tuesday": [
+        "12:00 PM - 1:30 PM",
+        "7:30 PM - 9:30 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 1:30 PM",
+        "7:30 PM - 9:30 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 1:30 PM",
+        "7:30 PM - 9:30 PM"
+      ],
+      "friday": [
+        "12:00 PM - 1:30 PM",
+        "7:30 PM - 9:30 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 1:30 PM",
+        "7:30 PM - 9:30 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$21 - $43",
+    "categories": {
+      "cuisine": [
+        "French",
+        "Contemporary"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Special occasions",
+        "Families with children",
+        "Business meetings",
+        "Local cuisine"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Street Parking",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Wine and Beer",
+      "Accepts Visa",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "5.0"
+  },
+  {
+    "name": "By Sam",
+    "address": "1 rue des Cordeliers | Face à l'église St-Jacques, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 23 38",
+    "images": [],
+    "schedule": {
+      "tuesday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "thursday": [
+        "9:00 AM - 5:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 9:30 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 9:30 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Lebanese",
+        "Mediterranean",
+        "Vegetarian Friendly",
+        "Vegan Options"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Drinks"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": [
+      "Delivery",
+      "Takeout",
+      "Reservations",
+      "Outdoor Seating",
+      "Seating",
+      "Serves Alcohol",
+      "Private Dining",
+      "Waitstaff",
+      "Street Parking",
+      "Highchairs Available",
+      "Full Bar",
+      "Wine and Beer",
+      "Digital Payments",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "La Cantina",
+    "address": "2 rue des Lombards, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 60 19 08 87",
+    "images": [],
+    "schedule": {
+      "monday": [
+        "12:00 PM - 2:30 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:30 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:30 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:30 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:30 PM",
+        "7:30 PM - 10:30 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:30 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Italian"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Business meetings",
+        "Romantic"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Bistrot du terroir",
+    "address": "13 rue Eugene Floquet, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 06 36",
+    "images": [],
+    "schedule": {
+      "monday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:00 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:00 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$29 - $44",
+    "categories": {
+      "cuisine": [
+        "French",
+        "European",
+        "Vegetarian Friendly"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Special occasions",
+        "Local cuisine",
+        "Romantic",
+        "Business meetings",
+        "Bar scene",
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Private Dining",
+      "Seating",
+      "Waitstaff",
+      "Highchairs Available",
+      "Serves Alcohol",
+      "Full Bar"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Auberge a la Bonne Idee",
+    "address": "3 rue des Meuniers, 60350 Saint-Jean-aux-Bois, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 42 84 09",
+    "images": [],
+    "schedule": {},
+    "price": "$$$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French",
+        "European"
+      ],
+      "meals": [
+        "Breakfast",
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Special occasions",
+        "Business meetings",
+        "Local cuisine",
+        "Romantic",
+        "Large groups",
+        "Families with children"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Outdoor Seating",
+      "Private Dining",
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Validated Parking",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Free Wifi"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Restaurant La Table d'ELISA",
+    "address": "1 Place de la Gare, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 83 22 30",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/0f/a6/fa/20180214-215656-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/0f/a6/f9/20180214-205437-largejpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "monday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 9:30 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 9:30 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 9:30 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 9:30 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 9:30 PM"
+      ],
+      "saturday": [
+        "7:00 PM - 9:30 PM"
+      ]
+    },
+    "price": "$$$$",
+    "averagePrice": "$17 - $74",
+    "categories": {
+      "cuisine": [
+        "French",
+        "Gastropub"
+      ],
+      "meals": [
+        "Drinks",
+        "Lunch",
+        "Dinner",
+        "Breakfast"
+      ],
+      "goodFor": [
+        "Large groups",
+        "Special occasions",
+        "Romantic",
+        "Families with children",
+        "Business meetings",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Street Parking",
+      "Validated Parking",
+      "Free Off-Street Parking",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Wine and Beer",
+      "Accepts American Express",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Digital Payments",
+      "Free Wifi",
+      "Reservations",
+      "Television",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Fleur de the",
+    "address": "Rue des patissiers, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 46 43",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/bf/b4/54/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/09/a3/0c/a1/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/04/9e/9b/7a/fleur-de-the.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "12:00 PM - 6:30 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 6:30 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 6:30 PM"
+      ],
+      "friday": [
+        "12:00 PM - 6:30 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 6:30 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French",
+        "Vegetarian Friendly"
+      ],
+      "meals": [
+        "Lunch",
+        "Brunch"
+      ],
+      "goodFor": [
+        "Romantic"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Bistrot Du Chateau",
+    "address": "8 rue du Dahomey, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 13 13",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/c5/22/3f/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0b/81/d1/27/bistrot-du-chateau.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0b/81/d1/2b/bistrot-du-chateau.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Large groups",
+        "Families with children"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Wheelchair Accessible",
+      "Serves Alcohol"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Le Bistrot Des Arts",
+    "address": "33 cours Guynemer, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 10 10",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/65/1e/e7/ta-img-20180321-203651.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/03/f1/4d/b7/le-bistrot-des-arts.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/08/9d/f1/99/le-bistrot-des-arts.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French",
+        "European"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Special occasions",
+        "Business meetings",
+        "Local cuisine"
+      ]
+    },
+    "locationFeatures": [
+      "Street Parking",
+      "Wheelchair Accessible",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Seating",
+      "Waitstaff",
+      "Highchairs Available",
+      "Serves Alcohol",
+      "Full Bar",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "L'Endroit",
+    "address": "14 rue des Patissiers, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 83 38",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/07/2f/2e/2e/salle-du-bas.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/1a/7e/79/photo3jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/11/1a/7e/78/photo2jpg.jpg"
+    ],
+    "schedule": {
+      "monday": [
+        "12:00 PM - 1:30 PM",
+        "7:15 PM - 8:45 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 1:30 PM",
+        "7:15 PM - 8:45 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 1:30 PM",
+        "7:15 PM - 8:45 PM"
+      ],
+      "friday": [
+        "12:00 PM - 1:30 PM",
+        "7:15 PM - 8:45 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 1:30 PM",
+        "7:15 PM - 8:45 PM",
+        "7:15 PM - 9:30 PM"
+      ]
+    },
+    "price": "$$$$",
+    "averagePrice": "$20 - $46",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Special occasions",
+        "Business meetings"
+      ]
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Seating",
+      "Waitstaff",
+      "Wheelchair Accessible",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Reservations",
+      "Highchairs Available",
+      "Serves Alcohol",
+      "Free Wifi",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Taj Mahal",
+    "address": "4 rue de Noyon, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 90 18 00",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/05/33/9e/15/taj-mahal.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0a/7a/a9/96/le-menu.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/05/33/9d/e6/taj-mahal.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "monday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Indian",
+        "Vegetarian Friendly",
+        "Vegan Options"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Large groups",
+        "Special occasions",
+        "Families with children",
+        "Business meetings",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Reservations",
+      "Seating",
+      "Waitstaff",
+      "Wheelchair Accessible",
+      "Serves Alcohol"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Bistrot de l'imprevu",
+    "address": "1 rue Saint Joseph | 1 Rue Saint Joseph, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 27 25",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/42/74/e3/img-20180306-125001-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/42/74/e2/received-10156151621254650.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/af/8d/6b/20171118-211755-largejpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 9:15 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 9:15 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 9:15 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 9:15 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 9:15 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 9:15 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$19 - $33",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Special occasions",
+        "Families with children",
+        "Business meetings",
+        "Local cuisine"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Seating",
+      "Waitstaff",
+      "Wheelchair Accessible",
+      "Serves Alcohol"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Peppole",
+    "address": "33 rue Saint Corneille, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 42 40 85",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/22/a2/3a/20180221-131029-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/22/a2/39/20180221-131034-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0b/62/aa/67/peppole.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Pizza",
+        "Vegetarian Friendly"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Outdoor Seating",
+      "Waitstaff"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Vivenel",
+    "address": "30 rue Vivenel, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 86 10 15",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/05/bf/6a/d3/acras-de-morue.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/91/79/01/very-very-good-high-quality.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/91/78/ff/very-very-good-high-quality.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "12:00 PM - 9:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 9:00 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 9:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 9:00 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 9:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids",
+        "Special occasions",
+        "Romantic"
+      ]
+    },
+    "locationFeatures": [
+      "Serves Alcohol",
+      "Accepts American Express",
+      "Accepts Visa",
+      "Reservations",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Bistrot de Flandre",
+    "address": "2 rue d Amiens, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 83 26 35",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/cf/d2/98/20180118-211605-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-o/05/d9/52/72/bistrot-de-flandre.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/24/b3/cd/un-dos-de-cabillaud-avec.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "$18 - $50",
+    "categories": {
+      "cuisine": [
+        "French",
+        "European",
+        "Pub",
+        "Gastropub"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Local cuisine",
+        "Special occasions",
+        "Large groups",
+        "Families with children",
+        "Bar scene",
+        "Kids",
+        "Business meetings"
+      ]
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Reservations",
+      "Seating",
+      "Waitstaff",
+      "Street Parking",
+      "Highchairs Available",
+      "Serves Alcohol",
+      "Wine and Beer",
+      "Accepts American Express",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Free Wifi"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Le Delice",
+    "address": "9 rue Solferino | Rue Solfèrino, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 36 00 94",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/64/ca/81/le-delice-love-you.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/3e/18/04/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/11/3e/18/03/photo0jpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "6:00 PM - 10:00 PM"
+      ],
+      "monday": [
+        "6:00 PM - 10:00 PM"
+      ],
+      "tuesday": [
+        "6:00 PM - 10:00 PM",
+        "11:00 AM - 2:30 PM"
+      ],
+      "wednesday": [
+        "6:00 PM - 10:00 PM",
+        "11:00 AM - 2:30 PM"
+      ],
+      "thursday": [
+        "6:00 PM - 10:00 PM",
+        "11:00 AM - 2:30 PM"
+      ],
+      "friday": [
+        "6:00 PM - 10:00 PM",
+        "11:00 AM - 2:30 PM"
+      ],
+      "saturday": [
+        "6:00 PM - 10:00 PM",
+        "11:00 AM - 2:30 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$16 - $54",
+    "categories": {
+      "cuisine": [
+        "Japanese",
+        "Sushi",
+        "Vegetarian Friendly"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Takeout",
+      "Seating",
+      "Waitstaff",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Wine and Beer",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Digital Payments",
+      "Free Wifi"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Restaurant Leon De Bruxelles Compiegne",
+    "address": "Rue Ferdinand De Lesseps | ZAC des Mercieres, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 37 02 55",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/39/a3/23/leon-de-bruxelles.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/dd/6c/11/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/b3/90/1a/ma-fille-et-moi-sur-une.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "11:30 AM - 11:00 PM"
+      ],
+      "monday": [
+        "11:30 AM - 3:00 PM",
+        "6:30 PM - 11:00 PM"
+      ],
+      "tuesday": [
+        "11:30 AM - 3:00 PM",
+        "6:30 PM - 11:00 PM"
+      ],
+      "wednesday": [
+        "11:30 AM - 3:00 PM",
+        "6:30 PM - 11:00 PM"
+      ],
+      "thursday": [
+        "11:30 AM - 3:00 PM",
+        "6:30 PM - 11:00 PM"
+      ],
+      "friday": [
+        "11:30 AM - 3:00 PM",
+        "6:30 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "11:30 AM - 11:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$14 - $27",
+    "categories": {
+      "cuisine": [
+        "Belgian",
+        "Seafood",
+        "Fast Food",
+        "Gastropub"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night",
+        "Drinks"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Business meetings",
+        "Kids",
+        "Large groups"
+      ]
+    },
+    "locationFeatures": [
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Takeout",
+      "Private Dining",
+      "Free Off-Street Parking",
+      "Full Bar",
+      "Wine and Beer",
+      "Digital Payments",
+      "Free Wifi",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Le Tendance Restaurant Bar Trendy",
+    "address": "431 avenue Raymond Poincare, 60280 Margny-les-Compiegne, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 6 59 93 01 20",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/26/cc/58/photo2jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/26/cc/57/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/26/cc/56/photo0jpg.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "9:00 AM - 3:00 PM",
+        "6:00 PM - 11:30 PM"
+      ],
+      "wednesday": [
+        "11:00 AM - 3:00 PM",
+        "6:00 PM - 12:00 AM"
+      ],
+      "thursday": [
+        "11:00 AM - 3:00 PM",
+        "6:00 PM - 12:00 AM"
+      ],
+      "friday": [
+        "11:00 AM - 3:00 PM",
+        "6:00 PM - 1:00 AM"
+      ],
+      "saturday": [
+        "6:00 PM - 1:00 AM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$7 - $49",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Special occasions"
+      ]
+    },
+    "locationFeatures": [
+      "Seating",
+      "Waitstaff",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Wine and Beer",
+      "Accepts Visa",
+      "Free Wifi",
+      "Reservations",
+      "Accepts Mastercard",
+      "Digital Payments",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Caffe Vespa",
+    "address": "6 rue des Patissiers, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 9 83 77 42 22",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/c0/92/fe/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/c0/92/fd/photo0jpg.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "12:00 PM - 1:45 PM",
+        "7:00 PM - 9:30 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 1:45 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 1:45 PM",
+        "7:00 PM - 9:30 PM"
+      ],
+      "friday": [
+        "12:00 PM - 1:45 PM",
+        "7:00 PM - 9:30 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 1:45 PM",
+        "7:00 PM - 9:30 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$12 - $31",
+    "categories": {
+      "cuisine": [
+        "Italian",
+        "American",
+        "Pizza",
+        "Central American"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Kids",
+        "Families with children",
+        "Special occasions",
+        "Business meetings",
+        "Bar scene"
+      ]
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Street Parking",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Wine and Beer",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Free Wifi",
+      "Reservations",
+      "Accepts American Express",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Chez Celestine",
+    "address": "4 rue des Boucheries, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 76 10 51",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/17/74/19/un-brownie-avec-un-scone.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/0a/69/7d/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/05/55/02/db/les-desserts-de-celestines.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "7:30 AM - 5:00 PM"
+      ],
+      "wednesday": [
+        "7:30 AM - 5:00 PM"
+      ],
+      "thursday": [
+        "7:30 AM - 5:00 PM"
+      ],
+      "friday": [
+        "7:30 AM - 5:00 PM"
+      ],
+      "saturday": [
+        "7:30 AM - 5:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French",
+        "International",
+        "Vegetarian Friendly"
+      ],
+      "meals": [
+        "Lunch",
+        "Brunch",
+        "Breakfast"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Reservations"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "In Vino",
+    "address": "1 Place de l Ancien Hopital, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 60 75",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/04/a0/7c/56/antipastis.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/31/f6/f8/20171003-205048-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/31/f6/f7/20170919-205417-largejpg.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "10:30 AM - 10:00 PM"
+      ],
+      "wednesday": [
+        "10:30 AM - 10:00 PM"
+      ],
+      "thursday": [
+        "10:30 AM - 10:00 PM"
+      ],
+      "friday": [
+        "10:30 AM - 10:00 PM"
+      ],
+      "saturday": [
+        "10:30 AM - 10:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$6 - $25",
+    "categories": {
+      "cuisine": [
+        "French",
+        "Wine Bar",
+        "Spanish"
+      ],
+      "meals": [
+        "Late Night",
+        "Drinks"
+      ],
+      "goodFor": [
+        "Bar scene"
+      ]
+    },
+    "locationFeatures": [
+      "Outdoor Seating",
+      "Seating",
+      "Serves Alcohol",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Free Wifi",
+      "Reservations",
+      "Waitstaff",
+      "Wheelchair Accessible",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "La Brasserie Parisienne",
+    "address": "17 rue Jean Legendre | 60200, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 42 29 77",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/f4/e0/b3/caption.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/f4/e0/90/caption.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/f4/e0/82/caption.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "7:30 AM - 1:00 AM"
+      ],
+      "monday": [
+        "7:30 AM - 1:00 AM"
+      ],
+      "tuesday": [
+        "7:30 AM - 1:00 AM"
+      ],
+      "wednesday": [
+        "7:30 AM - 1:00 AM"
+      ],
+      "thursday": [
+        "7:30 AM - 1:00 AM"
+      ],
+      "friday": [
+        "7:30 AM - 1:00 AM"
+      ],
+      "saturday": [
+        "7:30 AM - 1:00 AM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French",
+        "Bar",
+        "European",
+        "Vegetarian Friendly"
+      ],
+      "meals": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Brunch",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Special occasions",
+        "Kids",
+        "Business meetings",
+        "Local cuisine",
+        "Large groups",
+        "Bar scene",
+        "Families with children"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Outdoor Seating",
+      "Private Dining",
+      "Seating",
+      "Waitstaff",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "La Petite Auberge",
+    "address": "21, Grande Rue | Margny-sur-Matz, 60490, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 42 03 26",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/06/c2/18/e8/la-petite-auberge.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/ff/ef/aa/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/ff/ef/a9/photo0jpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "11:30 AM - 3:00 PM"
+      ],
+      "monday": [
+        "11:30 AM - 3:00 PM"
+      ],
+      "tuesday": [
+        "11:30 AM - 3:00 PM"
+      ],
+      "thursday": [
+        "11:30 AM - 3:00 PM"
+      ],
+      "friday": [
+        "11:30 AM - 9:30 PM"
+      ],
+      "saturday": [
+        "11:30 AM - 9:30 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$17 - $38",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Reservations",
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Street Parking",
+      "Highchairs Available",
+      "Serves Alcohol",
+      "Full Bar",
+      "Wine and Beer",
+      "Accepts Mastercard",
+      "Accepts Visa"
+    ],
+    "tripAdvisorRating": "5.0"
+  },
+  {
+    "name": "Auberge du Mont Saint Pierre",
+    "address": "27 rue des Etangs, 60350 Vieux-Moulin, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 85 60 00",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/05/52/a5/5d/auberge-du-mont-saint.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0b/62/d9/be/auberge-du-mont-saint.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/11/54/fd/de/le-menu-a-42.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 9:00 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 9:00 PM"
+      ]
+    },
+    "price": "$$$$",
+    "averagePrice": "$30 - $61",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Special occasions"
+      ]
+    },
+    "locationFeatures": [
+      "Parking Available",
+      "Highchairs Available",
+      "Takeout",
+      "Reservations",
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Validated Parking",
+      "Free Off-Street Parking",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Wine and Beer",
+      "Accepts American Express",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Digital Payments",
+      "Free Wifi",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Phoenicia Restaurant Libanais Traiteur",
+    "address": "28 B rue d Austerlitz, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 97 49 33",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/66/83/35/phoenicia-restaurant.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/66/83/20/phoenicia-restaurant.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "11:30 AM - 3:00 PM",
+        "7:00 PM - 12:30 AM"
+      ],
+      "monday": [
+        "11:30 AM - 3:00 PM",
+        "7:00 PM - 12:00 AM"
+      ],
+      "tuesday": [
+        "11:30 AM - 3:00 PM",
+        "7:00 PM - 12:00 AM"
+      ],
+      "wednesday": [
+        "11:30 AM - 3:00 PM",
+        "7:00 PM - 12:00 AM"
+      ],
+      "thursday": [
+        "11:30 AM - 3:00 PM",
+        "7:00 PM - 12:00 AM"
+      ],
+      "friday": [
+        "11:30 AM - 3:00 PM",
+        "7:00 PM - 12:30 AM"
+      ],
+      "saturday": [
+        "11:30 AM - 3:00 PM",
+        "7:00 PM - 12:30 AM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$7 - $47",
+    "categories": {
+      "cuisine": [
+        "Lebanese",
+        "Mediterranean",
+        "Barbecue",
+        "Middle Eastern",
+        "Wine Bar",
+        "Vegetarian Friendly"
+      ],
+      "meals": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Brunch",
+        "Late Night",
+        "Drinks"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids",
+        "Business meetings",
+        "Special occasions",
+        "Large groups",
+        "Romantic"
+      ]
+    },
+    "locationFeatures": [
+      "Delivery",
+      "Takeout",
+      "Reservations",
+      "Buffet",
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Street Parking",
+      "Validated Parking",
+      "Free Off-Street Parking",
+      "Highchairs Available",
+      "Serves Alcohol",
+      "Accepts American Express",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Digital Payments",
+      "Free Wifi",
+      "Accepts Discover",
+      "Private Dining",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Le Mega",
+    "address": "45 avenue de l Europe, 60280 Venette, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 90 05 99",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/c1/ae/05/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/59/41/48/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/0c/f2/52/2a/escalope-de-saumon-et.jpg"
+    ],
+    "schedule": {
+      "monday": [
+        "9:00 AM - 3:00 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "tuesday": [
+        "9:00 AM - 3:00 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "wednesday": [
+        "9:00 AM - 3:00 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "thursday": [
+        "9:00 AM - 3:00 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "friday": [
+        "9:00 AM - 3:00 PM",
+        "7:00 PM - 12:00 AM"
+      ],
+      "saturday": [
+        "9:00 AM - 3:00 PM",
+        "7:00 PM - 12:00 AM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Bar scene",
+        "Families with children",
+        "Kids",
+        "Business meetings",
+        "Local cuisine",
+        "Special occasions",
+        "Large groups"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Validated Parking",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Garrett Meals",
+    "address": "39 rue Vivenel | Compiegne, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 41 11 74",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/c1/2f/aa/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/c1/2f/a9/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/0b/6d/b3/39/garrett-meals.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "11:45 AM - 10:30 PM"
+      ],
+      "monday": [
+        "11:45 AM - 10:30 PM"
+      ],
+      "tuesday": [
+        "11:45 AM - 10:30 PM"
+      ],
+      "wednesday": [
+        "11:45 AM - 10:30 PM"
+      ],
+      "thursday": [
+        "11:45 AM - 10:30 PM"
+      ],
+      "friday": [
+        "11:45 AM - 11:00 PM"
+      ],
+      "saturday": [
+        "11:45 AM - 11:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$9 - $28",
+    "categories": {
+      "cuisine": [
+        "American",
+        "Grill"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Large groups",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Reservations",
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Television",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Digital Payments",
+      "Free Wifi"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Quatrieme Etoile",
+    "address": "34 rue Vivenel, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 86 36 90",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0d/cc/2a/72/caption.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0c/fd/f8/f5/quatrieme-etoile.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0c/de/a4/b5/photo1jpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "monday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Chinese",
+        "Asian"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Delivery"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Central Park",
+    "address": "1 rue des Metiers, 60280 Venette, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 9 51 35 86 61",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0a/31/61/41/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0a/31/61/42/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0a/5a/e2/90/central-park.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "American"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Brunch"
+      ],
+      "goodFor": [
+        "Bar scene",
+        "Families with children",
+        "Special occasions",
+        "Large groups"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Seating",
+      "Parking Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Le Pigeonnier",
+    "address": "33 avenue Octave Butin, 60280 Margny-les-Compiegne, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 6 79 61 33 15",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/fd/7c/89/photo3jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/fd/7c/88/photo2jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/fd/7c/87/photo1jpg.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:00 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children"
+      ]
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "French Touch",
+    "address": "12 rue d Austerlitz, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 9 52 36 38 82",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "6:00 PM - 11:00 PM"
+      ],
+      "tuesday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "wednesday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "thursday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "friday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Fast Food"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "La Calabraise",
+    "address": "22 rue des Lombards, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 10 08",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/d2/44/da/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0b/a8/ca/db/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0b/a8/ca/da/photo0jpg.jpg"
+    ],
+    "schedule": {
+      "monday": [
+        "11:30 AM - 2:30 PM"
+      ],
+      "tuesday": [
+        "11:55 AM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "wednesday": [
+        "11:55 AM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "thursday": [
+        "11:55 AM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "friday": [
+        "11:55 AM - 2:30 PM",
+        "7:00 PM - 11:30 PM"
+      ],
+      "saturday": [
+        "11:55 AM - 2:30 PM",
+        "7:00 PM - 11:30 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$15 - $32",
+    "categories": {
+      "cuisine": [
+        "Pizza",
+        "Italian"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Special occasions",
+        "Kids",
+        "Business meetings",
+        "Large groups"
+      ]
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Reservations",
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Accepts American Express",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Digital Payments",
+      "Free Wifi"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Le Cordelier",
+    "address": "11 rue de Senlis, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 83 90 25",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0c/1b/12/97/11-rue-de-senlis.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-o/08/db/a2/bd/crepes-ardechoises-a.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "$20 - $30",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": [
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Street Parking",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Wine and Beer",
+      "Accepts American Express",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Free Wifi",
+      "Reservations"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "La Brasserie du Nord",
+    "address": "7 Place de la Gare, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 36 68 70",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0c/f3/fb/77/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0a/c6/27/4c/20160401-123558-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/07/dc/b0/8a/timbale-de-saint-jaques.jpg"
+    ],
+    "schedule": {
+      "monday": [
+        "7:30 AM - 3:00 PM",
+        "6:00 PM - 1:00 AM"
+      ],
+      "tuesday": [
+        "7:30 AM - 3:00 PM",
+        "6:00 PM - 1:00 AM"
+      ],
+      "wednesday": [
+        "7:30 AM - 3:00 PM",
+        "6:00 PM - 1:00 AM"
+      ],
+      "thursday": [
+        "7:30 AM - 3:00 PM",
+        "6:00 PM - 1:00 AM"
+      ],
+      "friday": [
+        "7:30 AM - 3:00 PM",
+        "6:00 PM - 1:00 AM"
+      ],
+      "saturday": [
+        "6:00 PM - 1:00 AM",
+        "10:00 AM - 3:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$11 - $27",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Families with children"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Daisuki",
+    "address": "Quai du cours Guynemer, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 90 03 65",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/a8/d4/95/exteriors.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/d5/55/3a/20170630-134100-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/d5/55/39/20170630-135033-largejpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$9 - $31",
+    "categories": {
+      "cuisine": [
+        "Japanese",
+        "Asian",
+        "Chinese"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids",
+        "Business meetings"
+      ]
+    },
+    "locationFeatures": [
+      "Delivery",
+      "Takeout",
+      "Reservations"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Hostellerie de Royal-Lieu",
+    "address": "9 rue de Senlis, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 10 24",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/09/37/52/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/09/37/51/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/11/a5/86/c8/chevreuil.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "7:00 AM - 11:00 PM"
+      ],
+      "monday": [
+        "7:00 AM - 11:00 PM"
+      ],
+      "tuesday": [
+        "7:00 AM - 11:00 PM"
+      ],
+      "wednesday": [
+        "7:00 AM - 11:00 PM"
+      ],
+      "thursday": [
+        "7:00 AM - 11:00 PM"
+      ],
+      "friday": [
+        "7:00 AM - 11:00 PM"
+      ],
+      "saturday": [
+        "7:00 AM - 11:00 PM"
+      ]
+    },
+    "price": "$$$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Breakfast"
+      ],
+      "goodFor": [
+        "Kids",
+        "Business meetings",
+        "Romantic",
+        "Large groups",
+        "Families with children"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Parking Available",
+      "Wheelchair Accessible"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Le P'ti Bougnat",
+    "address": "8 Place du Marche aux Herbes, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {
+      "tuesday": [
+        "8:00 AM - 8:00 PM"
+      ],
+      "wednesday": [
+        "8:00 AM - 8:00 PM"
+      ],
+      "thursday": [
+        "8:00 AM - 8:00 PM"
+      ],
+      "friday": [
+        "8:00 AM - 8:00 PM"
+      ],
+      "saturday": [
+        "8:00 AM - 8:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Breakfast",
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Restaurant Aurassi",
+    "address": "7 avenue des Martyrs de la Liberte, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 86 21 23",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Soprano",
+    "address": "22 rue Jean Legendre, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 04 06",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/66/d9/56/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/66/d9/55/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/11/e6/93/20/on-s-est-regales.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:00 PM"
+      ],
+      "monday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:00 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:00 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:45 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:45 PM",
+        "7:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Italian",
+        "Mediterranean",
+        "European",
+        "Vegetarian Friendly"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids",
+        "Business meetings",
+        "Large groups"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Wheelchair Accessible",
+      "Serves Alcohol"
+    ],
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Le Vestiaire",
+    "address": "16 avenue de l Armistice, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 80 69 81",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/41/86/8a/img-20180221-130030-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/41/86/89/img-20180221-123310-largejpg.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "La Fontaine Saint Jean",
+    "address": "21 rue des Plaideurs, 60350 Saint-Jean-aux-Bois, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 42 18 12",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/33/95/5c/carbonnade-de-sanglier.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/6e/fd/5d/20170825-201139-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/27/02/aa/genereux-plateau-de-fromage.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Wheelchair Accessible"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Chez Lim",
+    "address": "25 rue Jeanne D Arc, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 85 67 29",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/63/d4/90/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/06/b6/fe/a5/chez-lim-facade.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/07/6c/a5/8d/le-pho-au-boeuf-avec.jpg"
+    ],
+    "schedule": {},
+    "price": "$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Asian",
+        "Vietnamese"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": [
+      "Reservations"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Les Accordailles",
+    "address": "24 rue d Ulm, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 03 45",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/03/12/74/eb/les-accordailles.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/a8/47/46/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/0e/a8/47/45/photo0jpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 2:30 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "saturday": [
+        "3:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Outdoor Seating",
+      "Waitstaff",
+      "Wheelchair Accessible",
+      "Serves Alcohol"
+    ],
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Happy Diner",
+    "address": "158 rue de la Republique | Clairoix, 60280, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 85 86 25",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/d0/fd/8e/dsc-0006-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/d0/fd/8d/1516390718610-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/10/3f/29/64/empire-state-building.jpg"
+    ],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "L’Entre Mets",
+    "address": "23 Ter Rue D'Amiens, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 9 87 32 64 39",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/1e/75/67/l-entre-mets.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/1e/75/66/l-entre-mets.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/1e/75/65/l-entre-mets.jpg"
+    ],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [],
+      "goodFor": [
+        "Hot New Restaurants"
+      ]
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "5.0"
+  },
+  {
+    "name": "Le Vesuvio",
+    "address": "5 rue de Harlay, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 23 31 33",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/2a/7a/ee/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/fd/34/d8/le-vesuvio.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/fd/34/d1/le-vesuvio.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 10:30 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Italian",
+        "Pizza"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Chocolat de Beussent-Lachelle",
+    "address": "5 Place de l Hotel de Ville, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 66 48",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Cafe"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Chez Claudette",
+    "address": "16 B rue Saint Jean, 60350 Vieux-Moulin, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 90 99 17",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/08/86/c7/7b/chez-claudette.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/12/9b/df/chez-claudette.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/0f/12/9b/de/chez-claudette.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "9:00 AM - 1:00 PM"
+      ],
+      "tuesday": [
+        "9:00 AM - 7:00 PM"
+      ],
+      "thursday": [
+        "9:00 AM - 7:00 PM"
+      ],
+      "friday": [
+        "9:00 AM - 7:00 PM"
+      ],
+      "saturday": [
+        "9:00 AM - 7:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$14 - $17",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Breakfast",
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Reservations",
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Street Parking",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Accepts Visa"
+    ],
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Auberge du Daguet",
+    "address": "Face a l'eglise, 60350 Vieux-Moulin, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 85 60 72",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/09/72/da/fc/auberge-du-daguet.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/09/72/da/c3/auberge-du-daguet.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/09/72/da/9f/auberge-du-daguet.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "11:59 PM - 9:30 PM"
+      ],
+      "wednesday": [
+        "11:59 PM - 9:30 PM"
+      ],
+      "thursday": [
+        "11:59 PM - 9:30 PM"
+      ],
+      "friday": [
+        "11:59 PM - 9:30 PM"
+      ],
+      "saturday": [
+        "11:59 PM - 9:30 PM"
+      ]
+    },
+    "price": "$$$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Le Bouchon Restaurant Bar a Vins",
+    "address": "4 rue d Austerlitz, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 02 03",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/09/2f/d0/de/le-bouchon.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/02/ac/8e/bd/filename-img-1566-jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/11/64/76/la-cave-medievale.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 11:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 11:00 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 11:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:00 PM",
+        "7:30 PM - 11:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$16 - $43",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Business meetings",
+        "Special occasions"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Wine and Beer",
+      "Accepts American Express",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Digital Payments",
+      "Free Wifi"
+    ],
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Creperie Saladerie la Bolee",
+    "address": "2 T rue Saint Martin, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 80 88",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/60/89/c0/un-petit-cappuccino-pour.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0a/29/94/00/dsc-7442-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0a/29/93/ff/dsc-7391-largejpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "11:45 AM - 2:00 PM",
+        "6:45 PM - 10:00 PM"
+      ],
+      "tuesday": [
+        "11:45 AM - 2:00 PM",
+        "6:45 PM - 10:00 PM"
+      ],
+      "wednesday": [
+        "11:45 AM - 2:00 PM",
+        "6:45 PM - 10:00 PM"
+      ],
+      "thursday": [
+        "11:45 AM - 2:00 PM",
+        "6:45 PM - 10:00 PM"
+      ],
+      "friday": [
+        "11:45 AM - 2:00 PM",
+        "6:45 PM - 10:00 PM"
+      ],
+      "saturday": [
+        "11:45 AM - 10:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Salon de the",
+    "address": "Parc Chateau de Compiegne, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 42 51 38",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/32/d8/0c/le-temps-s-est-arretepour.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/32/d7/ab/lequel-choisir.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/32/d7/66/deco-soignee.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 6:00 PM"
+      ],
+      "monday": [
+        "12:00 PM - 6:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 6:00 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 6:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 6:00 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 6:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch"
+      ],
+      "goodFor": [
+        "Romantic"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Outdoor Seating",
+      "Seating",
+      "Wheelchair Accessible"
+    ],
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Del Arte",
+    "address": "4 rue Ferdinand de Lesseps | Zac des Mercieres, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 42 65 21",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/e6/16/45/img-20180127-195035-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/e6/16/44/img-20180127-200856-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/e6/16/43/img-20180127-195032-largejpg.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Italian",
+        "Grill"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids",
+        "Business meetings",
+        "Large groups"
+      ]
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Reservations",
+      "Wheelchair Accessible"
+    ],
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Les Relais D'alsace",
+    "address": "6 Place du Marche aux Herbes, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 03 83",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/e9/70/e8/les-relais-d-alsace.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/e9/6f/c2/les-relais-d-alsace.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/e9/6d/3a/les-relais-d-alsace.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "9:00 AM - 12:00 AM"
+      ],
+      "monday": [
+        "9:00 AM - 12:00 AM"
+      ],
+      "tuesday": [
+        "9:00 AM - 12:00 AM"
+      ],
+      "wednesday": [
+        "9:00 AM - 12:00 AM"
+      ],
+      "thursday": [
+        "9:00 AM - 12:00 AM"
+      ],
+      "friday": [
+        "9:00 AM - 12:00 AM"
+      ],
+      "saturday": [
+        "9:00 AM - 12:00 AM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$12 - $37",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Dinner",
+        "Lunch",
+        "Late Night"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids",
+        "Large groups"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Wheelchair Accessible"
+    ],
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Brasserie Le Scapin",
+    "address": "102 rue Moliere, 60280 Margny-les-Compiegne, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 23 30 82",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Gourmet d'asie",
+    "address": "3 rue Gaspard Monge, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/29/6b/b9/ta-img-20170806-134002_rotated_90.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/df/4b/66/20170203-123838-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/df/4b/65/20170203-121114-largejpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "monday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 10:30 PM"
+      ]
+    },
+    "price": "$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Asian",
+        "Vegetarian Friendly",
+        "Vegan Options"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Large groups",
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Wheelchair Accessible"
+    ],
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Restaurant oriental Au Dellys",
+    "address": "8 rue de la 8e Division, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 09 81",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "5.0"
+  },
+  {
+    "name": "Au 7eme Art",
+    "address": "1 B Place Saint Jacques, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 86 39 42",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/a5/5c/03/au-7eme-art.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/a5/5b/f7/au-7eme-art.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/11/a5/5b/ed/au-7eme-art.jpg"
+    ],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Bar de la Tour",
+    "address": "19 rue Jeanne D Arc, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 36 68 80",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Shiki Sushi",
+    "address": "4 rue de Pierrefonds, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 26 90",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/8b/36/6c/sushi-maki-brochettes.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/8b/36/43/menu-japonais-sushi-maki.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/11/8b/36/1c/menu-japonais-sushi-sashimi.jpg"
+    ],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "5.0"
+  },
+  {
+    "name": "French Touch",
+    "address": "12 rue d Austerlitz, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 9 52 36 38 82",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "6:00 PM - 11:00 PM"
+      ],
+      "tuesday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "wednesday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "thursday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "friday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Fast Food"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Les Ferlempins",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "By Sam",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "La Cantina",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Bistrot du terroir",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Auberge a la Bonne Idee",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Restaurant La Table d'ELISA",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Fleur de the",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Bistrot Du Chateau",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Le Bistrot Des Arts",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "L'Endroit",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Taj Mahal",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Bistrot de l'imprevu",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Peppole",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Vivenel",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Bistrot de Flandre",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Le Delice",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Restaurant Leon De Bruxelles Compiegne",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Le Tendance Restaurant Bar Trendy",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Caffe Vespa",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Chez Celestine",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "In Vino",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "La Brasserie Parisienne",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "La Petite Auberge",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Auberge du Mont Saint Pierre",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Phoenicia Restaurant Libanais Traiteur",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Le Mega",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Garrett Meals",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Quatrieme Etoile",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Central Park",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Le Pigeonnier",
+    "address": "",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "French Touch",
+    "address": "12 rue d Austerlitz, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 9 52 36 38 82",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "6:00 PM - 11:00 PM"
+      ],
+      "tuesday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "wednesday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "thursday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "friday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Fast Food"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Le Stromboli",
+    "address": "12 rue des Cordeliers, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 88 63",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/09/73/c1/a9/ta-img-20151107-201028.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/09/73/c1/a8/dsc-3297-largejpg.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:30 PM",
+        "7:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Pizza"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": [
+      "Reservations"
+    ],
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "George Cafe",
+    "address": "6 rue Jean Legendre, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 10 11",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/29/78/d9/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/08/94/13/15/planche-mixte-charcuterie.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/5e/45/2f/partenaire-du-snc.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "10:00 AM - 1:00 AM"
+      ],
+      "monday": [
+        "10:00 AM - 1:00 AM"
+      ],
+      "tuesday": [
+        "10:00 AM - 1:00 AM"
+      ],
+      "wednesday": [
+        "10:00 AM - 1:00 AM"
+      ],
+      "thursday": [
+        "10:00 AM - 1:00 AM"
+      ],
+      "friday": [
+        "10:00 AM - 1:00 AM"
+      ],
+      "saturday": [
+        "10:00 AM - 1:00 AM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$10 - $28",
+    "categories": {
+      "cuisine": [
+        "Brew Pub",
+        "Bar",
+        "European",
+        "Pub",
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Late Night",
+        "Drinks"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Reservations",
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Street Parking",
+      "Television",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Wine and Beer",
+      "Accepts Visa",
+      "Free Wifi"
+    ],
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Pizza Minutes",
+    "address": "129 rue Louis Barthou, 60280 Margny-les-Compiegne, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 86 68 68",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "6:30 PM - 10:30 PM"
+      ],
+      "monday": [
+        "6:30 PM - 10:30 PM"
+      ],
+      "tuesday": [
+        "6:30 PM - 10:30 PM"
+      ],
+      "wednesday": [
+        "6:30 PM - 10:30 PM",
+        "11:30 AM - 2:00 PM"
+      ],
+      "thursday": [
+        "6:30 PM - 10:30 PM"
+      ],
+      "friday": [
+        "11:30 AM - 2:00 PM",
+        "6:30 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "6:30 PM - 11:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "L'alsace",
+    "address": "42 avenue de l Armistice, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 27 39",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Zen Sushi",
+    "address": "8 rue de Harlay, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 86 18 24",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Japanese",
+        "Sushi"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Izmir Kebab",
+    "address": "2 rue du Lieutenant Rene Ducloux, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 51 65",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "5:30 PM - 10:00 PM"
+      ],
+      "monday": [
+        "5:30 PM - 10:00 PM",
+        "11:30 AM - 2:00 PM"
+      ],
+      "tuesday": [
+        "5:30 PM - 10:00 PM",
+        "11:30 AM - 2:00 PM"
+      ],
+      "wednesday": [
+        "5:30 PM - 10:00 PM",
+        "11:30 AM - 2:00 PM"
+      ],
+      "thursday": [
+        "5:30 PM - 10:00 PM",
+        "11:30 AM - 2:00 PM"
+      ],
+      "friday": [
+        "5:30 PM - 10:00 PM",
+        "11:30 AM - 2:00 PM"
+      ],
+      "saturday": [
+        "5:30 PM - 10:00 PM",
+        "11:30 AM - 2:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Le Coq d'Or",
+    "address": "28 Place du Change, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "L'Assiette",
+    "address": "84 rue de Paris, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 92 30 06",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/d3/44/40/voici-quelques-cliches.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/d3/44/3e/voici-quelques-cliches.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/d3/44/3c/voici-quelques-cliches.jpg"
+    ],
+    "schedule": {},
+    "price": "$$$$",
+    "averagePrice": "$18 - $74",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "La Grange",
+    "address": "25 rue de la 8e Division, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/1e/bb/cc/soirees-concert.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/1e/bb/a9/une-terrasse-privee.jpg"
+    ],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Le Pacifique",
+    "address": "33 rue Jeanne D Arc, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Mie Caline",
+    "address": "13 Place de l Hotel de Ville, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 08 89",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/6d/fb/c2/photo1jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/6d/fb/c0/photo0jpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "6:30 AM - 7:30 PM"
+      ],
+      "monday": [
+        "6:30 AM - 7:30 PM"
+      ],
+      "tuesday": [
+        "6:30 AM - 7:30 PM"
+      ],
+      "wednesday": [
+        "6:30 AM - 7:30 PM"
+      ],
+      "thursday": [
+        "6:30 AM - 7:30 PM"
+      ],
+      "friday": [
+        "6:30 AM - 7:30 PM"
+      ],
+      "saturday": [
+        "6:30 AM - 7:30 PM"
+      ]
+    },
+    "price": "$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Breakfast",
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Pizza Pai Compiegne",
+    "address": "9 Avenue Jean Moulin | Centre Commercial Venette, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 83 78 31",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Italian"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Campanile Compiegne Restaurant",
+    "address": "70 avenue de Huy, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 42 35",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": [
+      "Reservations"
+    ],
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Foulou",
+    "address": "17 Place du Change, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 39 44",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Le Bidule",
+    "address": "84 rue de Paris | 84 Rue De Paris, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 83 83 84",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0a/fe/17/7b/assiette-rotisserie-palette.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/34/bc/44/20160317-195817-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/34/bc/43/20160317-195823-largejpg.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "$19 - $36",
+    "categories": {
+      "cuisine": [
+        "French",
+        "Barbecue",
+        "European",
+        "Wine Bar"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": [
+      "Takeout",
+      "Outdoor Seating",
+      "Seating",
+      "Waitstaff",
+      "Parking Available",
+      "Validated Parking",
+      "Television",
+      "Highchairs Available",
+      "Wheelchair Accessible",
+      "Serves Alcohol",
+      "Full Bar",
+      "Accepts Mastercard",
+      "Accepts Visa",
+      "Accepts Credit Cards"
+    ],
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Flunch",
+    "address": "6 avenue de l Europe, 60280 Venette, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 83 22 07",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/2a/11/f3/flunch.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/2a/11/81/flunch.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/2a/11/0f/flunch.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "11:00 AM - 9:30 PM"
+      ],
+      "monday": [
+        "8:30 AM - 9:30 PM"
+      ],
+      "tuesday": [
+        "8:30 AM - 9:30 PM"
+      ],
+      "wednesday": [
+        "8:30 AM - 9:30 PM"
+      ],
+      "thursday": [
+        "8:30 AM - 9:30 PM"
+      ],
+      "friday": [
+        "8:30 AM - 10:00 PM"
+      ],
+      "saturday": [
+        "8:30 AM - 10:00 PM"
+      ]
+    },
+    "price": "$",
+    "averagePrice": "$14 - $25",
+    "categories": {
+      "cuisine": [
+        "French",
+        "Vegetarian Friendly"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Breakfast"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Parking Available",
+      "Wheelchair Accessible"
+    ],
+    "tripAdvisorRating": "3.0"
+  },
+  {
+    "name": "Le Trendy",
+    "address": "41 rue de Soissons, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 6 83 50 34 17",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0c/1d/8b/c8/le-trendy.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0c/1d/8b/c7/le-trendy.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/0c/1d/8b/c6/le-trendy.jpg"
+    ],
+    "schedule": {
+      "tuesday": [
+        "5:00 PM - 1:00 AM"
+      ],
+      "wednesday": [
+        "5:00 PM - 1:00 AM"
+      ],
+      "thursday": [
+        "5:00 PM - 1:00 AM"
+      ],
+      "friday": [
+        "5:00 PM - 1:00 AM"
+      ],
+      "saturday": [
+        "5:00 PM - 1:00 AM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$7 - $62",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "L'Auberge Fleurie",
+    "address": "64 Route de Flandres | Cuvilly, 60490, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 85 02 90",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0b/f9/d2/c1/l-auberge-fleurie-64.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/99/40/8a/img-20170215-091654-396.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/99/40/88/img-20170214-234859-600.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.0"
+  },
+  {
+    "name": "So GuSTo",
+    "address": "10 quai de la Republique | Cote Gare, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 66 66",
+    "images": [],
+    "schedule": {
+      "monday": [
+        "10:00 AM - 10:00 PM"
+      ],
+      "tuesday": [
+        "10:00 AM - 10:00 PM"
+      ],
+      "wednesday": [
+        "10:00 AM - 10:00 PM"
+      ],
+      "thursday": [
+        "10:00 AM - 10:00 PM"
+      ],
+      "friday": [
+        "10:00 AM - 10:00 PM"
+      ],
+      "saturday": [
+        "10:00 AM - 10:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "La Locomotive",
+    "address": "6 Place de la Gare, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 83 22 33",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "McDonald's",
+    "address": "Avenue Marcelin Berthelot Zac des Mercieres | Le Lieu Dit le Hazoy, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 23 02 97",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "10:30 AM - 11:00 PM"
+      ],
+      "monday": [
+        "10:30 AM - 11:00 PM"
+      ],
+      "tuesday": [
+        "10:30 AM - 11:00 PM"
+      ],
+      "wednesday": [
+        "10:30 AM - 11:00 PM"
+      ],
+      "thursday": [
+        "10:30 AM - 11:00 PM"
+      ],
+      "friday": [
+        "10:30 AM - 11:00 PM"
+      ],
+      "saturday": [
+        "10:30 AM - 11:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Pizza King",
+    "address": "385 boulevard de la 1ere Armee, 60280 Margny-les-Compiegne, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 6 35 23 08 59",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "6:00 PM - 11:00 PM",
+        "11:00 AM - 2:30 PM"
+      ],
+      "monday": [
+        "6:00 PM - 11:00 PM",
+        "11:00 AM - 2:30 PM"
+      ],
+      "tuesday": [
+        "6:00 PM - 11:00 PM",
+        "11:00 AM - 2:30 PM"
+      ],
+      "wednesday": [
+        "6:00 PM - 11:00 PM",
+        "11:00 AM - 2:30 PM"
+      ],
+      "thursday": [
+        "6:00 PM - 11:00 PM",
+        "11:00 AM - 2:30 PM"
+      ],
+      "friday": [
+        "6:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "6:00 PM - 11:00 PM",
+        "11:00 AM - 2:30 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Pizza"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Asie Venette",
+    "address": "6 Avenue de L_Europe | Galerie Commerciale Carrefour, 60280 Venette, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Armonie Reception Traiteur",
+    "address": "4 rue Aubrelicque, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 6 63 78 22 44",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/09/c4/3d/9d/armonie-reception-traiteur.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/09/c4/3d/79/armonie-reception-traiteur.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/09/c4/3d/66/armonie-reception-traiteur.jpg"
+    ],
+    "schedule": {},
+    "price": "$$$$",
+    "averagePrice": "$25 - $136",
+    "categories": {
+      "cuisine": [
+        "French",
+        "Caribbean"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "5.0"
+  },
+  {
+    "name": "La Medina",
+    "address": "1 rue de Paris, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 65 79",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "12:00 PM - 2:00 PM"
+      ],
+      "tuesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "wednesday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "thursday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "friday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "12:00 PM - 2:00 PM",
+        "7:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Moroccan",
+        "Mediterranean"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Le Rethonde",
+    "address": "6 rue des Bonnetiers, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 10 25",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/f4/55/34/le-rethonde.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/f4/54/f3/le-rethonde.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/f4/54/c5/le-rethonde.jpg"
+    ],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Le Bar du Palais",
+    "address": "2 rue des Minimes, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 14 88",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/12/0d/c3/le-bar-du-palais.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/12/0d/93/le-bar-du-palais.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/12/12/0d/63/le-bar-du-palais.jpg"
+    ],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Le Bistrot de Flandre",
+    "address": "2 rue d Amiens, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 83 26 35",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.5"
+  },
+  {
+    "name": "Le Snack",
+    "address": "12, Rue Marcel Viseur, 60640, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "Les Volets Bleus",
+    "address": "70 rue du Bataillon de France, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 64 47 60 97",
+    "images": [],
+    "schedule": {
+      "monday": [
+        "7:00 AM - 8:00 PM"
+      ],
+      "tuesday": [
+        "7:00 AM - 8:00 PM"
+      ],
+      "wednesday": [
+        "7:00 AM - 8:00 PM"
+      ],
+      "thursday": [
+        "7:00 AM - 8:00 PM"
+      ],
+      "friday": [
+        "7:00 AM - 8:00 PM"
+      ],
+      "saturday": [
+        "8:00 AM - 2:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Breakfast",
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.0"
+  },
+  {
+    "name": "French Touch",
+    "address": "12 rue d Austerlitz, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 9 52 36 38 82",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "6:00 PM - 11:00 PM"
+      ],
+      "tuesday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "wednesday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "thursday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "friday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Fast Food"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.5"
+  },
+  {
+    "name": "Domino's Pizza",
+    "address": "5 rue de Clermont, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 09 15 15",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 10:00 PM"
+      ],
+      "monday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 10:00 PM"
+      ],
+      "tuesday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 10:00 PM"
+      ],
+      "wednesday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 10:00 PM"
+      ],
+      "thursday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "friday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "11:00 AM - 2:00 PM",
+        "6:00 PM - 10:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Pizza"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.0"
+  },
+  {
+    "name": "Burger King Compiegne Mercieres",
+    "address": "2 avenue Henri Adnot, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 65 52 00 62",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/c3/3f/66/photo0jpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/10/a2/59/05/part-1505214246037-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/fb/77/d5/ta-img-20170415-225928.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "$4 - $19",
+    "categories": {
+      "cuisine": [
+        "American"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.0"
+  },
+  {
+    "name": "Carre Sushi",
+    "address": "8 rue Saint Lazare, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 80 56",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Japanese"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.0"
+  },
+  {
+    "name": "Le Bar Parisien",
+    "address": "4 Place de la Gare, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "2.5"
+  },
+  {
+    "name": "La Couronne Royale",
+    "address": "2 avenue Henri Adnot, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Chinese"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "2.5"
+  },
+  {
+    "name": "Pastatartine",
+    "address": "7 rue des 3 Barbeaux, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 6 09 09 25 94",
+    "images": [],
+    "schedule": {
+      "tuesday": [
+        "9:00 AM - 8:00 PM"
+      ],
+      "wednesday": [
+        "8:30 AM - 8:00 PM"
+      ],
+      "thursday": [
+        "9:00 AM - 8:00 PM"
+      ],
+      "friday": [
+        "9:00 AM - 8:00 PM"
+      ],
+      "saturday": [
+        "8:30 AM - 8:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Breakfast",
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "La seigneurie",
+    "address": "4 avenue Henri Adnot, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 9 61 37 97 73",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "2.5"
+  },
+  {
+    "name": "Le Restaurant Ibis Compiegne",
+    "address": "18, rue Edouard Branly ZAC de Mercieres | ibis Compiegne, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "2.0"
+  },
+  {
+    "name": "Grill Courtepaille",
+    "address": "7 rue Clement Ader | 60200, 60471, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 20 30 60",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "11:30 AM - 11:00 PM"
+      ],
+      "monday": [
+        "11:30 AM - 3:00 PM",
+        "6:30 PM - 10:30 PM"
+      ],
+      "tuesday": [
+        "11:30 AM - 3:00 PM",
+        "6:30 PM - 10:30 PM"
+      ],
+      "wednesday": [
+        "11:30 AM - 3:00 PM",
+        "6:30 PM - 10:30 PM"
+      ],
+      "thursday": [
+        "11:30 AM - 3:00 PM",
+        "6:30 PM - 10:30 PM"
+      ],
+      "friday": [
+        "11:30 AM - 3:00 PM",
+        "6:30 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "11:30 AM - 11:00 PM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "3.0"
+  },
+  {
+    "name": "Buffalo Grill",
+    "address": "Avenue Marcelin Berthelot | ZAC Les Mercières, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 97 02 73",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/62/14/43/20170525-210453-largejpg_rotated_90.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0e/1b/1d/ba/visite-culinaire-inattendue.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-p/0e/1b/1d/b9/visite-culinaire-inattendue.jpg"
+    ],
+    "schedule": {},
+    "price": "$$ - $$$",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "American",
+        "Steakhouse"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": [
+        "Families with children",
+        "Kids"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Waitstaff",
+      "Wheelchair Accessible"
+    ],
+    "tripAdvisorRating": "2.5"
+  },
+  {
+    "name": "Le Fantasia",
+    "address": "173 rue Moliere, 60280 Margny-les-Compiegne, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 41 09 01",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-w/0f/76/c5/50/ta-img-20170603-131404.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-w/0f/76/c5/4f/ta-img-20170603-131346.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "6:00 PM - 10:30 PM"
+      ],
+      "monday": [
+        "6:00 PM - 10:30 PM",
+        "11:30 AM - 2:00 PM"
+      ],
+      "tuesday": [
+        "6:00 PM - 10:30 PM",
+        "11:30 AM - 2:00 PM"
+      ],
+      "wednesday": [
+        "6:00 PM - 10:30 PM",
+        "11:30 AM - 2:00 PM"
+      ],
+      "thursday": [
+        "6:00 PM - 10:30 PM",
+        "11:30 AM - 2:00 PM"
+      ],
+      "friday": [
+        "11:30 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ],
+      "saturday": [
+        "11:30 AM - 2:00 PM",
+        "6:00 PM - 11:00 PM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$10 - $19",
+    "categories": {
+      "cuisine": [
+        "Italian",
+        "Pizza"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "4.0"
+  },
+  {
+    "name": "McDonald's",
+    "address": "Centre Commercial Carrefour | Avenue de l'Europe, 60280 Venette, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 90 09 42",
+    "images": [],
+    "schedule": {
+      "sunday": [
+        "8:00 AM - 11:00 PM"
+      ],
+      "monday": [
+        "8:00 AM - 11:00 PM"
+      ],
+      "tuesday": [
+        "8:00 AM - 11:00 PM"
+      ],
+      "wednesday": [
+        "8:00 AM - 11:00 PM"
+      ],
+      "thursday": [
+        "8:00 AM - 11:00 PM"
+      ],
+      "friday": [
+        "8:00 AM - 12:30 AM"
+      ],
+      "saturday": [
+        "8:00 AM - 12:30 AM"
+      ]
+    },
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Breakfast",
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "2.0"
+  },
+  {
+    "name": "La ferme du Carandeau",
+    "address": "Route de L'Armistice | Proprietaire Nelly Et Thierry Gerant Noro Fabienne du 1 04 2014 AU 31 03 2015, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 85 89 89",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [
+        "Lunch",
+        "Dinner"
+      ],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "2.0"
+  },
+  {
+    "name": "Turtles Pizza",
+    "address": "27 Place du Change, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": "1.5"
+  },
+  {
+    "name": "Le Saint Clair",
+    "address": "8 rue des Lombards, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 58 18",
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/e5/f7/69/img-20180127-142109-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/e5/f7/68/img-20180127-142119-largejpg.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/11/e5/f7/67/img-20180127-140039-largejpg.jpg"
+    ],
+    "schedule": {
+      "sunday": [
+        "10:00 AM - 3:00 AM"
+      ],
+      "monday": [
+        "10:00 AM - 3:00 AM"
+      ],
+      "tuesday": [
+        "10:00 AM - 3:00 AM"
+      ],
+      "wednesday": [
+        "10:00 AM - 3:00 AM"
+      ],
+      "thursday": [
+        "10:00 AM - 3:00 AM"
+      ],
+      "friday": [
+        "10:00 AM - 3:00 AM"
+      ],
+      "saturday": [
+        "10:00 AM - 3:00 AM"
+      ]
+    },
+    "price": "$$ - $$$",
+    "averagePrice": "$15 - $31",
+    "categories": {
+      "cuisine": [
+        "French"
+      ],
+      "meals": [
+        "Lunch",
+        "Dinner",
+        "Drinks"
+      ],
+      "goodFor": [
+        "Bar scene"
+      ]
+    },
+    "locationFeatures": [
+      "Reservations",
+      "Wheelchair Accessible",
+      "Serves Alcohol"
+    ],
+    "tripAdvisorRating": "2.5"
+  },
+  {
+    "name": "Cuisine Simple Facon Passy",
+    "address": "16 rue du Bataillon de France, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 6 64 36 05 38",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "La Gourmandine",
+    "address": "28 rue des Lombards, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 40 33 77",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Les Delis'oises",
+    "address": "6 rue de Harlay, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 36 71 42",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Ayten",
+    "address": "75 rue du General Mangin, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 23 21 33",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Saveurs d'Orient",
+    "address": "Place du Marche Aux Herbes, 60200, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 6 59 63 31 67",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [
+        "Pub"
+      ],
+      "meals": [],
+      "goodFor": [
+        "Bar scene"
+      ]
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  },
+  {
+    "name": "Allopizza60.fr",
+    "address": "78 rue Moliere, 60280 Margny-les-Compiegne, Compiegne, France",
+    "city": "Compiegne",
+    "country": "France",
+    "phone": "+33 3 44 44 08 95",
+    "images": [],
+    "schedule": {},
+    "price": "",
+    "averagePrice": "",
+    "categories": {
+      "cuisine": [],
+      "meals": [],
+      "goodFor": []
+    },
+    "locationFeatures": "",
+    "tripAdvisorRating": ""
+  }
+]
