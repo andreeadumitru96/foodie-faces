@@ -5,8 +5,9 @@ import MuiThemeProvieder from 'material-ui/styles/MuiThemeProvider';
 
 import AppContainer from './components/individual/AppContainer/AppContainer';
 import './index.css';
+import {getTheme} from '../src/components/shared/constants'
 
-ReactDOM.render(<MuiThemeProvieder>
+ReactDOM.render(<MuiThemeProvieder muiTheme={getTheme()}>
                     <AppContainer />
                 </MuiThemeProvieder>
 , document.getElementById('root'));

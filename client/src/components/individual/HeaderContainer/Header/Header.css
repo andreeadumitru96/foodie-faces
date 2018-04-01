@@ -15,4 +15,6 @@
 .header__appbar-autocomplete {
     left: 60px;
     border-color: white;
+    background-color: white !important;
+    border-radius: 4px;
 }
