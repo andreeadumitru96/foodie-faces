@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Login from './Login/Login'
-import {notificationError} from '../../../shared/notification';
+import {notificationError} from '../../../shared/constants';
 
 class LoginContainer extends Component {
     constructor(props) {

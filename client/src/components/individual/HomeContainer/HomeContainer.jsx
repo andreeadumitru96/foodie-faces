@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Home from './Home/Home'
 import HeaderContainer from '../HeaderContainer/HeaderContainer';
-import {cookies} from '../../shared/notification';
+import {cookies} from '../../shared/constants';
 
 class HomeContainer extends Component {
 	constructor(props) {

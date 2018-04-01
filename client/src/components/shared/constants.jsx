@@ -1,4 +1,7 @@
 import Alert from 'react-s-alert';
+import Cookies from 'universal-cookie';
+
+export const cookies = new Cookies();
 
 export const notificationError = (message) => {
 	Alert.error(message, {
@@ -7,3 +10,5 @@ export const notificationError = (message) => {
 		timeout: 3000
 	});
 }
+
+export const cityList = ['Paris', 'Compiegne', 'Lyon'];

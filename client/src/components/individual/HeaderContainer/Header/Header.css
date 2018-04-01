@@ -1,0 +1,18 @@
+.header__logo {
+    width: 34px;
+    height: auto;
+    position: absolute;
+    top: 15px;
+    z-index: 9999;
+    left: 20px;
+}
+
+.header__logo-img {
+    width: 100%;
+    height: auto;
+}
+
+.header__appbar-autocomplete {
+    left: 60px;
+    border-color: white;
+}

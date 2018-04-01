@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import AvatarMenu from './AvatarMenu/AvatarMenu';
-import {cookies} from '../../../shared/notification';
+import {cookies} from '../../../shared/constants';
 
 class AvatarMenuContainer extends Component {
 	constructor(props) {

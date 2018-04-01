@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Header from './Header/Header';
+import {cityList} from '../../shared/constants';
 
 class HeaderContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            cityDropdownDataSet: cityList
         };
     }
 
@@ -14,7 +15,7 @@ class HeaderContainer extends Component {
     }
     render() {
         return (
-            <Header/>
+            <Header cityList={this.state.cityDropdownDataSet}/>
         );
     }
 }
