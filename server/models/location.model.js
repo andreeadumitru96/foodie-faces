@@ -22,11 +22,11 @@ let LocationSchema = new Schema({
         longitude: String,
         latitude: String
     },
-    phone: Array[String],
+    phone: [String],
     images: [String],
-    schedule: Array[{
+    schedule: [{
         dayName: String,
-        openHours: Array[String]
+        openHours: [String]
     }],
     receivedReviews: [{
         title: {
@@ -70,11 +70,11 @@ let LocationSchema = new Schema({
     price: String,
     averagePrice: String,
     categories: {
-        cuisine: Array[String],
-        meals: Array[String],
-        goodFor: Array[String]
+        cuisine: [String],
+        meals: [String],
+        goodFor: [String]
     },  
-    locationFeatures: Array[String],
+    locationFeatures: [String],
     tripAdvisorRating: String,
     menu: [{
          categoryName: {
@@ -84,14 +84,14 @@ let LocationSchema = new Schema({
             name: String,
             price : Number,
             image: String,
-            rating: Array[Number]
+            rating: [Number]
         }]
     }],
     temporaryMenu: [{
         name: String,
         price : Number,
         image: String,
-        rating: Array[Number],
+        rating: [Number],
         category: String,
         validationNumber: Number,
         addedBy: [{
