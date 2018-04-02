@@ -15,6 +15,7 @@ app.use(cors());
 //Attach Routes
 require('./server/routes/user.routes')(app);
 require('./server/routes/utils/geocoder.routes')(app);
+require('./server/routes/location.routes')(app);
 
 mongoose.Promise = global.Promise;
 
