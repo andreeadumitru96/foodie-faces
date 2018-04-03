@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Register from './Register/Register';
-import {notificationError} from '../../../shared/notificationError';
+import {notificationError} from '../../../shared/constants';
 
 class RegisterContainer extends Component {
     constructor(props) {
@@ -52,10 +52,15 @@ class RegisterContainer extends Component {
             method: 'post',
             body: JSON.stringify(data)
         }).then(function (response) {
-            return response.json()
-            console.log(response)
-        }).then(function (body) {
-            console.log(body);
+            if(response.status === 200) {
+				response.json().then((data) => {
+                    console.log("success");
+				})
+			} else {
+				response.json().then((data) => {
+					notificationError(data.message);
+				});
+            }
         });
     }
 

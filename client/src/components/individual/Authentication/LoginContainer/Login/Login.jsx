@@ -21,8 +21,8 @@ class Login extends Component {
                     </div>
                     <div className="login__form-email">
                         <TextField  
-                            // inputStyle={{color: 'white'}}
-                            // floatingLabelStyle={{color: 'white'}}
+                            inputStyle={{color: 'white'}}
+                            floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Email"
                             ref={(inputValue) => {this.email = inputValue}}
                         />  
@@ -30,8 +30,8 @@ class Login extends Component {
 
                     <div className="login__from-password">
                         <TextField
-                            // inputStyle={{color: 'white'}}
-                            // floatingLabelStyle={{color: 'white'}}
+                            inputStyle={{color: 'white'}}
+                            floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Password"
                             // type="password"
                             ref={(inputValue) => {this.password = inputValue}}

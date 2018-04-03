@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import Alert from 'react-s-alert';
 import 'react-s-alert/dist/s-alert-default.css';
 import 'react-s-alert/dist/s-alert-css-effects/jelly.css';
-import {cookies} from '../../shared/notification';
+import {cookies} from '../../shared/constants';
 
 import {
     BrowserRouter as Router,
     Route,
     Switch
 } from 'react-router-dom';
-
 
 import LoginContainer from '../Authentication/LoginContainer/LoginContainer';
 import RegisterContainer from '../Authentication/RegisterContainer/RegisterContainer';
