@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Home from './Home/Home'
 import HeaderContainer from '../HeaderContainer/HeaderContainer';
+import BodyContainer from '../BodyContainer/BodyContainer';
 import {cookies} from '../../shared/constants';
 
 class HomeContainer extends Component {
@@ -9,13 +10,14 @@ class HomeContainer extends Component {
 		super(props);
 		this.state = {
 			userData: cookies.get('user')
-		}
+		};
 	}
 
 	render() {
 		return (
 			<div>
                 <HeaderContainer/>
+                <BodyContainer/>
 				<Home userData={this.state.userData} />
 			</div>
 		);

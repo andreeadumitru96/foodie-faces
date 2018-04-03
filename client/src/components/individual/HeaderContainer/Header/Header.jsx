@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
-import SearchBar from 'material-ui-search-bar';
-import IconButton from 'material-ui/IconButton';
 import AutoComplete from 'material-ui/AutoComplete';
 
 import AvatarMenuContainer from '../AvatarMenuContainer/AvatarMenuContainer';
@@ -31,7 +29,7 @@ class Header extends Component {
                             <AutoComplete
                                 hintText="Choose a city..."
                                 dataSource={this.props.cityList}
-                                filter= {AutoComplete.caseInsensitiveFilter}                               
+                                filter={AutoComplete.caseInsensitiveFilter}                               
                                 className="header__appbar-autocomplete"          
                             />
                         }          

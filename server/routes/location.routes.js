@@ -4,5 +4,4 @@ module.exports = function(app) {
 
     app.get('/api/location/getAllLocations', locationController.getAllLocations);
 
-    
 };
