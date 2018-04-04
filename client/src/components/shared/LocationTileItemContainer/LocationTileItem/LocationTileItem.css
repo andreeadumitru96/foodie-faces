@@ -4,12 +4,10 @@
     display: flex;
 }
 
-
+*/
 .location-tile__button-star {
     color: white !important;
 }
 
 .location-tile__image {
-    width: 250px !important;
-    height: 250px;
-} */
+} 
