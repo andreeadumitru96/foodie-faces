@@ -75,7 +75,7 @@ let LocationSchema = new Schema({
         goodFor: [String]
     },  
     locationFeatures: [String],
-    tripAdvisorRating: String,
+    tripAdvisorRating: Number,
     menu: [{
          categoryName: {
              type: String

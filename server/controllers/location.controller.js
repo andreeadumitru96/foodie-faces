@@ -15,3 +15,14 @@ exports.getAllLocations = function(req, res) {
         }
     });
 };
+
+exports.getMostRatedLocations = function(req, res) {
+    Location.find({}).sort({'tripAdvisorRating': 'desc'}).limit(30).exec(function(err, locations) {
+        if(err) {
+            res.status(500).send({message: err})
+        }
+        else {
+            res.status(200).send(locations);
+        }
+    });
+};

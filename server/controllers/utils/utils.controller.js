@@ -1,8 +1,7 @@
-let Location = require('../../controllers/location.controller');
+let Location = require('../../models/location.model');
 
 const geoCoder = require('../../../google_geocode_config/google_geocode_config');
 const googleGeoCoder = geoCoder.nodeGeocoder(geoCoder.options);
-
 
 exports.saveLocationFromFile = function (req, res) {
 
@@ -99,7 +98,7 @@ exports.saveLocationFromFile = function (req, res) {
                     goodFor: location.categories.goodFor
                 },
                 locationFeatures: location.locationFeatures,
-                tripAdvisorRating: location.tripAdvisorRating,
+                tripAdvisorRating: parseFloat(location.tripAdvisorRating),
                 receivedReviews: [],
                 receivedRatings: [],
                 menu: [],
