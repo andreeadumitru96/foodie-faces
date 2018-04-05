@@ -36,3 +36,16 @@ exports.getLocationsCities = function(req, res) {
         }
     });
 };
+
+exports.getLocationsByCity = function(req, res) {
+    if(!req.body) {
+        res.status(500).send({message: error})
+    }
+    Location.find({'city': req.body.cityName}, function(err, locations) {
+        if(err) {
+            res.status(500).send({message: err});
+        } else {
+            res.status(200).send(locations);
+        }
+    });
+};
