@@ -4,8 +4,6 @@ import AutoComplete from 'material-ui/AutoComplete';
 
 import AvatarMenuContainer from '../AvatarMenuContainer/AvatarMenuContainer';
 import logoImg from '../../../../assets/logo.jpg';
-// import {cityList} from '../../../shared/constants';
-
 import './Header.css';
 
 class Header extends Component {
@@ -29,7 +27,8 @@ class Header extends Component {
                             <AutoComplete
                                 hintText="Choose a city..."
                                 dataSource={this.props.citiesList}
-                                filter={AutoComplete.caseInsensitiveFilter}                               
+                                filter={AutoComplete.caseInsensitiveFilter}
+                                onNewRequest = {this.props.onSelectCity}                               
                                 className="header__appbar-autocomplete"          
                             />
                         }          

@@ -9,7 +9,9 @@ class HeaderContainer extends Component {
         this.state = {
             citiesList: []
         };
+        this.fetchedLocationsData = [];
         this._getLocationsCities = this._getLocationsCities.bind(this);
+        this._onSelectCity = this._onSelectCity.bind(this);
     }
 
     componentWillMount() {
@@ -35,9 +37,35 @@ class HeaderContainer extends Component {
              }
          }.bind(this));
     }
+
+    _onSelectCity = function(cityName, index) {
+        let cityData = {
+            cityName: cityName
+        };
+
+        fetch('http://localhost:3001/api/location/getLocationsByCity', {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: 'post',
+            body: JSON.stringify(cityData)
+        }).then(function(response) {
+            if(response.status === 200) {
+                response.json().then((locations) => {
+                    this.props.onLocationsFetched(locations);
+                    let mountComponent = 'LocationSearchComponent'
+                    this.props.manageBodyComponents(mountComponent);
+                })
+            }
+        }.bind(this))
+    }
     render() {
         return (
-            <Header citiesList={this.state.citiesList}/>
+            <Header 
+                citiesList={this.state.citiesList}
+                onSelectCity={this._onSelectCity}
+            />
         );
     }
 
