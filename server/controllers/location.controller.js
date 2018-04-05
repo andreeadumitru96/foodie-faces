@@ -26,3 +26,13 @@ exports.getMostRatedLocations = function(req, res) {
         }
     });
 };
+
+exports.getLocationsCities = function(req, res) {
+    Location.distinct('city', function(err, cities) {
+        if(err) {
+            res.status(500).send({message: err});
+        } else {
+            res.status(200).send(cities);
+        }
+    });
+};
