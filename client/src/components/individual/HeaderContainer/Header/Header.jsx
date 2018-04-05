@@ -12,7 +12,7 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            // cityDropdownDataSet: cityList
+          
         };
     }
 
@@ -28,7 +28,7 @@ class Header extends Component {
                         iconElementLeft={
                             <AutoComplete
                                 hintText="Choose a city..."
-                                dataSource={this.props.cityList}
+                                dataSource={this.props.citiesList}
                                 filter={AutoComplete.caseInsensitiveFilter}                               
                                 className="header__appbar-autocomplete"          
                             />
@@ -43,6 +43,9 @@ class Header extends Component {
             
         );
     }
+    componentWillReceiveProps() {
+		this.forceUpdate();
+	}
 }
 
 export default Header;
