@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import PinPoint from '../PinPoint/PinPoint';
 
 import './GoogleMap.css'
-
-const AnyReactComponent = ({ text }) => <div>{ text }</div>;
 
 class GoogleMap extends Component {
     constructor(props){
         super(props);
         this.state = {
-            markers: [],
         }
+    }
+
+    componentWillMount() {
+        console.log(this.props.locationsList)
     }
     
 
@@ -18,15 +20,19 @@ render() {
     return (
         <div className="googleMapsWrapper">
             <GoogleMapReact
-            defaultCenter={this.props.center}
-            onChange={this._onChange}
-            defaultZoom={this.props.zoom}
+                defaultCenter={this.props.center}
+                onChange={this._onChange}
+                defaultZoom={this.props.zoom}
             >
-            <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
-                text={'Google Map'}
-            />
+            {this.props.locationsList.map(location => (
+                <PinPoint 
+                    text={location.name}
+                    lat={parseFloat(location.coordinates.latitude)}
+                    lng={parseFloat(location.coordinates.longitude)}  
+                    key={location.name}/>
+
+            ))}
+
             </GoogleMapReact>
         </div>
       );
@@ -34,7 +40,7 @@ render() {
 }
 
 GoogleMap.defaultProps = {
-    center: {lat: 59.95, lng: 30.33},
+    center: {lat: 49.348405, lng: 2.9055590000000393},
     zoom: 11
   };
 

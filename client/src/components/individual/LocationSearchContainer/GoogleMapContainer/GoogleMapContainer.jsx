@@ -11,7 +11,7 @@ class GoogleMapContainer extends Component {
 
 	render() {
 		return (
-            <GoogleMap/> 
+            <GoogleMap locationsList={this.props.locationsList}/> 
 		);
     } 
 }

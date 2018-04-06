@@ -16,7 +16,10 @@ class LocationSearch extends Component {
 		return (
 			<div className="location-search">
                <LocationTileListContainer locationsList={this.props.locationsList} className="location-search__location-tile-list"/>
-               <GoogleMapContainer className="location-search__google-map"/> 
+               <GoogleMapContainer 
+                    className="location-search__google-map"
+                    locationsList={this.props.locationsList}            
+                /> 
                
 			</div>
 		);
