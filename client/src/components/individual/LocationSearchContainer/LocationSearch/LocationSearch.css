@@ -1,0 +1,8 @@
+.location-search {
+    display: flex;
+    flex-direction: row;
+}
+
+.location-search__google-map, .location-search__location-tile-list {
+    display: flex
+ }
