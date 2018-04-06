@@ -1,10 +1,6 @@
 var Location = require('../models/location.model.js');
 
 exports.getAllLocations = function(req, res) {
-    if(!req.body) {
-        res.status(500).send({message: req.body});
-    };
-
     Location.find({}).limit(10).exec(function(err, locations){
         if(err) {
             res.status(500).send({message: "Some error occurred while searching for the Recipes."})
@@ -48,4 +44,15 @@ exports.getLocationsByCity = function(req, res) {
             res.status(200).send(locations);
         }
     });
+};
+
+exports.getSingleLocation = function(req, res) {
+
+    Location.findOne({_id: req.params.id}, function (err, location) {
+        if(err) {
+            res.status(500).send({message: err});
+        } else {
+            res.status(200).send(location);
+        }
+     });
 };
