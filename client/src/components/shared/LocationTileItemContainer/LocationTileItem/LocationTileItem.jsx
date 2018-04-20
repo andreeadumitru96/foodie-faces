@@ -21,6 +21,7 @@ class LocationTileItem extends Component {
                 key={this.props.locationData._id}
                 title={this.props.locationData.name}
                 subtitle={this.props.locationData.price}
+                onClick={this.props.onLocationClick}
                 actionIcon={
                 <IconButton className="location-tile__button">
                     <StarBorder className="location-tile__button-star"/>

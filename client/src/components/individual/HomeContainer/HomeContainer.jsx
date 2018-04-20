@@ -22,12 +22,12 @@ class HomeContainer extends Component {
 		return (
 			<div>
                 <HeaderContainer 
-                    manageBodyComponents={this._manageBodyComponents}
+                    manageBodyComponents = {this._manageBodyComponents}
                     onLocationsFetched = {this._fetchedLocationsTriggered}
                 />
                 <BodyContainer 
-                    componentToMount={this.state.componentMountInBody}
-                    receivedLocationsFromHeader={this.state.receivedLocationsFromHeader}    
+                    componentToMount = {this.state.componentMountInBody}
+                    receivedLocationsFromHeader = {this.state.receivedLocationsFromHeader}    
                 />
                
 				<Home userData={this.state.userData} />
@@ -36,15 +36,16 @@ class HomeContainer extends Component {
 		);
     }
     
-    _manageBodyComponents (mountComponent) {
+    _manageBodyComponents(mountComponent) {
         if(mountComponent === 'LocationSearchComponent') {
             this.setState({componentMountInBody: mountComponent})
         }
     }
 
-    _fetchedLocationsTriggered (locations) {
+    _fetchedLocationsTriggered(locations) {
         this.setState({receivedLocationsFromHeader: locations})
     }
+
 }
 
 export default HomeContainer;

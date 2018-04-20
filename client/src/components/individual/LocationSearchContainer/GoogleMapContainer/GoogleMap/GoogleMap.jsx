@@ -18,7 +18,7 @@ class GoogleMap extends Component {
 
 render() {
     return (
-        <div className="googleMapsWrapper">
+        <div className="google-maps">
             <GoogleMapReact
                 defaultCenter={this.props.center}
                 onChange={this._onChange}

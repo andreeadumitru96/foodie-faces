@@ -38,7 +38,10 @@ class LocationTileListContainer extends Component {
 
     render() {
         return (
-            <LocationTileList locationsList={this.props.locationsList ? this.props.locationsList : []}/>
+            <LocationTileList 
+                locationsList = {this.props.locationsList ? this.props.locationsList : []}
+                triggeredBody = {this.props.triggeredBody}
+            />
         );
 
     }

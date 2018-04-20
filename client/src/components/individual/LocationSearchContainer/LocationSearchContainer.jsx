@@ -12,7 +12,10 @@ class LocationSearchContainer extends Component {
 	render() {
 		return (
 			<div>
-                <LocationSearch locationsList={this.props.locationsList}/>
+                <LocationSearch 
+                    locationsList = {this.props.locationsList}
+                    triggeredBody = {this.props.triggeredBody}
+                />
 			</div>
 		);
     }

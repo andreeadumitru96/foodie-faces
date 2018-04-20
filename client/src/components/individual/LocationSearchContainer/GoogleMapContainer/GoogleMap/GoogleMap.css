@@ -1,9 +1,9 @@
-.googleMapsWrapper {
+.google-maps {
     width: 50%;
     height: 100vh;
 }
 
-.googleMapsWrapper > div > div {
+.google-maps > div > div {
     width: 100% !important;
     height: 100% !important;
     position: relative !important;

@@ -15,10 +15,15 @@ class LocationSearch extends Component {
 	render() {
 		return (
 			<div className="location-search">
-               <LocationTileListContainer locationsList={this.props.locationsList} className="location-search__location-tile-list"/>
+               <LocationTileListContainer 
+                    locationsList = {this.props.locationsList} 
+                    className="location-search__location-tile-list"
+                    triggeredBody = {this.props.triggeredBody}
+                    
+                />
                <GoogleMapContainer 
                     className="location-search__google-map"
-                    locationsList={this.props.locationsList}            
+                    locationsList = {this.props.locationsList}            
                 /> 
                
 			</div>

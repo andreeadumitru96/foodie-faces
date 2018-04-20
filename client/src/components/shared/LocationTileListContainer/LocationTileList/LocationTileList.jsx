@@ -29,7 +29,10 @@ class LocationTileList extends Component {
                     style={styles.gridList}
                     >
                     {this.props.locationsList.map(location => (
-                        <LocationTileItemContainer locationData={location} key={location._id} />
+                        <LocationTileItemContainer 
+                            locationData={location} key={location._id}
+                            triggeredBody = {this.props.triggeredBody}
+                        />
                     ))}
                 </GridList>
             </div>
