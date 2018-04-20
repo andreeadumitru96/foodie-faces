@@ -1,10 +1,8 @@
-/* .location-tile {
-    width: 250px;
-    height: 250px;
-    display: flex;
+.location-tile {
+    cursor: pointer;
 }
 
-*/
+
 .location-tile__button-star {
     color: white !important;
 }

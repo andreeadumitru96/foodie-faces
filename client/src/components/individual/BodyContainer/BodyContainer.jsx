@@ -13,11 +13,12 @@ class BodyContainer extends Component {
             isLocationDetailsMount: this.props.componentToMount === 'LocationDetailsComponent' ? true : false
         };
         this._triggeredBody = this._triggeredBody.bind(this);
+        this.locationDetails = []
     }
 
     render() {
         return(
-            <div>
+            <div className="body">
                 {this.state.isMostRatedLocationsMount ? <MostRatedLocationsContainer /> : null}
                 {this.state.isLocationSearchMount ? 
                     <LocationSearchContainer  
@@ -28,7 +29,7 @@ class BodyContainer extends Component {
                 }
                 {this.state.isLocationDetailsMount ? 
                     <LocationDetailsContainer
-                        locationDetails = {this.props.data}
+                        locationDetails = {this.locationDetails}
                      /> 
                      : null}
             </div>
@@ -43,6 +44,7 @@ class BodyContainer extends Component {
     }
 
     _triggeredBody(componentToMount, data) {
+        this.locationDetails = data;
         this.setState({
             isLocationDetailsMount: componentToMount === 'LocationDetailsComponent' ? true : false,
             isMostRatedLocationsMount: false,

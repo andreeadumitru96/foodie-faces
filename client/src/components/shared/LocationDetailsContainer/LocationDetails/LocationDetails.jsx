@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import LocationDetailsHeader from '../LocationDetailsHeader/LocationDetailsHeader';
+import './LocationDetails.css';
 
 class LocationDetails extends Component {
 	constructor(props) {
@@ -11,8 +13,10 @@ class LocationDetails extends Component {
 
 	render() {
 		return (
-			<div>
-                dsuadja
+			<div className="location-details">
+                <LocationDetailsHeader
+                    locationDetails = {this.props.locationDetails}
+                />
 			</div>
 		);
     }
