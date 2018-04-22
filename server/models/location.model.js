@@ -36,24 +36,6 @@ let LocationSchema = new Schema({
         content: {
             type: String
         },
-        createdDate: {
-            type: Date,
-            default: Date.now()
-        },
-        userName: {
-            type: String,
-            required: true
-        },
-        userPic : {
-            type: String,
-            required: true
-        },
-        userId: {
-            type: Schema.Types.ObjectId,
-            ref: 'User'
-        }
-    }],
-    receivedRatings: [{
         score: {
             type: Number,
             required: true
@@ -63,6 +45,10 @@ let LocationSchema = new Schema({
             default: Date.now()
         },
         userName: {
+            type: String,
+            required: true
+        },
+        userPic : {
             type: String,
             required: true
         },
