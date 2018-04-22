@@ -4,6 +4,7 @@ import LocationDetailsHeader from '../LocationDetailsHeader/LocationDetailsHeade
 import './LocationDetails.css';
 import LocationDetailsGrid from '../LocatonDetailsGrid.jsx/LocationDetailsGrid';
 import LocationDetailsActions from '../LocationDetailsActions/LocationDetailsActions';
+import LocationDetailsReviews from '../LocationDetailsReviews/LocationDetailsReviews';
 
 class LocationDetails extends Component {
 	constructor(props) {
@@ -22,7 +23,10 @@ class LocationDetails extends Component {
                 <LocationDetailsGrid
                     locationDetails = {this.props.locationDetails}
                 />
-                <LocationDetailsActions/>
+                <LocationDetailsActions />
+                <LocationDetailsReviews
+                    locationDetails = {this.props.locationDetails}
+                />
 			</div>
 		);
     }
