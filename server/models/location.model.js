@@ -88,7 +88,8 @@ let LocationSchema = new Schema({
             type: Schema.Types.ObjectId,
             ref: 'User'
         }]
-   }]
+   }],
+   averageScore: Number
 
 });
 

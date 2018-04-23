@@ -109,3 +109,11 @@ exports.saveLocationFromFile = function (req, res) {
     };
 
 };
+
+exports.setDefaultAverageScore = function(req, res) {
+    Location.update({}, { averageScore: 3}, { multi: true }, function (err, raw) {
+        if (err) return handleError(err);
+        console.log('The raw response from Mongo was ', raw);
+      });      
+
+};
