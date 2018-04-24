@@ -7,7 +7,11 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "mongoose": "^4.13.6"
+    "mongoose": "^4.13.6",
+    "node-geocoder": "^3.22.0",
+    "password-hash": "^1.2.2",
+    "react-s-alert": "^1.4.1",
+    "universal-cookie": "^2.1.2"
   },
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",

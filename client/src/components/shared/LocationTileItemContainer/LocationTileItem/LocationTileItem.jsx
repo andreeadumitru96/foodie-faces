@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { GridTile } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
-import InfoIcon from 'material-ui-icons/Info';
 
 import './LocationTileItem.css';
 
