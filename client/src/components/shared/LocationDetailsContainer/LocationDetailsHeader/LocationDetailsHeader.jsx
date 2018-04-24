@@ -18,23 +18,23 @@ class LocationDetailsHeader extends Component {
                     {this.props.locationDetails.name}
                 </div>
                 <div className="location-details-header__information">
-                    <div className="location-details-header__information-address main-information">
+                    <div className="information-address main-information">
                         <i className="fa fa-map-marker">
                             {this.props.locationDetails.address}
                         </i>
                     </div>
-                    <div className="location-details-header__information-phone main-information">
+                    <div className="information-phone main-information">
                         <i className="fa fa-phone">
                             {this.props.locationDetails.phone[0]}
                         </i>
                     </div>
-                    <div className="location-details-header__information-average-price main-information">
+                    <div className="information-average-price main-information">
                         <i className="fa fa-money">
                             {this.props.locationDetails.price}
                         </i>
                     </div>
 
-                    <div className="location-details-header__information-rating main-information">
+                    <div className="information-rating main-information">
                         <ReactStars
                             count={5}
                             size={24}

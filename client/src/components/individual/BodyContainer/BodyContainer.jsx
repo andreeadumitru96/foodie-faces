@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
+
 import Body from '../BodyContainer/Body/Body';
 import MostRatedLocationsContainer from '../MostRatedLocationsContainer/MostRatedLocationsContainer';
 import LocationSearchContainer from '../LocationSearchContainer/LocationSearchContainer';
 import LocationDetailsContainer from '../../shared/LocationDetailsContainer/LocationDetailsContainer';
+
+import './Body/Body.css';
 
 class BodyContainer extends Component {
     constructor(props) {
@@ -18,7 +21,7 @@ class BodyContainer extends Component {
 
     render() {
         return(
-            <div className="body">
+            <div className="body-container">
                 {this.state.isMostRatedLocationsMount ? <MostRatedLocationsContainer /> : null}
                 {this.state.isLocationSearchMount ? 
                     <LocationSearchContainer  

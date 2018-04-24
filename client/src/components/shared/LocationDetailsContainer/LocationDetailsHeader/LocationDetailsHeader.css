@@ -14,9 +14,10 @@
 
 .location-details-header__information {
     display: flex;
+    padding: 30px;
 }
 
-.location-details-header__information-rating {
+.information-rating {
     padding-top: 10px;
 }
 
