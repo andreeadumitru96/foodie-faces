@@ -75,7 +75,8 @@ exports.addReview = function (req, res) {
         title: req.body.title,
         content: req.body.content,
         userName: req.body.userName,
-        userId: req.body.userId
+        userId: req.body.userId,
+        score: score
     };
 
     Location.findOneAndUpdate(searchQuery, { $push: { receivedReviews: review }, $set: { averageScore:  updatedAverageScore} }, { new: true }, function (err, location) {
