@@ -61,6 +61,8 @@ class LocationDetailsReviews extends Component {
                     ))}
                 </div>
 
+                <div className="">
+                </div>
                 <div className="location-details-reviews__add-review">
                     <form className="add-review-form">
                         <label className="add-review-form-label"> Write a review </label>

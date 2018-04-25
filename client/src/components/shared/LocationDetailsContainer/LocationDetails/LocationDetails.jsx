@@ -25,12 +25,16 @@ class LocationDetails extends Component {
                     locationDetails = {this.props.locationDetails}
                 />
                 <LocationDetailsActions />
-                <LocationDetailsReviews
-                    locationDetails = {this.props.locationDetails}
-                />
-                <LocationDetailsMap
-                    locationDetails = {this.props.locationDetails} 
-                />
+
+                <div className="location-details-reviews-map">
+                    <LocationDetailsReviews
+                        locationDetails = {this.props.locationDetails}
+                    />
+                    <LocationDetailsMap
+                        locationDetails = {this.props.locationDetails} 
+                    />
+                </div>
+
 			</div>
 		);
     }

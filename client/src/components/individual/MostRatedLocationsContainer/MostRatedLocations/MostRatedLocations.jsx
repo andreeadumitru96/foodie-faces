@@ -1,5 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+
 import LocationTileListContainer from '../../../shared/LocationTileListContainer/LocationTileListContainer';
+import './MostRatedLocations.css';
 
 class MostRatedLocations extends Component {
     constructor(props) {
@@ -8,10 +10,16 @@ class MostRatedLocations extends Component {
     }
 
     render() {
-        return(
-            <div>
-                <p>Here are the most rated locations...</p>
-                <LocationTileListContainer locationsList={this.props.locationsList}/>
+        return (
+            <div className="most-rated-locations">
+                <div className="most-rated-location__header">
+                    <p className="header-p">Here are the most rated locations...</p>
+                </div>
+                <div>
+                    <LocationTileListContainer locationsList={this.props.locationsList} />
+                </div>
+                
+
             </div>
         );
     }

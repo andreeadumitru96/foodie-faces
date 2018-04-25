@@ -10,7 +10,7 @@ const styles = {
         justifyContent: 'center',
     },
     gridList: {
-        width: '50%',
+        width: '80%',
         height: 'auto'
     },
 };
@@ -25,7 +25,9 @@ class LocationTileList extends Component {
         return (
             <div className="location-tile-list" style={styles.root}>
                 <GridList
-                    cellHeight={180}
+                    cellHeight={350}
+                    cols={3}
+                    padding={20}
                     style={styles.gridList}
                     >
                     {this.props.locationsList.map(location => (
