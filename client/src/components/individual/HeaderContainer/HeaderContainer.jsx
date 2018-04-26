@@ -77,12 +77,10 @@ class HeaderContainer extends Component {
                         if(!locations[index].coordinates.longitude) {
                             
                             let coordinates = this._setDefaultCoordinates(locations[index].coordinates.latitude, locations[index].coordinates.longitude);
-                            console.log(coordinates);
                             
                             locations[index].coordinates.latitude = coordinates.latitude;
                             locations[index].coordinates.longitude = coordinates.longitude;
-                        }
-                        
+                        }                      
                     }
                     this.props.onLocationsFetched(locations);
                     let mountComponent = 'LocationSearchComponent'

@@ -29,14 +29,14 @@ class Header extends Component {
                                 dataSource={this.props.citiesList}
                                 filter={AutoComplete.caseInsensitiveFilter}
                                 onNewRequest = {this.props.onSelectCity}                               
-                                className="header__appbar-autocomplete"          
+                                className="appbar-autocomplete"          
                             />
                         }          
                     />
                 </div>  
 
                 <div className="header__logo">
-                    <img src={logoImg} className="header__logo-img"/>
+                    <img src={logoImg} className="logo-img"/>
                 </div>
             </div>
             

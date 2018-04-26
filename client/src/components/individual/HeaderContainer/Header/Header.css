@@ -7,15 +7,22 @@
     left: 20px;
 }
 
-.header__logo-img {
+.logo-img {
     width: 100%;
     height: auto;
 }
 
-.header__appbar-autocomplete {
+.appbar-autocomplete {
     left: 60px;
     border-color: white;
     background-color: white !important;
     border-radius: 4px;
     padding-left: 2px;
+}
+
+.header {
+    position: fixed !important;
+    top: 0px !important;
+	width: 100%;
+	z-index: 99999;
 }
