@@ -8,5 +8,6 @@ module.exports = function(app) {
     app.post('/api/location/getLocationsByCity', locationController.getLocationsByCity);
     app.get('/api/location/getSingleLocation/:id', locationController.getSingleLocation);
     app.post('/api/location/addReview', locationController.addReview);
+    app.get('/api/location/getFiltersByLocations', locationController.getFiltersByLocations);
 
 };

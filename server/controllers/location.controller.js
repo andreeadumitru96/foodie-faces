@@ -79,7 +79,7 @@ exports.addReview = function (req, res) {
         score: score
     };
 
-    Location.findOneAndUpdate(searchQuery, { $push: { receivedReviews: review }, $set: { averageScore:  updatedAverageScore} }, { new: true }, function (err, location) {
+    Location.findOneAndUpdate(searchQuery, { $push: { receivedReviews: review }, $set: { averageScore: updatedAverageScore } }, { new: true }, function (err, location) {
         if (err) {
             console.log(err);
 
@@ -88,9 +88,32 @@ exports.addReview = function (req, res) {
             res.status(200).send(location);
         }
     });
-
-
-
-
-
 };
+
+exports.getFiltersByLocations = function (req, res) {
+    Location.distinct('categories.cuisine', function (err, cuisine) {
+        let categories = {};
+        if (err) {
+            res.status(500).send({ message: err });
+        } else {
+            categories.cuisine = cuisine;
+            Location.distinct('categories.goodFor', function (err, goodFor) {
+                if (err) {
+                    res.status(500).send({ message: err });
+                } else {
+                    categories.goodFor = goodFor;
+                    Location.distinct('categories.meals', function (err, meals) {
+                        if (err) {
+                            res.status(500).send({ message: err });
+                        } else {
+                            categories.meals = meals;
+                            res.status(200).send(categories);
+
+                        }
+                    });
+                }
+            });
+        }
+    });
+
+}
