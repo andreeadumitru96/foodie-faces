@@ -25,9 +25,9 @@ class LocationTileList extends Component {
         return (
             <div className="location-tile-list" style={styles.root}>
                 <GridList
-                    cellHeight={350}
+                    cellHeight={300}
                     cols={3}
-                    padding={20}
+                    padding={10}
                     style={styles.gridList}
                     >
                     {this.props.locationsList.map(location => (

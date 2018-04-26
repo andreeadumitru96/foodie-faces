@@ -35,65 +35,6 @@ class LocationTileItemContainer extends Component {
         this._setDefaultImage();
     }
 
-    // async _getLocationDetails() {
-    //     let id = this.props.locationData._id;
-    //     try {
-    //         let response = fetch(`http://localhost:3001/api/location/getSingleLocation/${id}`, {
-    //             headers: {
-    //                 'Accept': 'application/json',
-    //                 'Content-Type': 'application/json'
-    //             },
-    //             method: 'get',
-    //         });
-    //         return await response.json();
-    //     }
-    //     catch (err){
-    //         notificationError(err);
-    //     }
-    // }
-
-    // async _getLocationDetails() {
-    //     let id = this.props.locationData._id;
-    //     try {
-    //         let request = await fetch(`http://localhost:3001/api/location/getSingleLocation/${id}`, {
-    //             headers: {
-    //                  'Accept': 'application/json',
-    //                  'Content-Type': 'application/json'
-    //             },
-    //             method: 'get',
-    //          });
-    //          const response = await request.json();
-    //          return response;
-    //     } 
-    //     catch(err) {
-    //         //
-    //     }
-              
-        
-    // }
-
-    // _getLocationDetails = async() => {
-    //     let id = this.props.locationData._id;
-    //     await fetch(`http://localhost:3001/api/location/getSingleLocation/${id}`, {
-    //        headers: {
-    //             'Accept': 'application/json',
-    //             'Content-Type': 'application/json'
-    //        },
-    //        method: 'get',
-    //     }).then(function(response){
-    //         if(response.status === 200) {
-    //             response.json().then((data) => {
-    //                 return data;
-    //             })
-    //         } else {
-    //             response.json().then((data) => {
-    //                 notificationError(data.message);
-    //             });
-    //         }
-    //     }.bind(this));
-
-    // }
-
     _getLocationDetails = async() => {
         let id = this.props.locationData._id; 
         try {

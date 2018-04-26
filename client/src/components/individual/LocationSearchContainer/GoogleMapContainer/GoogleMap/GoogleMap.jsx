@@ -11,9 +11,9 @@ class GoogleMap extends Component {
         }
     }
 
-    componentWillMount() {
-        console.log(this.props.locationsList)
-    }
+    // componentWillMount() {
+    //     console.log(this.props.locationsList)
+    // }
     
 
 render() {

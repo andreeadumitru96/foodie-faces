@@ -12,6 +12,17 @@ class HeaderContainer extends Component {
         this.fetchedLocationsData = [];
         this._getLocationsCities = this._getLocationsCities.bind(this);
         this._onSelectCity = this._onSelectCity.bind(this);
+        this._setDefaultCoordinates = this._setDefaultCoordinates.bind(this);
+
+    }
+
+    render() {
+        return (
+            <Header 
+                citiesList={this.state.citiesList}
+                onSelectCity={this._onSelectCity}
+            />
+        );
     }
 
     componentWillMount() {
@@ -38,6 +49,14 @@ class HeaderContainer extends Component {
          }.bind(this));
     }
 
+    _setDefaultCoordinates(latitude, longitude) {
+        let coordinates = {
+            latitude: 0,
+            longitude: 0
+        };
+        return coordinates;
+    }
+
     _onSelectCity = function(cityName, index) {
         let cityData = {
             cityName: cityName
@@ -53,6 +72,18 @@ class HeaderContainer extends Component {
         }).then(function(response) {
             if(response.status === 200) {
                 response.json().then((locations) => {
+                    
+                    for(index = 0; index < locations.length; index++) { 
+                        if(!locations[index].coordinates.longitude) {
+                            
+                            let coordinates = this._setDefaultCoordinates(locations[index].coordinates.latitude, locations[index].coordinates.longitude);
+                            console.log(coordinates);
+                            
+                            locations[index].coordinates.latitude = coordinates.latitude;
+                            locations[index].coordinates.longitude = coordinates.longitude;
+                        }
+                        
+                    }
                     this.props.onLocationsFetched(locations);
                     let mountComponent = 'LocationSearchComponent'
                     this.props.manageBodyComponents(mountComponent);
@@ -60,16 +91,6 @@ class HeaderContainer extends Component {
             }
         }.bind(this))
     }
-    render() {
-        return (
-            <Header 
-                citiesList={this.state.citiesList}
-                onSelectCity={this._onSelectCity}
-            />
-        );
-    }
-
-
 }
 
 export default HeaderContainer;

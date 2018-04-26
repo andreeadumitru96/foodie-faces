@@ -15,7 +15,7 @@ class MostRatedLocations extends Component {
                 <div className="most-rated-location__header">
                     <p className="header-p">Here are the most rated locations...</p>
                 </div>
-                <div>
+                <div className="most-rated-location__content">
                     <LocationTileListContainer locationsList={this.props.locationsList} />
                 </div>
                 

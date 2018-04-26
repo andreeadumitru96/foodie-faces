@@ -22,11 +22,11 @@ class LocationTileItem extends Component {
                 subtitle={this.props.locationData.price}
                 onClick={this.props.onLocationClick}
                 actionIcon={
-                <IconButton className="location-tile__button">
-                    <StarBorder className="location-tile__button-star"/>
-                </IconButton>
+                    <IconButton className="location-tile__button">
+                        <StarBorder className="location-tile__button-star" />
+                    </IconButton>
                 }
-                >
+            >
                 <img className="location-tile__image" src={this.props.locationData.images[0]} />
             </GridTile>
         );
