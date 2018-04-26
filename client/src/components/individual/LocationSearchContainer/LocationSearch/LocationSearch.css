@@ -1,9 +1,12 @@
 .location-search {
     display: flex;
     flex-direction: row;
-    padding: 60px;
+    flex-wrap: wrap;
+    padding: 80px 40px 10px 12px;
+    
 }
 
 .location-search__google-map, .location-search__location-tile-list {
-    display: flex
+    display: flex;
+    
  }

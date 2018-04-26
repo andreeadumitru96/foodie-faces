@@ -2,15 +2,10 @@ import React, { Component } from 'react';
 import LocationTileItemContainer from '../../LocationTileItemContainer/LocationTileItemContainer';
 import GridList from 'material-ui/GridList';
 
+import './LocationTileList.css';
+
 const styles = {
-    root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        height: 'auto',
-        justifyContent: 'center',
-    },
     gridList: {
-        width: '80%',
         height: 'auto'
     },
 };
@@ -23,7 +18,7 @@ class LocationTileList extends Component {
 
     render() {
         return (
-            <div className="location-tile-list" style={styles.root}>
+            <div className="location-tile-list">
                 <GridList
                     cellHeight={300}
                     cols={3}

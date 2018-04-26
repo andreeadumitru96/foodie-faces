@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { GridTile } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import ReactStars from 'react-stars';
 
 import './LocationTileItem.css';
 
@@ -19,7 +20,14 @@ class LocationTileItem extends Component {
             <GridTile className="location-tile"
                 key={this.props.locationData._id}
                 title={this.props.locationData.name}
-                subtitle={this.props.locationData.price}
+                subtitle={
+                    <ReactStars
+                        count={5}
+                        size={14}
+                        color2={'white'}
+                        edit={false}
+                        value={this.props.locationData.tripAdvisorRating}
+                    />}
                 onClick={this.props.onLocationClick}
                 actionIcon={
                     <IconButton className="location-tile__button">
