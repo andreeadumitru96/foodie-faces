@@ -41,7 +41,10 @@ class MostRatedLocationsContainer extends Component {
     render() {
         return(
             <div>
-                <MostRatedLocations locationsList={this.state.locationsList}/>
+                <MostRatedLocations 
+                    locationsList={this.state.locationsList}
+                    triggeredBody = {this.props.triggeredBody}
+                />
             </div>
         );
     }

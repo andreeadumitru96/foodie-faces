@@ -22,7 +22,11 @@ class BodyContainer extends Component {
     render() {
         return(
             <div className="body-container">
-                {this.state.isMostRatedLocationsMount ? <MostRatedLocationsContainer /> : null}
+                {this.state.isMostRatedLocationsMount ? 
+                    <MostRatedLocationsContainer
+                        triggeredBody = {this._triggeredBody}
+                    />
+                    : null}
                 {this.state.isLocationSearchMount ? 
                     <LocationSearchContainer  
                         locationsList = {this.props.receivedLocationsFromHeader}
