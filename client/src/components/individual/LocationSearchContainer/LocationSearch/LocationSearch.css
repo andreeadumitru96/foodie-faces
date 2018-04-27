@@ -10,3 +10,7 @@
     display: flex;
     
  }
+
+ .location-search__filters {
+     justify-content: center !important;
+ }

@@ -6,6 +6,7 @@ import LocationTileListContainer from '../../../shared/LocationTileListContainer
 import GoogleMapContainer from '../GoogleMapContainer/GoogleMapContainer';
 
 import './LocationSearch.css';
+import LocationFiltersContainer from '../../../shared/LocationFiltersContainer/LocationFiltersContainer';
 
 class LocationSearch extends Component {
     constructor(props) {
@@ -18,12 +19,8 @@ class LocationSearch extends Component {
     render() {
         return (
             <div className="location-search">
-                <div className="location-search__filter">
-                    <div className="filters-cuisine">
-                        <DropDownMenu  >
-                            
-                        </DropDownMenu>
-                    </div>
+                <div className="location-search__filters">
+                    <LocationFiltersContainer/>
                 </div>
                 <div className="location-search__location-tile-list">
                     <LocationTileListContainer
