@@ -21,20 +21,25 @@ class LocationFilters extends Component {
                     <FilterItem
                         filterElements={this.props.filtersList.cuisine}
                         type={"Cuisine"}
+                        ref={(cuisineFilterDropdown) => this.cuisineFilterDropdown = cuisineFilterDropdown}
                     />
                 </div>
                 <div className="location-filters__goodFor">
                     <FilterItem
                         filterElements={this.props.filtersList.goodFor}
                         type={"Good For"}
+                        ref={(goodForFilterDropdown) => this.goodForFilterDropdown = goodForFilterDropdown}
                     />
                 </div>
                 <div className="location-filters__meals">
                     <FilterItem
                         filterElements={this.props.filtersList.meals}
                         type={"Meals"}
+                        ref={(mealsFilterDropdown) => this.mealsFilterDropdown = mealsFilterDropdown}
                     />
                 </div>
+
+                <button onClick={this.props.getFilteredLocations}>dsadas</button>
             </div>
         );
     }

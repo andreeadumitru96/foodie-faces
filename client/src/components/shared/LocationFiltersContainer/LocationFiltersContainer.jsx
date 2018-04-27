@@ -14,15 +14,34 @@ class LocationFiltersContainer extends Component {
             }
         };
         this._getFiltersByLocations = this._getFiltersByLocations.bind(this);
+        this._getFilteredLocations = this._getFilteredLocations.bind(this);
 
     }
 
     render() {
         return (
             <div>
-                <LocationFilters filtersList={this.state.filtersList}/>    
+                <LocationFilters 
+                    filtersList={this.state.filtersList}
+                    ref={(filterDropdown) => this.filterDropdown = filterDropdown}
+                    getFilteredLocations={this._getFilteredLocations} 
+                />    
             </div>
         );
+    }
+
+    _getFilteredLocations() {
+        let selectedFilters = {
+            cuisine: [],
+            goodFor: [],
+            meals: []
+        };
+        selectedFilters.cuisine = this.filterDropdown.cuisineFilterDropdown._getSelectedFilters();
+        selectedFilters.goodFor = this.filterDropdown.goodForFilterDropdown._getSelectedFilters();
+        selectedFilters.meals = this.filterDropdown.mealsFilterDropdown._getSelectedFilters();
+
+        console.log(selectedFilters);
+
     }
 
     _getFiltersByLocations() {
