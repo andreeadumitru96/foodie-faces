@@ -116,4 +116,34 @@ exports.getFiltersByLocations = function (req, res) {
         }
     });
 
-}
+};
+
+exports.getFilteredLocations = function(req, res) {
+    if (!req.body) {
+        res.status(500).send({ message: error })
+    }
+
+    let objectQuery = {}
+
+    Object.assign(objectQuery, req.body.goodFor.length !== 0 ? {'categories.goodFor': {$all: req.body.goodFor}} : null,
+                               req.body.cuisine.length !== 0 ? {'categories.cuisine': {$all: req.body.cuisine}} : null,
+                               req.body.meals.length !== 0 ? {'categories.meals': {$all: req.body.meals}} : null)
+
+    let arrayQuery = [];
+
+    for(key in objectQuery) {
+        arrayQuery.push({[key] : objectQuery[key]});
+    }
+
+    Location.find({ $and: arrayQuery} ,
+        function(err, locations) {
+            if (err) {
+                res.status(500).send({ message: err });
+            } else {
+                res.status(200).send(locations);
+
+            }
+        }
+    )
+    
+};
