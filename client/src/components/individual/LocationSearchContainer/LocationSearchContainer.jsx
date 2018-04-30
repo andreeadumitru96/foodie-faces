@@ -5,7 +5,9 @@ class LocationSearchContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            locationsList: this.props.locationsList
         };
+        this._onFilterLocationsReceived = this._onFilterLocationsReceived.bind(this);
 
     }
 
@@ -13,8 +15,10 @@ class LocationSearchContainer extends Component {
         return (
             <div>
                 <LocationSearch
-                    locationsList={this.props.locationsList}
+                    locationsList={this.state.locationsList}
+                    city={this.props.city}
                     triggeredBody={this.props.triggeredBody}
+                    onFilterLocationsReceived={this._onFilterLocationsReceived}
                 />
             </div>
         );
@@ -24,12 +28,11 @@ class LocationSearchContainer extends Component {
         this.forceUpdate();
     }
 
-    // _formatCuisineItems() {
-    //     const cuisineItems = [];
-    //     cuisineitems.forEach(function () {
-    //         cuisineElements.push(<MenuItem value={this.} primaryText={`Item ${index}`} />);
-    //     });
-    // }
+    _onFilterLocationsReceived(filteredLocations) {
+        this.setState({
+            locationsList: filteredLocations
+        })
+    }
 
 }
 

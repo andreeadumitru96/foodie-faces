@@ -13,3 +13,9 @@
     width: 250px !important;
     display: flex;
 }
+
+.location-filters__search-button > div {
+    margin-left: 10px;
+    margin-top: 2px;
+    width: 50px !important;
+}

@@ -4,6 +4,7 @@ import MenuItem from 'material-ui/MenuItem';
 
 import FilterItem from './FilterItem';
 import './LocationFilters.css';
+import { RaisedButton } from 'material-ui';
 
 
 class LocationFilters extends Component {
@@ -27,7 +28,7 @@ class LocationFilters extends Component {
                 <div className="location-filters__goodFor">
                     <FilterItem
                         filterElements={this.props.filtersList.goodFor}
-                        type={"Good For"}
+                        type={"Good for"}
                         ref={(goodForFilterDropdown) => this.goodForFilterDropdown = goodForFilterDropdown}
                     />
                 </div>
@@ -38,8 +39,13 @@ class LocationFilters extends Component {
                         ref={(mealsFilterDropdown) => this.mealsFilterDropdown = mealsFilterDropdown}
                     />
                 </div>
-
-                <button onClick={this.props.getFilteredLocations}>dsadas</button>
+                <div className="location-filters__search-button">
+                    <RaisedButton
+                        onClick={this.props.onClickFilteredLocations}    
+                    >
+                        <i className="fa fa-search"></i>
+                    </RaisedButton>
+                </div>
             </div>
         );
     }

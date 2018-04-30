@@ -20,7 +20,11 @@ class LocationSearch extends Component {
         return (
             <div className="location-search">
                 <div className="location-search__filters">
-                    <LocationFiltersContainer/>
+                    <LocationFiltersContainer
+                        onFilterLocationsReceived={this.props.onFilterLocationsReceived}
+                        city={this.props.city}
+
+                    />
                 </div>
                 <div className="location-search__location-tile-list">
                     <LocationTileListContainer

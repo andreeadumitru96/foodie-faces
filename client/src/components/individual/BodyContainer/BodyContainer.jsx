@@ -28,7 +28,8 @@ class BodyContainer extends Component {
                     />
                     : null}
                 {this.state.isLocationSearchMount ? 
-                    <LocationSearchContainer  
+                    <LocationSearchContainer
+                        city = {this.props.receivedLocationsFromHeader[0].city}  
                         locationsList = {this.props.receivedLocationsFromHeader}
                         triggeredBody = {this._triggeredBody}
                     /> 
@@ -58,6 +59,8 @@ class BodyContainer extends Component {
             isLocationSearchMount: false
         })
     }
+
+    
 
     
 

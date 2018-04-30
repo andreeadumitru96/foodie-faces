@@ -10,11 +10,13 @@ class LocationFiltersContainer extends Component {
             filtersList: {
                 cuisine: [],
                 goodFor: [],
-                meals: []
+                meals: [],
+                city: []
             }
         };
         this._getFiltersByLocations = this._getFiltersByLocations.bind(this);
-        this._getFilteredLocations = this._getFilteredLocations.bind(this);
+        this._getAllSelectedFilters = this._getAllSelectedFilters.bind(this);
+        this._onClickFilteredLocations = this._onClickFilteredLocations.bind(this);
 
     }
 
@@ -24,23 +26,25 @@ class LocationFiltersContainer extends Component {
                 <LocationFilters 
                     filtersList={this.state.filtersList}
                     ref={(filterDropdown) => this.filterDropdown = filterDropdown}
-                    getFilteredLocations={this._getFilteredLocations} 
+                    onClickFilteredLocations={this._onClickFilteredLocations} 
                 />    
             </div>
         );
     }
 
-    _getFilteredLocations() {
+    _getAllSelectedFilters() {
         let selectedFilters = {
             cuisine: [],
             goodFor: [],
-            meals: []
+            meals: [],
+            city: []
         };
         selectedFilters.cuisine = this.filterDropdown.cuisineFilterDropdown._getSelectedFilters();
         selectedFilters.goodFor = this.filterDropdown.goodForFilterDropdown._getSelectedFilters();
         selectedFilters.meals = this.filterDropdown.mealsFilterDropdown._getSelectedFilters();
+        selectedFilters.city = this.props.city;
 
-        console.log(selectedFilters);
+        return selectedFilters;
 
     }
 
@@ -62,6 +66,32 @@ class LocationFiltersContainer extends Component {
                 });
             }
         }.bind(this));
+    }
+
+    _onClickFilteredLocations() {
+
+        let selectedFilters = this._getAllSelectedFilters();
+
+        fetch('http://localhost:3001/api/location/getFilteredLocations', {
+           headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+           },
+           method: 'post',
+           body: JSON.stringify(selectedFilters)
+
+        }).then(function(response){
+            if(response.status === 200) {
+                response.json().then((data) => {
+                    this.props.onFilterLocationsReceived(data);
+                })
+            } else {
+                response.json().then((data) => {
+                    notificationError(data.message);
+                });
+            }
+        }.bind(this));  
+
     }
 
     componentWillMount() {
