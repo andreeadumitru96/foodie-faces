@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 
-import Body from '../BodyContainer/Body/Body';
+// import Body from '../BodyContainer/Body/Body';
 import MostRatedLocationsContainer from '../MostRatedLocationsContainer/MostRatedLocationsContainer';
 import LocationSearchContainer from '../LocationSearchContainer/LocationSearchContainer';
 import LocationDetailsContainer from '../../shared/LocationDetailsContainer/LocationDetailsContainer';
 
-import './Body/Body.css';
+import './Body.css';
 
 class BodyContainer extends Component {
     constructor(props) {
@@ -47,7 +47,8 @@ class BodyContainer extends Component {
     componentWillReceiveProps(newProps) {
         this.setState({
             isMostRatedLocationsMount: newProps.componentToMount === 'MostRatedLocationsComponent' ? true : false,
-            isLocationSearchMount: newProps.componentToMount === 'LocationSearchComponent' ? true : false
+            isLocationSearchMount: newProps.componentToMount === 'LocationSearchComponent' ? true : false,
+            isLocationDetailsMount: newProps.componentToMount === 'LocationDetailsComponent' ? true : false
         })
     }
 
