@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ReactStars from 'react-stars';
 import { GridList, GridTile } from 'material-ui/GridList';
 
+import './LocationDetailsGrid.css';
+
 const styles = {
     root: {
         display: 'flex',
@@ -24,23 +26,26 @@ class LocationDetailsGrid extends Component {
 
     render() {
         return (
-            <GridList
-                cols={2}
-                cellHeight={200}
-                padding={1}
-                style={styles.gridList}
-            >
-                {this.props.locationDetails.images.map((image) => (
-                    <GridTile
-                        actionPosition="left"
-                        titlePosition="top"
-                        titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
-                    >
-                        <img src={image} />
-                    </GridTile>
-                ))}
+            <div className="location-details-grid">
+                <GridList
+                    cols={2}
+                    cellHeight={200}
+                    padding={1}
+                    style={styles.gridList}
+                >
+                    {this.props.locationDetails.images.map((image) => (
+                        <GridTile
+                            actionPosition="left"
+                            titlePosition="top"
+                            titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+                        >
+                            <img src={image} />
+                        </GridTile>
+                    ))}
 
-            </GridList>
+                </GridList>
+            </div>
+
 
         );
     }

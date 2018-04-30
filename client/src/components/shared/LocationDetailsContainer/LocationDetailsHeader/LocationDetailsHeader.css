@@ -4,7 +4,7 @@
     text-align: center;
     font-size: 34px;
     font-weight: bold;
-    padding: 35px 0px 35px 0px;
+    padding: 120px 0px 35px 0px;
 
 }
 
@@ -19,5 +19,9 @@
 
 .information-rating {
     padding-top: 10px;
+}
+
+.main-information-details {
+    padding-left: 8px;
 }
 
