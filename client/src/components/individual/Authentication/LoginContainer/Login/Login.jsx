@@ -24,6 +24,7 @@ class Login extends Component {
                             inputStyle={{color: 'white'}}
                             floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Email"
+                            autoComplete = "new-password"
                             ref={(inputValue) => {this.email = inputValue}}
                         />  
                     </div>
@@ -33,7 +34,8 @@ class Login extends Component {
                             inputStyle={{color: 'white'}}
                             floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Password"
-                            // type="password"
+                            type="password"
+                            autoComplete = "new-password"
                             ref={(inputValue) => {this.password = inputValue}}
                         />
                     </div>
