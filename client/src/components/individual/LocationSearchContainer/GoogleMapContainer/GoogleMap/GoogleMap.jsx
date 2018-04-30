@@ -23,6 +23,7 @@ class GoogleMap extends Component {
                     defaultCenter={this.props.center}
                     onChange={this._onChange}
                     defaultZoom={this.props.zoom}
+                    
                 >
                     {this.props.locationsList.map(location => (
 
