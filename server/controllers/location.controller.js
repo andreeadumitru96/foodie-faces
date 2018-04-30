@@ -127,7 +127,8 @@ exports.getFilteredLocations = function(req, res) {
 
     Object.assign(objectQuery, req.body.goodFor.length !== 0 ? {'categories.goodFor': {$all: req.body.goodFor}} : null,
                                req.body.cuisine.length !== 0 ? {'categories.cuisine': {$all: req.body.cuisine}} : null,
-                               req.body.meals.length !== 0 ? {'categories.meals': {$all: req.body.meals}} : null)
+                               req.body.meals.length !== 0 ? {'categories.meals': {$all: req.body.meals}} : null,
+                                                             {'city': req.body.city} )
 
     let arrayQuery = [];
 
@@ -135,7 +136,7 @@ exports.getFilteredLocations = function(req, res) {
         arrayQuery.push({[key] : objectQuery[key]});
     }
 
-    Location.find({ $and: arrayQuery} ,
+    Location.find({ $and: arrayQuery } ,
         function(err, locations) {
             if (err) {
                 res.status(500).send({ message: err });
