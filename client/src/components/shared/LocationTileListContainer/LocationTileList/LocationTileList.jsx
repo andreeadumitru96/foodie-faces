@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LocationTileItemContainer from '../../LocationTileItemContainer/LocationTileItemContainer';
 import GridList from 'material-ui/GridList';
+import InfiniteScroll from 'react-infinite-scroller';
 
 import './LocationTileList.css';
 
@@ -19,19 +20,25 @@ class LocationTileList extends Component {
     render() {
         return (
             <div className="location-tile-list">
+            	<InfiniteScroll
+					pageStart={0}
+					loadMore={this.props.onScrollEnd}
+					hasMore={this.props.hasMore}
+				>
                 <GridList
                     cellHeight={300}
                     cols={3}
                     padding={10}
                     style={styles.gridList}
                     >
-                    {this.props.locationsList.map(location => (
+                    {this.props.passedLocations.map(location => (
                         <LocationTileItemContainer 
                             locationData={location} key={location._id}
                             triggeredBody = {this.props.triggeredBody}
                         />
                     ))}
                 </GridList>
+                </InfiniteScroll>
             </div>
         );
     }
