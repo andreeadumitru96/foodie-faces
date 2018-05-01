@@ -15,7 +15,6 @@ class HomeContainer extends Component {
             receivedLocationsFromHeader: []
         };
         this._manageBodyComponents = this._manageBodyComponents.bind(this);
-        this._fetchedLocationsTriggered = this._fetchedLocationsTriggered.bind(this);
 	}
 
 	render() {
@@ -23,7 +22,6 @@ class HomeContainer extends Component {
 			<div>
                 <HeaderContainer 
                     manageBodyComponents = {this._manageBodyComponents}
-                    onLocationsFetched = {this._fetchedLocationsTriggered}
                 />
                 <BodyContainer 
                     componentToMount = {this.state.componentMountInBody}
@@ -36,14 +34,13 @@ class HomeContainer extends Component {
 		);
     }
     
-    _manageBodyComponents(mountComponent) {
+    _manageBodyComponents(mountComponent, locations) {
         if(mountComponent === 'LocationSearchComponent') {
-            this.setState({componentMountInBody: mountComponent})
+            this.setState({
+                componentMountInBody: mountComponent,
+                receivedLocationsFromHeader: locations
+            })
         }
-    }
-
-    _fetchedLocationsTriggered(locations) {
-        this.setState({receivedLocationsFromHeader: locations})
     }
 
 }

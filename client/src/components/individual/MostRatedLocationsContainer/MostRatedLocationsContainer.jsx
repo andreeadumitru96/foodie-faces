@@ -13,7 +13,7 @@ class MostRatedLocationsContainer extends Component {
         this._getMostRatedLocations = this._getMostRatedLocations.bind(this);
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this._getMostRatedLocations();
     }
 

@@ -28,6 +28,12 @@ class LocationSearchContainer extends Component {
         this.forceUpdate();
     }
 
+    componentWillReceiveProps(newProps) {
+        this.setState({
+            locationsList: newProps.locationsList
+        })
+    }
+
     _onFilterLocationsReceived(filteredLocations) {
         this.setState({
             locationsList: filteredLocations

@@ -82,9 +82,8 @@ class HeaderContainer extends Component {
                             locations[index].coordinates.longitude = coordinates.longitude;
                         }                      
                     }
-                    this.props.onLocationsFetched(locations);
-                    let mountComponent = 'LocationSearchComponent'
-                    this.props.manageBodyComponents(mountComponent);
+                    let mountComponent = 'LocationSearchComponent'                    
+                    this.props.manageBodyComponents(mountComponent, locations);
                 })
             }
         }.bind(this))

@@ -38,6 +38,7 @@ class LocationDetailsGrid extends Component {
                             actionPosition="left"
                             titlePosition="top"
                             titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+                            key={image}
                         >
                             <img src={image} />
                         </GridTile>
