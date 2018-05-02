@@ -11,27 +11,23 @@ class GoogleMap extends Component {
         }
     }
 
-    // componentWillMount() {
-    //     console.log(this.props.locationsList)
-    // }
-
 
     render() {
         return (
             <div className="google-maps">
                 <GoogleMapReact
-                    defaultCenter={this.props.center}
-                    onChange={this._onChange}
-                    defaultZoom={this.props.zoom}
+                    center = {this.props.getCenterCoordinates()}
+                    defaultZoom = {this.props.getCenterZoom()}
                     
                 >
                     {this.props.locationsList.map(location => (
 
                         <PinPoint
-                            text={location.name}
-                            lat={parseFloat(location.coordinates.latitude)}
-                            lng={parseFloat(location.coordinates.longitude)}
-                            key={location.name} />
+                            text = {location.name}
+                            lat = {parseFloat(location.coordinates.latitude)}
+                            lng = {parseFloat(location.coordinates.longitude)}
+                            key = {location.name}
+                        />
 
                     ))}
 
@@ -41,13 +37,5 @@ class GoogleMap extends Component {
     }
     
 }
-
-GoogleMap.defaultProps = {
-    center: {
-        lat: 49.348405,
-        lng: 2.9055590000000393
-    },
-    zoom: 10
-};
 
 export default GoogleMap;

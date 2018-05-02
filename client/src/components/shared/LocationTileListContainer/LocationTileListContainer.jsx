@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 
-
-
 import LocationTileList from '../LocationTileListContainer/LocationTileList/LocationTileList';
-import {notificationError} from '../constants';
 
 const numberOfPassedLocations = 9;
 

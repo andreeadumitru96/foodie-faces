@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Home from './Home/Home'
 import HeaderContainer from '../HeaderContainer/HeaderContainer';
 import BodyContainer from '../BodyContainer/BodyContainer';
-import LocationSearchContainer from '../LocationSearchContainer/LocationSearchContainer';
 import {cookies} from '../../shared/constants';
 
 class HomeContainer extends Component {
