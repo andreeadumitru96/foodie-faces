@@ -52,9 +52,9 @@ class AppContainer extends Component {
                         <Route exact path='/register' render={(params) => <RegisterContainer history={params.history}/>}/>
                         <PrivateRoute exact path='/' component={HomeContainer} authenticated={this.state.authenticated} />
                         {/* { <Route component={NotFoundRoute} /> } */}
-                        <Alert stack={{limit: 3}} />
                     </Switch>
                 </Router>
+                <Alert stack={{limit: 3}} />
             </div>
         
         );

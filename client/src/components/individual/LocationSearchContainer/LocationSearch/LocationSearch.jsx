@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import DropDownMenu from 'material-ui/DropDownMenu';
-import MenuItem from 'material-ui/MenuItem';
 
 import LocationTileListContainer from '../../../shared/LocationTileListContainer/LocationTileListContainer';
 import GoogleMapContainer from '../GoogleMapContainer/GoogleMapContainer';

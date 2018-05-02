@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactStars from 'react-stars';
 import { RaisedButton } from 'material-ui';
-import Divider from 'material-ui/Divider';
 
 import { cookies } from '../../../shared/constants';
 import { notificationError } from '../../../shared/constants';

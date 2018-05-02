@@ -9,7 +9,7 @@ export const cookies = new Cookies();
 
 export const notificationError = (message) => {
 	Alert.error(message, {
-		position: 'top-right',
+		position: 'bottom-right',
 		effect: 'jelly',
 		timeout: 3000
 	});

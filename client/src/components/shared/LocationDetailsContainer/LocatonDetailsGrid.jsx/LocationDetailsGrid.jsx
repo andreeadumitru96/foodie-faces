@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactStars from 'react-stars';
 import { GridList, GridTile } from 'material-ui/GridList';
 
 import './LocationDetailsGrid.css';
