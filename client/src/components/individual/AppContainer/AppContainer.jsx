@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Alert from 'react-s-alert';
 import 'react-s-alert/dist/s-alert-default.css';
 import 'react-s-alert/dist/s-alert-css-effects/jelly.css';
+
 import {cookies} from '../../shared/constants';
 
 import {
@@ -51,6 +52,7 @@ class AppContainer extends Component {
                         <Route exact path='/login' render={(params) => <LoginContainer onLogin={this._onLogin} history={params.history}/>}/>
                         <Route exact path='/register' render={(params) => <RegisterContainer history={params.history}/>}/>
                         <PrivateRoute exact path='/' component={HomeContainer} authenticated={this.state.authenticated} />
+                        
                         {/* { <Route component={NotFoundRoute} /> } */}
                     </Switch>
                 </Router>

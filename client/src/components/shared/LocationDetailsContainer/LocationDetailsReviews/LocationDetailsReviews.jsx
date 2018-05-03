@@ -5,19 +5,21 @@ import { RaisedButton } from 'material-ui';
 import { cookies } from '../../../shared/constants';
 import { notificationError } from '../../../shared/constants';
 import './LocationDetailsReviews.css';
+import LocationDetailsAddDish from '../LocationDetailsMenu/LocationDetailsAddDish/LocationDetailsAddDish';
 
 
 class LocationDetailsReviews extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            locationDetails: this.props.locationDetails
+            locationDetails: this.props.locationDetails,
+            isAddDishOpen: false
         };
 
         this.reviewScore = this.state.locationDetails.averageScore;
         this._getReviewDetails = this._getReviewDetails.bind(this);
         this._onAddReview = this._onAddReview.bind(this);
-        this._onRatingChanged = this._onRatingChanged.bind(this);
+        this._onRatingChanged = this._onRatingChanged.bind(this); 
         // this._parseDate = this._parseDate.bind(this);
     }
 
@@ -60,8 +62,6 @@ class LocationDetailsReviews extends Component {
                     ))}
                 </div>
 
-                <div className="">
-                </div>
                 <div className="location-details-reviews__add-review">
                     <form className="add-review-form">
                         <label className="add-review-form-label"> Write a review </label>
@@ -99,6 +99,12 @@ class LocationDetailsReviews extends Component {
                             />
                         </div>
                     </form>
+                </div>
+
+                <div className="location-details-reviews__add-dish">
+                    <LocationDetailsAddDish
+                        isAddDishOpen = {this.state.isAddDishOpen}
+                    />
                 </div>
             </div>
 
@@ -153,6 +159,10 @@ class LocationDetailsReviews extends Component {
                 })
             }
         }.bind(this))
+
+        this.setState({
+            isAddDishOpen: true
+        });
     }
 
     // _parseDate(date) {

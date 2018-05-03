@@ -1,0 +1,11 @@
+.location-details-add-dish__buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.location-details-add-dish > div > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
