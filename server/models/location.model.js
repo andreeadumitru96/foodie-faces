@@ -74,14 +74,14 @@ let LocationSchema = new Schema({
             name: String,
             price : Number,
             image: String,
-            rating: [Number]
+            score: [Number]
         }]
     }],
     temporaryMenu: [{
         name: String,
         price : Number,
         image: String,
-        rating: [Number],
+        score: [Number],
         category: String,
         validationNumber: Number,
         addedBy: [{

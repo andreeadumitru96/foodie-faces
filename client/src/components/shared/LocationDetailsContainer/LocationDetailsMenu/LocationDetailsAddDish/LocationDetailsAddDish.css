@@ -1,7 +1,7 @@
 .location-details-add-dish__buttons {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .location-details-add-dish > div > div > div {
@@ -9,3 +9,17 @@
     flex-direction: column;
     align-items: center;
 }   
+
+.location-details-add-dish__score {
+    /* padding-top: 20px; */
+    justify-content: center;
+}
+
+.photos-add-photo {
+    padding-top: 20px;
+}
+
+.fa-plus { 
+    font-size: 22px;
+    color: green;
+}
