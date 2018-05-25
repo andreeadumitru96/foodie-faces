@@ -104,6 +104,7 @@ class LocationDetailsReviews extends Component {
                 <div className="location-details-reviews__add-dish">
                     <LocationDetailsAddDish
                         isAddDishOpen = {this.state.isAddDishOpen}
+                        locationDetails = {this.state.locationDetails}
                     />
                 </div>
             </div>
