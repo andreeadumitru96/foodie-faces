@@ -67,27 +67,22 @@ let LocationSchema = new Schema({
     locationFeatures: [String],
     tripAdvisorRating: Number,
     menu: [{
-         categoryName: {
-             type: String
-         },
-        categoryItems: [{
-            name: String,
-            price : Number,
-            image: String,
-            score: [Number]
-        }]
+        name: String,
+        price : Number,
+        image: [String],
+        score: Number,
+        category: String
     }],
     temporaryMenu: [{
         name: String,
         price : Number,
         image: String,
-        score: [Number],
+        score: Number,
         category: String,
-        validationNumber: Number,
-        addedBy: [{
-            type: Schema.Types.ObjectId,
-            ref: 'User'
-        }]
+        // addedBy: [{
+        //     type: Schema.Types.ObjectId,
+        //     ref: 'User'
+        // }]
    }],
    averageScore: Number
 

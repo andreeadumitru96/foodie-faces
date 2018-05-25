@@ -148,3 +148,94 @@ exports.getFilteredLocations = function(req, res) {
     )
     
 };
+
+exports.addDish = function(req, res) {
+
+    let locationId = req.body.locationId;
+
+    let searchLocationId = {
+        _id: locationId
+    };
+
+    let dish = {
+        name: req.body.name,
+        category: req.body.category,
+        price: req.body.price,
+        score: req.body.score,
+        image: req.body.image
+    };
+
+
+    Location.findOne(searchLocationId, function (err, location) {
+        if (err) {
+            console.log(err);
+            res.status(500).send({ message: err });
+        } else {
+            let occurenceDishNumber = 0;
+            let similarDishes = [];
+            location.temporaryMenu.forEach((existingDish) => {
+                if(existingDish.name === dish.name) {
+                    similarDishes.push(existingDish);
+                    occurenceDishNumber++;
+                }
+            });
+
+            if(occurenceDishNumber < 2 ) {
+                //push to temporary menu
+                location.temporaryMenu.push(dish);
+                Location.findOneAndUpdate(searchLocationId, {temporaryMenu: location.temporaryMenu}, {new: true}, function(err, updatedLocation) {
+                    if(err) {
+                        res.status(500).send({message: err});
+                    } else {
+                        res.status(200).send({message: 'Temporary Menu Updated'});
+                    }
+                });
+            } else if (occurenceDishNumber === 2){
+                similarDishes.push(dish);
+                let processedDishForMenu = {
+                    name: similarDishes[0].name,
+                    price : 0,
+                    image: [],
+                    score: 0,
+                    category: similarDishes[0].category
+                };
+
+                similarDishes.forEach((existingDish) => {
+                    processedDishForMenu.price += existingDish.price;
+                    processedDishForMenu.score += existingDish.score;
+                    processedDishForMenu.image.push(existingDish.image);
+                })
+
+                processedDishForMenu.price = processedDishForMenu.price / 3;
+                processedDishForMenu.score = processedDishForMenu.score / 3;
+
+
+                let dishAlreadyExistsInMenu = false;
+                location.menu.forEach((item, index) => {
+                        if(item.name === processedDishForMenu.name) {
+                            processedDishForMenu[index] = processedDishForMenu;
+                            dishAlreadyExistsInMenu = true;
+                        }
+                });
+
+                if(!dishAlreadyExistsInMenu) {
+                    location.menu.push(processedDishForMenu);
+                }
+
+                for(let index = location.temporaryMenu.length - 1; index >= 0; index--) {
+                    if(location.temporaryMenu[index].name === processedDishForMenu.name) {
+                        location.temporaryMenu.splice(index, 1);
+                    }
+                }
+
+                Location.findOneAndUpdate(searchLocationId, {temporaryMenu: location.temporaryMenu, menu: location.menu}, {new: true}, function(err, updatedLocation) {
+                    if(err) {
+                        res.status(500).send({message: err});
+                    } else {
+                        res.status(200).send({updatedLocation});
+                    }
+                });
+            }
+        }
+    });
+}

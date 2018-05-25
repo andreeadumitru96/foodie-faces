@@ -10,5 +10,6 @@ module.exports = function(app) {
     app.post('/api/location/addReview', locationController.addReview);
     app.get('/api/location/getFiltersByLocations', locationController.getFiltersByLocations);
     app.post('/api/location/getFilteredLocations', locationController.getFilteredLocations);
+    app.post('/api/location/addDish', locationController.addDish);
 
 };
