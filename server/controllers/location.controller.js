@@ -181,7 +181,6 @@ exports.addDish = function(req, res) {
             });
 
             if(occurenceDishNumber < 2 ) {
-                //push to temporary menu
                 location.temporaryMenu.push(dish);
                 Location.findOneAndUpdate(searchLocationId, {temporaryMenu: location.temporaryMenu}, {new: true}, function(err, updatedLocation) {
                     if(err) {
@@ -279,6 +278,26 @@ exports.recommendDish = function(req, res) {
                 }
             })
         }
-    })
+    });
 
-}
+};
+
+exports.getMenuDishes = function(req, res) {
+
+    Location.findOne({ _id: req.params.id }, function (err, location) {
+        if (err) {
+            res.status(500).send({ message: err });
+        } else {
+            
+        }
+    });
+
+    Location.distinct('menu', function (err, menuDishses) {
+        if (err) {
+            res.status(500).send({ message: err });
+        } else {
+            res.status(200).send(menuDishses);
+        }
+    });
+
+};
