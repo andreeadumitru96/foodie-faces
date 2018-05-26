@@ -84,6 +84,11 @@ let LocationSchema = new Schema({
         //     ref: 'User'
         // }]
    }],
+   recommendedDishes: [{
+        name: String,
+        occurrencesNumber: Number,
+        image: String,
+   }],
    averageScore: Number
 
 });

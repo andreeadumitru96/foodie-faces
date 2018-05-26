@@ -239,3 +239,46 @@ exports.addDish = function(req, res) {
         }
     });
 }
+
+exports.recommendDish = function(req, res) {
+    let locationId = req.body.locationId;
+
+    let searchLocationId = {
+        _id: locationId
+    };
+
+    let recommendedDish = req.body.recommendedDish;
+    let recommendDishImage = req.body.recommendDishImage;
+
+    Location.findOne(searchLocationId, function(err, location){
+        if(err) {
+            res.status(500).send({message: err});
+        } else {
+            let alreadyExists = false;
+
+            location.recommendedDishes.forEach((existingDish, index) => {
+                if(existingDish.name === recommendedDish) {
+                    location.recommendDishes[index].occurrencesNumber ++;
+                    alreadyExists = true;
+                }
+            });
+
+            if(!alreadyExists) {
+                location.recommendDish.push({
+                    name: recommendedDish,
+                    occurrencesNumber: 1,
+                    image: recommendDishImage
+                });
+            }
+
+            Location.findOneAndUpdate(searchLocationId, {recommendedDishes: location.recommendedDishes}, {new: true}, function(err, updatedLocation){
+                if(err) {
+                    res.status(500).send({message: err});
+                } else { 
+                    res.status(200).send({updatedLocation});
+                }
+            })
+        }
+    })
+
+}
