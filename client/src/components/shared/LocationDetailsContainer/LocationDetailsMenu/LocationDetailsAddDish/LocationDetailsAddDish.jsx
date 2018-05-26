@@ -30,8 +30,7 @@ class LocationDetailsAddDish extends Component {
                 title="What did you eat? Help the community"
                 // actions={actions}
                 modal={false}
-                // open={this.props.isAddDishOpen}
-                open={true}
+                open={this.props.isAddDishOpen}
                 className="location-details-add-dish"
             // onRequestClose={}
             >
