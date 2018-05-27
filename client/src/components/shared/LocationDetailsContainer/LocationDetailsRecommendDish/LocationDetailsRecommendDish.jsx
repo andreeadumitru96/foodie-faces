@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Dialog from 'material-ui/Dialog'
+import Dialog from 'material-ui/Dialog';
 import TextField from 'material-ui/TextField';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
+import { RaisedButton } from 'material-ui';
 
 import { notificationError } from '../../constants';
-
-// let bla = [1, 2, 3, 4, 7, 8, 9, 10];
+import './LocationDetailsRecommendDish.css';
 
 class LocationDetailsRecommendDish extends Component {
     constructor(props) {
@@ -19,7 +19,8 @@ class LocationDetailsRecommendDish extends Component {
         this._getMenuDishes = this._getMenuDishes.bind(this);
         this._getDropDownItems = this._getDropDownItems.bind(this);
         this._handleChange = this._handleChange.bind(this);
-        
+        this._onRecommendDish = this._onRecommendDish.bind(this);
+
     }
 
     render() {
@@ -35,9 +36,25 @@ class LocationDetailsRecommendDish extends Component {
                     multiple={false}
                     value={this.state.selectedDish}
                     onChange={this._handleChange}
+                    className="location-details-recommend-dish__items"
                 >
                     {this._getDropDownItems()}
                 </SelectField>
+
+                <div className="location-details-recommend-dish__actions">
+                    <RaisedButton
+                        label="Recommend"
+                        onClick={this._onRecommendDish}
+                        className="actions-recommend"
+                    />
+                    <RaisedButton
+                        label="Cancel"
+                    // onClick={}
+                        className="actions-cancel"
+                    />
+                </div>
+
+
             </Dialog>
         );
     }
@@ -66,7 +83,7 @@ class LocationDetailsRecommendDish extends Component {
                     notificationError(error.message);
                 })
             }
-        }.bind(this))
+        }.bind(this));
     }
 
     _getDropDownItems() {
@@ -82,7 +99,48 @@ class LocationDetailsRecommendDish extends Component {
     }
 
     _handleChange(event, index, values) {
-        this.setState({selectedDish: values});
+        this.setState({ selectedDish: values });
+    }
+
+    _onRecommendDish() {
+
+        let recommendDishImage;
+
+        this.state.menuDishes.forEach((item) => {
+            if(item.name === this.state.selectedDish) {
+                recommendDishImage = item.image[0];
+            }
+        })
+
+        console.log(recommendDishImage);
+
+        let data = {
+            locationId: this.props.locationDetails._id,
+            recommendedDish: {
+                name: this.state.selectedDish,
+                image: recommendDishImage
+            }
+        }
+
+        fetch(`http://localhost:3001/api/location/recommendDish`, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+
+            method: 'post',
+            body: JSON.stringify(data),
+        }).then(function (response) {
+            if (response.status === 200) {
+                response.json().then((menuDishes) => {
+                    
+                })
+            } else {
+                response.json().then((error) => {
+                    notificationError(error.message);
+                })
+            }
+        }.bind(this));
     }
 
     componentWillMount() {

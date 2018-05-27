@@ -246,8 +246,8 @@ exports.recommendDish = function(req, res) {
         _id: locationId
     };
 
-    let recommendedDish = req.body.recommendedDish;
-    let recommendDishImage = req.body.recommendDishImage;
+    let dishName = req.body.recommendedDish.name;
+    let dishImage = req.body.recommendedDish.image
 
     Location.findOne(searchLocationId, function(err, location){
         if(err) {
@@ -256,17 +256,17 @@ exports.recommendDish = function(req, res) {
             let alreadyExists = false;
 
             location.recommendedDishes.forEach((existingDish, index) => {
-                if(existingDish.name === recommendedDish) {
+                if(existingDish.name === dishName) {
                     location.recommendDishes[index].occurrencesNumber ++;
                     alreadyExists = true;
                 }
             });
 
             if(!alreadyExists) {
-                location.recommendDish.push({
-                    name: recommendedDish,
+                location.recommendedDishes.push({
+                    name: dishName,
                     occurrencesNumber: 1,
-                    image: recommendDishImage
+                    image: dishImage
                 });
             }
 
