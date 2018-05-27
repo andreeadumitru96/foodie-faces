@@ -22,10 +22,11 @@ class LocationDetailsActions extends Component {
                 <div className="location-details-actions__recommend">
                     <RaisedButton
                         label="Recommend a dish"
-                        onClick={this._onRecommendButton}
+                        onClick = {this._onRecommendButton}
                     />
                     <LocationDetailsRecommendDish
-                        isRecommendDishOpen={this.state.isRecommendDishOpen}
+                        isRecommendDishOpen = {this.state.isRecommendDishOpen}
+                        locationDetails = {this.props.locationDetails}
                     />
                 </div>
             </div>
@@ -36,7 +37,7 @@ class LocationDetailsActions extends Component {
     _onRecommendButton() {
         this.setState({
             isRecommendDishOpen: true
-        })
+        });
     }
 
 }

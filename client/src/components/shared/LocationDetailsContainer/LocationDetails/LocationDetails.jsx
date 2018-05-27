@@ -24,7 +24,9 @@ class LocationDetails extends Component {
                 <LocationDetailsGrid
                     locationDetails = {this.props.locationDetails}
                 />
-                <LocationDetailsActions />
+                <LocationDetailsActions
+                    locationDetails = {this.props.locationDetails}     
+                />
 
                 <div className="location-details-reviews-map">
                     <LocationDetailsReviews
