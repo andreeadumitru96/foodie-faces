@@ -288,16 +288,7 @@ exports.getMenuDishes = function(req, res) {
         if (err) {
             res.status(500).send({ message: err });
         } else {
-            
+            res.status(200).send(location.menu)
         }
     });
-
-    Location.distinct('menu', function (err, menuDishses) {
-        if (err) {
-            res.status(500).send({ message: err });
-        } else {
-            res.status(200).send(menuDishses);
-        }
-    });
-
 };
