@@ -161,6 +161,8 @@ class LocationDetailsAddDish extends Component {
                 })
             });
     }
+
+    
 }
 
 export default LocationDetailsAddDish;

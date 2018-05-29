@@ -49,7 +49,7 @@ class LocationDetailsRecommendDish extends Component {
                     />
                     <RaisedButton
                         label="Cancel"
-                    // onClick={}
+                        // onClick={}
                         className="actions-cancel"
                     />
                 </div>
@@ -146,6 +146,12 @@ class LocationDetailsRecommendDish extends Component {
     componentWillMount() {
         this._getMenuDishes();
     }
+
+    // _onCancelRecommendDish() {
+    //     this.setState({
+
+    //     })
+    // }
 }
 
 export default LocationDetailsRecommendDish;

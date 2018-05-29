@@ -6,6 +6,7 @@ import LocationDetailsGrid from '../LocatonDetailsGrid.jsx/LocationDetailsGrid';
 import LocationDetailsActions from '../LocationDetailsActions/LocationDetailsActions';
 import LocationDetailsReviews from '../LocationDetailsReviews/LocationDetailsReviews';
 import LocationDetailsMap from '../LocationDetailsMap/LocationDetailsMap';
+import LocationDetailsMenu from '../LocationDetailsMenu/LocationDetailsMenu';
 
 class LocationDetails extends Component {
 	constructor(props) {
@@ -26,6 +27,10 @@ class LocationDetails extends Component {
                 />
                 <LocationDetailsActions
                     locationDetails = {this.props.locationDetails}     
+                />
+
+                <LocationDetailsMenu
+                    locationDetails = {this.props.locationDetails}
                 />
 
                 <div className="location-details-reviews-map">
