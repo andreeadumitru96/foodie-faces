@@ -257,7 +257,7 @@ exports.recommendDish = function(req, res) {
 
             location.recommendedDishes.forEach((existingDish, index) => {
                 if(existingDish.name === dishName) {
-                    location.recommendDishes[index].occurrencesNumber ++;
+                    location.recommendedDishes[index].occurrencesNumber ++;
                     alreadyExists = true;
                 }
             });
@@ -289,6 +289,23 @@ exports.getMenuDishes = function(req, res) {
             res.status(500).send({ message: err });
         } else {
             res.status(200).send(location.menu)
+        }
+    });
+};
+
+exports.getRecommendedDishes = function(req, res) {
+    Location.findOne({ _id: req.params.id }, function (err, location) {
+        if (err) {
+            res.status(500).send({ message: err })
+        }
+        else {
+            let mostRecommendedDishes = location.recommendedDishes.sort(function(a, b) {
+                return b.occurrencesNumber - a.occurrencesNumber;
+            });
+
+            mostRecommendedDishes = mostRecommendedDishes.slice(0, 3);
+
+            res.status(200).send({mostRecommendedDishes});
         }
     });
 };
