@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import { List, ListItem } from 'material-ui/List';
-import ActionGrade from 'material-ui/svg-icons/action/grade';
-import ContentInbox from 'material-ui/svg-icons/content/inbox';
-import ContentDrafts from 'material-ui/svg-icons/content/drafts';
-import ContentSend from 'material-ui/svg-icons/content/send';
-import Subheader from 'material-ui/Subheader';
-import Toggle from 'material-ui/Toggle';
 import Avatar from 'material-ui/Avatar'
+
+import './LocationDetailsMenu.css';
 
 class LocationDetailsMenu extends Component {
     constructor(props) {
@@ -39,18 +35,13 @@ class LocationDetailsMenu extends Component {
                                             leftAvatar={<Avatar icon={<img src={item.image} />} />}
                                             key={item.name}
                                             primaryText={item.name}
-                                            rightIcon={<span>{Math.round( item.price * 10) / 10}€</span>}
+                                            rightIcon={<span>{Math.round(item.price * 10) / 10}€</span>}
                                         />)
                                     })
                                 }
-
                             >
-
                             </ListItem>)
-                        })
-
-                        }
-
+                        })}
                     </List>
                 </div>
             </div>
@@ -58,7 +49,6 @@ class LocationDetailsMenu extends Component {
     }
 
     _sortMenuItemsByCategory() {
-        console.log(this.props.locationDetails.menu);
 
         this.props.locationDetails.menu.sort(function (a, b) {
             var categoryA = a["category"].toLowerCase(), categoryB = b["category"].toLowerCase();

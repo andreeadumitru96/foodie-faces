@@ -13,14 +13,15 @@ class LocationDetailsRecommendDish extends Component {
         super(props);
         this.state = {
             selectedDish: null,
-            menuDishes: []
+            menuDishes: [],
+            isRecommendDishOpen: props.isRecommendDishOpen
         };
 
         this._getMenuDishes = this._getMenuDishes.bind(this);
         this._getDropDownItems = this._getDropDownItems.bind(this);
         this._handleChange = this._handleChange.bind(this);
         this._onRecommendDish = this._onRecommendDish.bind(this);
-
+        this._handleClose = this._handleClose.bind(this);
     }
 
     render() {
@@ -28,8 +29,9 @@ class LocationDetailsRecommendDish extends Component {
             <Dialog
                 title="What did you like? Recommend a dish"
                 modal={false}
-                open={this.props.isRecommendDishOpen}
+                open={this.state.isRecommendDishOpen}
                 className="location-details-recommend-dish"
+                onRequestClose={this._handleClose}
             >
 
                 <SelectField
@@ -49,7 +51,7 @@ class LocationDetailsRecommendDish extends Component {
                     />
                     <RaisedButton
                         label="Cancel"
-                        // onClick={}
+                        onClick={this._handleClose}
                         className="actions-cancel"
                     />
                 </div>
@@ -76,7 +78,6 @@ class LocationDetailsRecommendDish extends Component {
                     this.setState({
                         menuDishes: menuDishes
                     });
-                    console.log(menuDishes);
                 })
             } else {
                 response.json().then((error) => {
@@ -145,6 +146,19 @@ class LocationDetailsRecommendDish extends Component {
 
     componentWillMount() {
         this._getMenuDishes();
+    }
+
+    _handleClose() {
+        this.setState({
+            isRecommendDishOpen: !this.state.isRecommendDishOpen
+        });
+        this.props.triggerWindowClose();
+    }
+
+    componentWillReceiveProps(newProps) {
+        this.setState({
+            isRecommendDishOpen: newProps.isRecommendDishOpen
+        })
     }
 
     // _onCancelRecommendDish() {

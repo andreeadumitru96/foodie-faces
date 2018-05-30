@@ -7,6 +7,7 @@ import LocationDetailsActions from '../LocationDetailsActions/LocationDetailsAct
 import LocationDetailsReviews from '../LocationDetailsReviews/LocationDetailsReviews';
 import LocationDetailsMap from '../LocationDetailsMap/LocationDetailsMap';
 import LocationDetailsMenu from '../LocationDetailsMenu/LocationDetailsMenu';
+import LocationDetailsMostRecommendedDishes from '../LocationDetailsRecommendDish/LocationDetailsMostRecommendedDishes';
 
 class LocationDetails extends Component {
 	constructor(props) {
@@ -30,6 +31,10 @@ class LocationDetails extends Component {
                 />
 
                 <LocationDetailsMenu
+                    locationDetails = {this.props.locationDetails}
+                />
+
+                <LocationDetailsMostRecommendedDishes
                     locationDetails = {this.props.locationDetails}
                 />
 

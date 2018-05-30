@@ -16,12 +16,14 @@ class LocationDetailsAddDish extends Component {
         this.state = {
             dishImagePreview: null,
             dishImageBlob: null,
-            uploadedDishImage: null
+            uploadedDishImage: null,
+            isAddDishOpen: props.isAddDishOpen
         };
         this._onAddDishImage = this._onAddDishImage.bind(this);
         this._onAddDish = this._onAddDish.bind(this);
         this._onDishScoreChanged = this._onDishScoreChanged.bind(this);
         this._getDishScore = this._getDishScore.bind(this);
+        this._handleClose = this._handleClose.bind(this);
     }
 
     render() {
@@ -31,6 +33,7 @@ class LocationDetailsAddDish extends Component {
                 // actions={actions}
                 modal={false}
                 open={this.props.isAddDishOpen}
+                onRequestClose={this._handleClose}
                 className="location-details-add-dish"
             // onRequestClose={}
             >
@@ -40,7 +43,7 @@ class LocationDetailsAddDish extends Component {
                         size={24}
                         color2={'green'}
                         half={false}
-                    // value={this.state.locationDetails.averageScore}
+                        // value={this.state.locationDetails.averageScore}
                         onChange={this._onDishScoreChanged}
                     />
                 </div>
@@ -92,7 +95,7 @@ class LocationDetailsAddDish extends Component {
 
                     <div className="buttons-cancel">
                         <RaisedButton label="CANCEL"
-                        // onClick={}
+                        onClick={this._handleClose}
                         />
                     </div>
                 </div>
@@ -162,7 +165,20 @@ class LocationDetailsAddDish extends Component {
             });
     }
 
-    
+    _handleClose() {
+        this.setState({
+            isAddDishOpen: !this.state.isAddDishOpen
+        });
+        this.props.triggerWindowClose();
+    }
+
+    componentWillReceiveProps(newProps) {
+        this.setState({
+            isRecommendDishOpen: newProps.isRecommendDishOpen
+        })
+    }
+
+
 }
 
 export default LocationDetailsAddDish;

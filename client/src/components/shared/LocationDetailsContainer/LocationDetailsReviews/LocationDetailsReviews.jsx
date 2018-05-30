@@ -19,7 +19,8 @@ class LocationDetailsReviews extends Component {
         this.reviewScore = this.state.locationDetails.averageScore;
         this._getReviewDetails = this._getReviewDetails.bind(this);
         this._onAddReview = this._onAddReview.bind(this);
-        this._onRatingChanged = this._onRatingChanged.bind(this); 
+        this._onRatingChanged = this._onRatingChanged.bind(this);
+        this._triggerWindowClose = this._triggerWindowClose.bind(this); 
         // this._parseDate = this._parseDate.bind(this);
     }
 
@@ -103,6 +104,7 @@ class LocationDetailsReviews extends Component {
 
                 <div className="location-details-reviews__add-dish">
                     <LocationDetailsAddDish
+                        triggerWindowClose = {this._triggerWindowClose}
                         isAddDishOpen = {this.state.isAddDishOpen}
                         locationDetails = {this.state.locationDetails}
                     />
@@ -164,6 +166,12 @@ class LocationDetailsReviews extends Component {
         this.setState({
             isAddDishOpen: true
         });
+    }
+
+    _triggerWindowClose() {
+        this.setState({
+            isAddDishOpen: false
+        })
     }
 
     // _parseDate(date) {

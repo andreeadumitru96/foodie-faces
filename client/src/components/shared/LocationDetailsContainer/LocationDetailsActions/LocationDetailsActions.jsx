@@ -11,6 +11,7 @@ class LocationDetailsActions extends Component {
             isRecommendDishOpen: false
         };
         this._onRecommendButton = this._onRecommendButton.bind(this);
+        this._triggerWindowClose = this._triggerWindowClose.bind(this);
     }
 
     render() {
@@ -26,6 +27,7 @@ class LocationDetailsActions extends Component {
                     />
                     <LocationDetailsRecommendDish
                         isRecommendDishOpen = {this.state.isRecommendDishOpen}
+                        triggerWindowClose = {this._triggerWindowClose}
                         locationDetails = {this.props.locationDetails}
                     />
                 </div>
@@ -38,6 +40,12 @@ class LocationDetailsActions extends Component {
         this.setState({
             isRecommendDishOpen: true
         });
+    }
+
+    _triggerWindowClose() {
+        this.setState({
+            isRecommendDishOpen: false
+        })
     }
 
 }
