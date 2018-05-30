@@ -305,7 +305,9 @@ exports.getRecommendedDishes = function(req, res) {
 
             mostRecommendedDishes = mostRecommendedDishes.slice(0, 3);
 
-            res.status(200).send({mostRecommendedDishes});
+            console.log(mostRecommendedDishes);
+
+            res.status(200).send(mostRecommendedDishes);
         }
     });
 };
