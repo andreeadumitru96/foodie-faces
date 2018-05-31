@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactStars from 'react-stars'
+import { List, ListItem } from 'material-ui/List';
 
 import './LocationDetailsHeader.css';
 
@@ -66,10 +67,82 @@ class LocationDetailsHeader extends Component {
                         />
                     </div>
 
+                    <div className="information-categories main_information">
+                    {
+                            this.props.locationDetails.categories.goodFor
+                                ?
+                                <List>
+                                    <div className="information-categories__goodFor">
+                                        <ListItem
+                                            primaryText={"Good for"}
+                                            initiallyOpen={false}
+                                            primaryTogglesNestedList={true}
+                                            nestedItems={
+                                                this.props.locationDetails.categories.goodFor.map((item) => {
+                                                    return (<ListItem
+                                                        className="goodFor-list main-information-details"
+                                                        key={item}
+                                                        primaryText={item}
+                                                    />)
+                                                })
+                                            }
+                                        >
+                                        </ListItem>
+                                    </div>
+                                </List>
+                            : null
+                        }
+
+                        {
+                            this.props.locationDetails.categories.meals
+                                ?
+                                <List>
+                                    <div className="information-categories__meals">
+                                        <ListItem
+                                            primaryText={"Meals"}
+                                            initiallyOpen={false}
+                                            primaryTogglesNestedList={true}
+                                            nestedItems={
+                                                this.props.locationDetails.categories.meals.map((item) => {
+                                                    return (<ListItem
+                                                        className="meals-list main-information-details"
+                                                        key={item}
+                                                        primaryText={item}
+                                                    />)
+                                                })
+                                            }
+                                        >
+                                        </ListItem>
+                                    </div>
+                                </List>
+                            : null
+                        }
+                         {
+                            this.props.locationDetails.categories.cuisine
+                                ?
+                                <List>
+                                    <div className="information-categories__cuisine">
+                                        <ListItem
+                                            primaryText={"Cuisine"}
+                                            initiallyOpen={false}
+                                            primaryTogglesNestedList={true}
+                                            nestedItems={
+                                                this.props.locationDetails.categories.cuisine.map((item) => {
+                                                    return (<ListItem
+                                                        className="cuisine-list main-information-details"
+                                                        key={item}
+                                                        primaryText={item}
+                                                    />)
+                                                })
+                                            }
+                                        >
+                                        </ListItem>
+                                    </div>
+                                </List>
+                            : null
+                        }
+                    </div>
                 </div>
-
-
-
             </div>
         );
     }

@@ -25,3 +25,19 @@
     padding-left: 8px;
 }
 
+.information-categories {
+    display: flex;
+
+}
+
+.information-categories.main_information > div {
+    padding: 0px !important;
+}
+
+.information-categories__goodFor > div > div, .information-categories__meals > div > div, .information-categories__cuisine > div > div {
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
