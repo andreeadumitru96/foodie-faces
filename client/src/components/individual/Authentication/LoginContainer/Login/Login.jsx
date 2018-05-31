@@ -25,6 +25,7 @@ class Login extends Component {
                             floatingLabelStyle={{color: 'white'}}
                             floatingLabelText="Email"
                             autoComplete = "new-password"
+                            onKeyPress={this.props.onEnterPressed}
                             ref={(inputValue) => {this.email = inputValue}}
                         />  
                     </div>
@@ -36,6 +37,7 @@ class Login extends Component {
                             floatingLabelText="Password"
                             type="password"
                             autoComplete = "new-password"
+                            onKeyPress={this.props.onEnterPressed}
                             ref={(inputValue) => {this.password = inputValue}}
                         />
                     </div>

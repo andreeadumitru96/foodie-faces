@@ -12,6 +12,7 @@ class LoginContainer extends Component {
         this._onLogin = this._onLogin.bind(this);
         this._toRegister = this._toRegister.bind(this);
         this._toHomePage = this._toHomePage.bind(this);
+        this._onEnterPressed = this._onEnterPressed.bind(this);
     }
 
     _toRegister() {
@@ -44,7 +45,6 @@ class LoginContainer extends Component {
             if(response.status === 200) {
 				response.json().then((data) => {
                     this._toHomePage(data);
-                    console.log("success");
 				})
 			} else {
 				response.json().then((data) => {
@@ -55,14 +55,18 @@ class LoginContainer extends Component {
 
     }
 
-    componentWillMount() {
-
+    _onEnterPressed(ev) {
+        if (ev.key === 'Enter') {
+            this._onLogin();
+          }
     }
+
     render() {
         return (
             <Login
-                onLogin={this._onLogin}
-                toRegister={this._toRegister}
+                onLogin = {this._onLogin}
+                toRegister = {this._toRegister}
+                onEnterPressed = {this._onEnterPressed}
                 ref={(childInstance) => { this.child = childInstance; }}
             />
         );
