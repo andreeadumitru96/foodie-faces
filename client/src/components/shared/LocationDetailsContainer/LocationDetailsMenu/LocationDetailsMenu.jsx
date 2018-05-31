@@ -32,7 +32,7 @@ class LocationDetailsMenu extends Component {
                                 nestedItems={
                                     this._getFormattedMenuByCategory()[key].map((item) => {
                                         return (<ListItem
-                                            leftAvatar={<Avatar icon={<img src={item.image} />} />}
+                                            leftAvatar={<Avatar icon={<img src={item.image} alt="" />} />}
                                             key={item.name}
                                             primaryText={item.name}
                                             rightIcon={<span>{Math.round(item.price * 10) / 10}€</span>}

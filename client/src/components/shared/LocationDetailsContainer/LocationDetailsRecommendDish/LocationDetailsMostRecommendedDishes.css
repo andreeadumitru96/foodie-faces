@@ -1,4 +1,38 @@
 .location-details-most-recommended-dishes__title {
     font-size: 34px;
     padding-left: 30px;
+    padding-bottom: 70px;
 }
+
+.location-details-most-recommended-dishes__list {
+    display: flex;
+}
+
+.list-badge {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    padding: 0 !important;
+}
+
+.list-badge  img {
+    width: 100%;
+    height: auto;
+}
+
+.list-badge-text {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.list-badge > span {
+    width: 140px !important;
+    /* height: 120px;
+    display: flex;
+    justify-content: center; */
+}
+
+/* .location-details-most-recommended-dishes__list {
+    padding: 20px;
+} */

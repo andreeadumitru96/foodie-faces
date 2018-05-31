@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {BottomNavigation, BottomNavigationItem} from 'material-ui/BottomNavigation';
+import Badge from 'material-ui/Badge';
+import NotificationsIcon from 'material-ui/svg-icons/social/notifications';
 import FontIcon from 'material-ui/FontIcon';
 
 
@@ -26,11 +27,13 @@ class LocationDetailsMostRecommendedDishes extends Component {
                 </div>
                 <div className="location-details-most-recommended-dishes__list">
                     {this.state.mostRecommendedDishes.map(dish => {
-                    //     return(<BottomNavigationItem
-                    //     label = "sdad"
-                    //     icon={dish.image}
-                    //     onClick={() => this.select(1)}
-                    // />)
+                        return(<Badge
+                            badgeContent={<img src={dish.image} />}
+                            primary={true}
+                            className="list-badge"
+                          >
+                            <div className="list-badge-text">{dish.name}</div>
+                          </Badge>)
                     })}
                     
                 </div>
