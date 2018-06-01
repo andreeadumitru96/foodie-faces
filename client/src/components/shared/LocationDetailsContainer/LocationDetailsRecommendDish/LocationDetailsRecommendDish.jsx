@@ -14,7 +14,8 @@ class LocationDetailsRecommendDish extends Component {
         this.state = {
             selectedDish: null,
             menuDishes: [],
-            isRecommendDishOpen: props.isRecommendDishOpen
+            isRecommendDishOpen: this.props.isRecommendDishOpen,
+            isDishRecommended: false
         };
 
         this._getMenuDishes = this._getMenuDishes.bind(this);
@@ -22,38 +23,54 @@ class LocationDetailsRecommendDish extends Component {
         this._handleChange = this._handleChange.bind(this);
         this._onRecommendDish = this._onRecommendDish.bind(this);
         this._handleClose = this._handleClose.bind(this);
+        this._onPressedRecommend = this._onPressedRecommend.bind(this);
     }
 
     render() {
         return (
+
             <Dialog
-                title="What did you like? Recommend a dish"
                 modal={false}
                 open={this.state.isRecommendDishOpen}
-                className="location-details-recommend-dish"
                 onRequestClose={this._handleClose}
             >
 
-                <SelectField
-                    multiple={false}
-                    value={this.state.selectedDish}
-                    onChange={this._handleChange}
-                    className="location-details-recommend-dish__items"
-                >
-                    {this._getDropDownItems()}
-                </SelectField>
+                <div className="location-details-recommend-dish">
+                    {this.state.isDishRecommended ?
+                        <div className="location-details-recommend-dish__done">
+                            <div className="done-title">
+                                Thank you for the recommended dish
+                            </div>
+                        </div>
+                        :
+                        <div className="location-details-recommend-dish__add-dish">
+                            <div className="add-dish-title">
+                                What did you like? Recommend a dish!
+                            </div>
 
-                <div className="location-details-recommend-dish__actions">
-                    <RaisedButton
-                        label="Recommend"
-                        onClick={this._onRecommendDish}
-                        className="actions-recommend"
-                    />
-                    <RaisedButton
-                        label="Cancel"
-                        onClick={this._handleClose}
-                        className="actions-cancel"
-                    />
+                            <SelectField
+                                multiple={false}
+                                value={this.state.selectedDish}
+                                onChange={this._handleChange}
+                                className="add-dish-items"
+                            >
+                                {this._getDropDownItems()}
+                            </SelectField>
+
+                            <div className="add-dish-actions">
+                                <RaisedButton
+                                    label="Recommend"
+                                    onClick={this._onRecommendDish}
+                                    className="add-dish-actions--recommend"
+                                />
+                                <RaisedButton
+                                    label="Cancel"
+                                    onClick={this._handleClose}
+                                    className="add-dish-actions--cancel"
+                                />
+                            </div>
+                        </div>
+                    }
                 </div>
 
 
@@ -108,12 +125,10 @@ class LocationDetailsRecommendDish extends Component {
         let recommendDishImage;
 
         this.state.menuDishes.forEach((item) => {
-            if(item.name === this.state.selectedDish) {
+            if (item.name === this.state.selectedDish) {
                 recommendDishImage = item.image[0];
             }
         })
-
-        console.log(recommendDishImage);
 
         let data = {
             locationId: this.props.locationDetails._id,
@@ -123,25 +138,32 @@ class LocationDetailsRecommendDish extends Component {
             }
         }
 
-        fetch(`http://localhost:3001/api/location/recommendDish`, {
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
+        if (!data.recommendedDish.image) {
+            notificationError("Please choose a dish");
+        }
+        else {
+            fetch(`http://localhost:3001/api/location/recommendDish`, {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
 
-            method: 'post',
-            body: JSON.stringify(data),
-        }).then(function (response) {
-            if (response.status === 200) {
-                response.json().then((menuDishes) => {
-                    
-                })
-            } else {
-                response.json().then((error) => {
-                    notificationError(error.message);
-                })
-            }
-        }.bind(this));
+                method: 'post',
+                body: JSON.stringify(data),
+            }).then(function (response) {
+                if (response.status === 200) {
+                    response.json().then((menuDishes) => {
+
+                    })
+                } else {
+                    response.json().then((error) => {
+                        notificationError(error.message);
+                    })
+                }
+            }.bind(this));
+
+            this._onPressedRecommend();
+        }
     }
 
     componentWillMount() {
@@ -161,11 +183,11 @@ class LocationDetailsRecommendDish extends Component {
         })
     }
 
-    // _onCancelRecommendDish() {
-    //     this.setState({
-
-    //     })
-    // }
+    _onPressedRecommend() {
+        this.setState({
+            isDishRecommended: !this.state.isDishRecommended
+        })
+    }
 }
 
 export default LocationDetailsRecommendDish;
