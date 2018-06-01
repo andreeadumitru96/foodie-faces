@@ -18,12 +18,11 @@ class LocationDetailsMenu extends Component {
         return (
             <div className="location-details-menu">
                 <div className="location-details-menu__title">
-                    <h1>
-                        Menu
-                    </h1>
+                    Menu
                 </div>
-                <div className="location-details-menu__dish">
+                <div className="location-details-menu__dishes-list">
                     <List>
+
                         {Object.keys(this._getFormattedMenuByCategory()).map((key, index) => {
                             return (<ListItem
                                 primaryText={key}

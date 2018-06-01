@@ -68,7 +68,7 @@ class LocationDetailsReviews extends Component {
 
                     ))}
                     { 
-                        this.state.isShowMoreDisplayed ? 
+                        (this.state.isShowMoreDisplayed && this.state.locationDetails.receivedReviews.length > 4) ? 
                             <div className="location-details-reviews__show-more" onClick={this._onShowMoreReviews}>
                                 Show more
                             </div>

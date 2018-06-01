@@ -1,4 +1,4 @@
-.location-details-add-dish > div > div {
+.location-details-add-dish-dialog > div > div {
     height: 600px;
     overflow: auto;
 }
@@ -10,14 +10,13 @@
     margin-bottom: 30px;
 }
 
-.location-details-add-dish > div > div > div {
+.location-details-add-dish-dialog > div > div > div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }   
 
 .location-details-add-dish__score {
-    /* padding-top: 20px; */
     justify-content: center;
 }
 

@@ -17,87 +17,99 @@ class LocationDetailsAddDish extends Component {
             dishImagePreview: null,
             dishImageBlob: null,
             uploadedDishImage: null,
-            isAddDishOpen: props.isAddDishOpen
+            isAddDishOpen: this.props.isAddDishOpen,
+            isDishAdded: false
         };
         this._onAddDishImage = this._onAddDishImage.bind(this);
         this._onAddDish = this._onAddDish.bind(this);
         this._onDishScoreChanged = this._onDishScoreChanged.bind(this);
         this._getDishScore = this._getDishScore.bind(this);
         this._handleClose = this._handleClose.bind(this);
+        this._onPressAddDish = this._onPressAddDish.bind(this);
     }
 
     render() {
         return (
             <Dialog
-                title="What did you eat? Help the community"
-                // actions={actions}
                 modal={false}
                 open={this.props.isAddDishOpen}
                 onRequestClose={this._handleClose}
-                className="location-details-add-dish"
-            // onRequestClose={}
+                className="location-details-add-dish-dialog"
             >
-                <div className="location-details-add-dish__score">
-                    <ReactStars
-                        count={5}
-                        size={24}
-                        color2={'green'}
-                        half={false}
-                        // value={this.state.locationDetails.averageScore}
-                        onChange={this._onDishScoreChanged}
-                    />
-                </div>
-                <div className="location-details-add-dish__information">
-                    <div className="information-dish-name">
-                        <TextField
-                            floatingLabelText="Dish name"
-                            ref={(inputValue) => { this.dishName = inputValue }}
-                        />
-                    </div>
-                    <div className="information-category">
-                        <TextField
-                            floatingLabelText="Category"
-                            ref={(inputValue) => { this.dishCategory = inputValue }}
+                <div className="location-details-add-dish__done">
+                    {this.state.isDishAdded ?
+                        <div className="done-title">
+                            Thank you for the added dish
+                        </div>
+                        :
+                        <div className="location-details-add-dish">
+                            <div className="location-details-add-dish__title">
+                                What did you eat? Help the community
+                            </div>
+                            <div className="location-details-add-dish__score">
+                                <ReactStars
+                                    count={5}
+                                    size={24}
+                                    color2={'green'}
+                                    half={false}
+                                    onChange={this._onDishScoreChanged}
+                                />
+                            </div>
 
-                        />
-                    </div>
-                    <div className="information-price">
-                        <TextField
-                            floatingLabelText="Price"
-                            ref={(inputValue) => { this.dishPrice = inputValue }}
-                        />
-                    </div>
-                </div>
+                            <div className="location-details-add-dish__information">
+                                <div className="information-dish-name">
+                                    <TextField
+                                        floatingLabelText="Dish name"
+                                        ref={(inputValue) => { this.dishName = inputValue }}
+                                    />
+                                </div>
+                                <div className="information-category">
+                                    <TextField
+                                        floatingLabelText="Category"
+                                        ref={(inputValue) => { this.dishCategory = inputValue }}
 
-                <div className="location-details-add-dish__upload">
-                    <Dropzone
-                        multiple={false}
-                        accept="image/*"
-                        onDrop={this._onAddDishImage}
-                        className="photos-add-photo"
-                    >
-                        <i className="fa fa-plus">
-                            Add a photo
-                        </i>
-                    </Dropzone>
-                </div>
+                                    />
+                                </div>
+                                <div className="information-price">
+                                    <TextField
+                                        floatingLabelText="Price"
+                                        ref={(inputValue) => { this.dishPrice = inputValue }}
+                                    />
+                                </div>
+                            </div>
 
-                <div className="location-details-add-dish__image-preview">
-                    <img src={this.state.dishImagePreview} />
-                </div>
+                            <div className="location-details-add-dish__upload">
+                                <Dropzone
+                                    multiple={false}
+                                    accept="image/*"
+                                    onDrop={this._onAddDishImage}
+                                    className="photos-add-photo"
+                                >
+                                    <i className="fa fa-plus">
+                                        Add a photo
+                                    </i>
+                                </Dropzone>
+                            </div>
 
-                <div className="location-details-add-dish__buttons">
-                    <div className="buttons-send">
-                        <RaisedButton label="SEND"
-                            onClick={this._onAddDish}
-                        />
-                    </div>
+                            <div className="location-details-add-dish__image-preview">
+                                <img src={this.state.dishImagePreview} />
+                            </div>
 
-                    <div className="buttons-cancel">
-                        <RaisedButton label="CANCEL"
-                        onClick={this._handleClose}
-                        />
-                    </div>
+                            <div className="location-details-add-dish__buttons">
+                                <div className="buttons-send">
+                                    <RaisedButton label="SEND"
+                                        onClick={this._onAddDish}
+                                    />
+                                </div>
+
+                                <div className="buttons-cancel">
+                                    <RaisedButton label="CANCEL"
+                                        onClick={this._handleClose}
+                                    />
+                                </div>
+                            </div>
+                        </div>         
+                    }
                 </div>
             </Dialog>
         );
@@ -120,16 +132,21 @@ class LocationDetailsAddDish extends Component {
     }
 
     _onAddDish() {
-        let file = this.state.dishImageBlob
+        if (!this.state.dishImageBlob) {
+            notificationError("Please upload a photo");
+        } else if (!this.dishName.getValue() || !this.dishCategory.getValue() || !this.dishPrice.getValue()) {
+            notificationError("Please complete all the fields");
+        } else {
+            let file = this.state.dishImageBlob
 
-        let fd = new FormData();
-        fd.append('upload_preset', CLOUDINARY_UPLOAD_PRESET);
-        fd.append('file', file);
+            let fd = new FormData();
+            fd.append('upload_preset', CLOUDINARY_UPLOAD_PRESET);
+            fd.append('file', file);
 
-        fetch(CLOUDINARY_UPLOAD_URL, {
-            method: 'post',
-            body: fd
-        })
+            fetch(CLOUDINARY_UPLOAD_URL, {
+                method: 'post',
+                body: fd
+            })
             .then()
             .then()
             .then((response) => {
@@ -153,7 +170,7 @@ class LocationDetailsAddDish extends Component {
                     }).then(function (response) {
                         if (response.status === 200) {
                             response.json().then((data) => {
-
+                                this._onPressAddDish();
                             })
                         } else {
                             response.json().then((data) => {
@@ -163,6 +180,10 @@ class LocationDetailsAddDish extends Component {
                     }.bind(this));
                 })
             });
+            console.log("dsada");
+           
+        }
+
     }
 
     _handleClose() {
@@ -172,13 +193,17 @@ class LocationDetailsAddDish extends Component {
         this.props.triggerWindowClose();
     }
 
+    _onPressAddDish() {
+        this.setState({
+            isDishAdded: true
+        })
+    }
+
     componentWillReceiveProps(newProps) {
         this.setState({
             isRecommendDishOpen: newProps.isRecommendDishOpen
         })
     }
-
-
 }
 
 export default LocationDetailsAddDish;

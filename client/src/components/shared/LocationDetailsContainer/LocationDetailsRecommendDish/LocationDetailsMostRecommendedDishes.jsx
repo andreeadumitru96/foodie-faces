@@ -17,26 +17,32 @@ class LocationDetailsMostRecommendedDishes extends Component {
         };
         this._getMostRecommendedDishes = this._getMostRecommendedDishes.bind(this);
     }
-    select = (index) => this.setState({selectedIndex: index});
+    select = (index) => this.setState({ selectedIndex: index });
 
     render() {
         return (
             <div className="location-details-most-recommended-dishes">
-                <div className="location-details-most-recommended-dishes__title">
-                    Most recommended dishes
-                </div>
-                <div className="location-details-most-recommended-dishes__list">
-                    {this.state.mostRecommendedDishes.map(dish => {
-                        return(<Badge
-                            badgeContent={<img src={dish.image} />}
-                            primary={true}
-                            className="list-badge"
-                          >
-                            <div className="list-badge-text">{dish.name}</div>
-                          </Badge>)
-                    })}
-                    
-                </div>
+                {this.state.mostRecommendedDishes.length > 0 ?
+
+                    <div className="location-details-most-recommended-dishes__list">
+                        <div className="list-title">
+                            Most recommended dishes
+                        </div>
+                        <div className="list-items">
+                            {this.state.mostRecommendedDishes.map(dish => {
+                                return (<Badge
+                                    badgeContent={<img src={dish.image} />}
+                                    primary={true}
+                                    className="list-badge"
+                                >
+                                    <div className="list-badge-text">{dish.name}</div>
+                                </Badge>)
+                            })}
+                        </div>
+                    </div>
+                    :
+                    null
+                }
             </div>
         );
     }
