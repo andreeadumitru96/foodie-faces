@@ -13,14 +13,18 @@ class LocationDetailsReviews extends Component {
         super(props);
         this.state = {
             locationDetails: this.props.locationDetails,
-            isAddDishOpen: false
+            initialDisplayedReviews: this.props.locationDetails.receivedReviews.slice(0, 4),
+            isAddDishOpen: false,
+            isShowMoreDisplayed: true,
         };
 
         this.reviewScore = this.state.locationDetails.averageScore;
         this._getReviewDetails = this._getReviewDetails.bind(this);
         this._onAddReview = this._onAddReview.bind(this);
         this._onRatingChanged = this._onRatingChanged.bind(this);
-        this._triggerWindowClose = this._triggerWindowClose.bind(this); 
+        this._triggerWindowClose = this._triggerWindowClose.bind(this);
+        this._onShowMoreReviews = this._onShowMoreReviews.bind(this);
+        this._onPressShowMore = this._onPressShowMore.bind(this);
         // this._parseDate = this._parseDate.bind(this);
     }
 
@@ -32,7 +36,8 @@ class LocationDetailsReviews extends Component {
                     <p className="location-details-reviews__list-title">
                         Reviews ({this.state.locationDetails.receivedReviews.length})
                     </p>
-                    {this.state.locationDetails.receivedReviews.map((receivedReview) => (
+
+                    {this.state.initialDisplayedReviews.map((receivedReview) => (
                         <div className="list--entity">
                             <div className="list--entity-user">
                                 {/* <div className="list-entity-user-picture">
@@ -60,7 +65,15 @@ class LocationDetailsReviews extends Component {
                                 </div>
                             </div>
                         </div>
+
                     ))}
+                    { 
+                        this.state.isShowMoreDisplayed ? 
+                            <div className="location-details-reviews__show-more" onClick={this._onShowMoreReviews}>
+                                Show more
+                            </div>
+                        :null
+                    }
                 </div>
 
                 <div className="location-details-reviews__add-review">
@@ -104,9 +117,9 @@ class LocationDetailsReviews extends Component {
 
                 <div className="location-details-reviews__add-dish">
                     <LocationDetailsAddDish
-                        triggerWindowClose = {this._triggerWindowClose}
-                        isAddDishOpen = {this.state.isAddDishOpen}
-                        locationDetails = {this.state.locationDetails}
+                        triggerWindowClose={this._triggerWindowClose}
+                        isAddDishOpen={this.state.isAddDishOpen}
+                        locationDetails={this.state.locationDetails}
                     />
                 </div>
             </div>
@@ -171,6 +184,19 @@ class LocationDetailsReviews extends Component {
     _triggerWindowClose() {
         this.setState({
             isAddDishOpen: false
+        });
+    }
+
+    _onShowMoreReviews() {
+        this.setState({
+            initialDisplayedReviews: this.props.locationDetails.receivedReviews
+        });
+        this._onPressShowMore();
+    }
+
+    _onPressShowMore() {
+        this.setState({
+            isShowMoreDisplayed: !this.state.isShowMoreDisplayed
         })
     }
 

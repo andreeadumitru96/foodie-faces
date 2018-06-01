@@ -20,6 +20,15 @@
     flex-direction: column;
 }
 
+.location-details-reviews__show-more {
+    font-size: 20px;
+    cursor: pointer;
+    color: #004d00;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 5px;
+}
+
 .add-review-form-label {
     font-size: 20px;
 }
