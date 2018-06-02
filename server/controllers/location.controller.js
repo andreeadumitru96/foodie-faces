@@ -311,3 +311,55 @@ exports.getRecommendedDishes = function(req, res) {
         }
     });
 };
+
+exports.getSimilarLocations = function (req, res) {
+	if (!req.body) {
+		res.status(500).send({ message: req.body });
+    };
+
+    let mealsFilters = req.body.filters.meals;
+    let goodForFilters = req.body.filters.goodFor;
+    let cuisineFilters = req.body.filters.cuisine;
+    let cityLocation = req.body.cityLocation;
+
+	Location.aggregate([
+        {
+            $match:
+                {
+                    'city': cityLocation,
+                }
+        },
+		{
+			$addFields: {
+				totalMatch: {
+                    $sum:[
+                        {$size: {  $setIntersection:  [goodForFilters, "$categories.goodFor"]  }},
+                        {$size: {  $setIntersection:  [cuisineFilters, "$categories.cuisine"]  }},
+                        {$size: {  $setIntersection:  [mealsFilters, "$categories.meals"]  }}
+                    ]
+				}
+			}
+		},
+		{
+			$sort: {
+				totalMatch: -1
+			}
+		},
+		{
+			$project: {
+				totalMatch: 0
+			}
+		},
+		{
+			$limit: 10
+		}
+	], function (err, locations) {
+		if (err) {
+			res.status(500).send({ message: "Some error occurred while searching for the Locations." })
+		} else if (locations && locations !== null) {
+			res.status(200).send(locations);
+		} else {
+			res.status(404).send({ message: "Could not find the locations." });
+		}
+	});
+};
