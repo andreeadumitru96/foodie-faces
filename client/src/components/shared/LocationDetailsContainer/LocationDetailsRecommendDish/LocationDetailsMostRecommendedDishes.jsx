@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import Badge from 'material-ui/Badge';
-import NotificationsIcon from 'material-ui/svg-icons/social/notifications';
-import FontIcon from 'material-ui/FontIcon';
 
 
 import { notificationError } from '../../constants';
 import './LocationDetailsMostRecommendedDishes.css';
 
-
-const favoritesIcon = <FontIcon className="material-icons">favorite</FontIcon>;
 class LocationDetailsMostRecommendedDishes extends Component {
     constructor(props) {
         super(props);
@@ -17,7 +13,6 @@ class LocationDetailsMostRecommendedDishes extends Component {
         };
         this._getMostRecommendedDishes = this._getMostRecommendedDishes.bind(this);
     }
-    select = (index) => this.setState({ selectedIndex: index });
 
     render() {
         return (

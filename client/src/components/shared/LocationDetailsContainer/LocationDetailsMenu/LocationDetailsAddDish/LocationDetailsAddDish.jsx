@@ -180,7 +180,6 @@ class LocationDetailsAddDish extends Component {
                     }.bind(this));
                 })
             });
-            console.log("dsada");
            
         }
 

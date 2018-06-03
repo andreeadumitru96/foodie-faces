@@ -8,6 +8,7 @@ import LocationDetailsReviews from '../LocationDetailsReviews/LocationDetailsRev
 import LocationDetailsMap from '../LocationDetailsMap/LocationDetailsMap';
 import LocationDetailsMenu from '../LocationDetailsMenu/LocationDetailsMenu';
 import LocationDetailsMostRecommendedDishes from '../LocationDetailsRecommendDish/LocationDetailsMostRecommendedDishes';
+import LocationDetailsSimilarLocations from '../LocationDetailsSimilarLocations/LocationDetailsSimilarLocations';
 
 class LocationDetails extends Component {
 	constructor(props) {
@@ -46,6 +47,9 @@ class LocationDetails extends Component {
                         locationDetails = {this.props.locationDetails} 
                     />
                 </div>
+                <LocationDetailsSimilarLocations
+                    locationDetails = {this.props.locationDetails}
+                />
 
 			</div>
 		);

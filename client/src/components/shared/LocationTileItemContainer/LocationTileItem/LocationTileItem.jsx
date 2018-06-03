@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { GridTile } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
@@ -39,7 +38,6 @@ class LocationTileItem extends Component {
             </GridTile>
         );
     }
-
 }
 
 export default LocationTileItem;
