@@ -149,8 +149,48 @@ exports.getFilteredLocations = function(req, res) {
     
 };
 
-exports.addDish = function(req, res) {
+exports.wordSimilarity = function(s1, s2) {
+    var longer = s1;
+      var shorter = s2;
+      if (s1.length < s2.length) {
+        longer = s2;
+        shorter = s1;
+      }
+      var longerLength = longer.length;
+      if (longerLength == 0) {
+        return 1.0;
+      }
+      return (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength);
+    }
 
+    function editDistance(s1, s2) {
+      s1 = s1.toLowerCase();
+      s2 = s2.toLowerCase();
+
+      var costs = new Array();
+      for (var i = 0; i <= s1.length; i++) {
+        var lastValue = i;
+        for (var j = 0; j <= s2.length; j++) {
+          if (i == 0)
+            costs[j] = j;
+          else {
+            if (j > 0) {
+              var newValue = costs[j - 1];
+              if (s1.charAt(i - 1) != s2.charAt(j - 1))
+                newValue = Math.min(Math.min(newValue, lastValue),
+                  costs[j]) + 1;
+              costs[j - 1] = lastValue;
+              lastValue = newValue;
+            }
+          }
+        }
+        if (i > 0)
+          costs[s2.length] = lastValue;
+      }
+      return costs[s2.length];
+}
+
+exports.addDish = function(req, res) {
     let locationId = req.body.locationId;
 
     let searchLocationId = {
@@ -174,7 +214,7 @@ exports.addDish = function(req, res) {
             let occurenceDishNumber = 0;
             let similarDishes = [];
             location.temporaryMenu.forEach((existingDish) => {
-                if(existingDish.name === dish.name) {
+                if(exports.wordSimilarity(existingDish.name, dish.name) > 0.75) {
                     similarDishes.push(existingDish);
                     occurenceDishNumber++;
                 }
@@ -211,18 +251,19 @@ exports.addDish = function(req, res) {
 
                 let dishAlreadyExistsInMenu = false;
                 location.menu.forEach((item, index) => {
-                        if(item.name === processedDishForMenu.name) {
+                        if(exports.wordSimilarity(item.name, processedDishForMenu.name) > 0.75) {
                             processedDishForMenu[index] = processedDishForMenu;
+                            processedDishForMenu[index].name = item.name;
                             dishAlreadyExistsInMenu = true;
                         }
                 });
 
-                if(!dishAlreadyExistsInMenu) {
+                if(!dishAlreadyExistsInMenu) {                    
                     location.menu.push(processedDishForMenu);
                 }
 
                 for(let index = location.temporaryMenu.length - 1; index >= 0; index--) {
-                    if(location.temporaryMenu[index].name === processedDishForMenu.name) {
+                    if(exports.wordSimilarity(location.temporaryMenu[index].name, processedDishForMenu.name) > 0.75) {
                         location.temporaryMenu.splice(index, 1);
                     }
                 }
