@@ -187,7 +187,9 @@ class LocationDetailsAddDish extends Component {
 
     _handleClose() {
         this.setState({
-            isAddDishOpen: !this.state.isAddDishOpen
+            isAddDishOpen: !this.state.isAddDishOpen,
+            isDishAdded: false,
+            dishImagePreview: null
         });
         this.props.triggerWindowClose();
     }

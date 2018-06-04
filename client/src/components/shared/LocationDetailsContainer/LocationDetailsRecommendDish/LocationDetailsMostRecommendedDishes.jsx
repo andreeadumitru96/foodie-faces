@@ -42,9 +42,9 @@ class LocationDetailsMostRecommendedDishes extends Component {
         );
     }
 
-    _getMostRecommendedDishes() {
+    _getMostRecommendedDishes(location) {
 
-        let id = this.props.locationDetails._id;
+        let id = location._id;
 
         fetch(`http://localhost:3001/api/location/getRecommendedDishes/${id}`, {
             headers: {
@@ -69,7 +69,11 @@ class LocationDetailsMostRecommendedDishes extends Component {
     }
 
     componentWillMount() {
-        this._getMostRecommendedDishes();
+        this._getMostRecommendedDishes(this.props.locationDetails);
+    }
+
+    componentWillReceiveProps(newProps) {
+        this._getMostRecommendedDishes(newProps.locationDetails);
     }
 }
 

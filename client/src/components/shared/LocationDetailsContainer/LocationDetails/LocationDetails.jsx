@@ -14,41 +14,49 @@ class LocationDetails extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+            locationDetails: props.locationDetails
         };
         
-	}
+    }
+    
+    componentWillReceiveProps(newProps) {
+        this.setState({
+            locationDetails: newProps.locationDetails
+        })
+    }
 
 	render() {
 		return (
 			<div className="location-details">
                 <LocationDetailsHeader
-                    locationDetails = {this.props.locationDetails}
+                    locationDetails = {this.state.locationDetails}
                 />
                 <LocationDetailsGrid
-                    locationDetails = {this.props.locationDetails}
+                    locationDetails = {this.state.locationDetails}
                 />
                 <LocationDetailsActions
-                    locationDetails = {this.props.locationDetails}     
+                    locationDetails = {this.state.locationDetails}     
                 />
 
                 <LocationDetailsMenu
-                    locationDetails = {this.props.locationDetails}
+                    locationDetails = {this.state.locationDetails}
                 />
 
                 <LocationDetailsMostRecommendedDishes
-                    locationDetails = {this.props.locationDetails}
+                    locationDetails = {this.state.locationDetails}
                 />
 
                 <div className="location-details-reviews-map">
                     <LocationDetailsReviews
-                        locationDetails = {this.props.locationDetails}
+                        locationDetails = {this.state.locationDetails}
                     />
                     <LocationDetailsMap
-                        locationDetails = {this.props.locationDetails} 
+                        locationDetails = {this.state.locationDetails} 
                     />
                 </div>
                 <LocationDetailsSimilarLocations
-                    locationDetails = {this.props.locationDetails}
+                    locationDetails = {this.state.locationDetails}
+                    triggeredBody = {this.props.triggeredBody}
                 />
 
 			</div>

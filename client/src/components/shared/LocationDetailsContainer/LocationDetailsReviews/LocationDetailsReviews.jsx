@@ -200,6 +200,13 @@ class LocationDetailsReviews extends Component {
         })
     }
 
+    componentWillReceiveProps(newProps) {
+        this.setState({
+            locationDetails: newProps.locationDetails,
+            initialDisplayedReviews: newProps.locationDetails.receivedReviews.slice(0, 4),
+        })
+    }
+
     // _parseDate(date) {
     //     // let parsedDate = date.toLocaleDateString();
     //     var utc = date.toISOString().split('T')[0];

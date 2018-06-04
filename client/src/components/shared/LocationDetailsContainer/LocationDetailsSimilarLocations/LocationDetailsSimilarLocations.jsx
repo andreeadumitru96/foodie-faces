@@ -46,6 +46,7 @@ class LocationDetailsSimilarLocations extends Component {
                             return(<LocationTileItemContainer
                                 locationData={location}
                                 key={location._id}
+                                triggeredBody = {this.props.triggeredBody}
                             />)
                         })}
                     </GridList>
@@ -90,6 +91,10 @@ class LocationDetailsSimilarLocations extends Component {
 
     componentWillMount() {
         this._getSimilarLocations();    
+    }
+
+    componentWillReceiveProps(newProps) {
+        this._getSimilarLocations();
     }
 }
 

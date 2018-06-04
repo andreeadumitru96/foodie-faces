@@ -14,9 +14,18 @@ class LocationDetailsContainer extends Component {
         return (
             <LocationDetails
                 locationDetails={this.props.locationDetails}
+                triggeredBody = {this.props.triggeredBody}
             />
 
         );
+    }
+
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
+    componentWillReceiveProps() {
+        window.scrollTo(0,0);
     }
 
 }
