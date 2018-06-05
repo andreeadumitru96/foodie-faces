@@ -8,7 +8,8 @@ class LocationDetailsActions extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isRecommendDishOpen: false
+            isRecommendDishOpen: false,
+            isMenuDishesAvailable: false
         };
         this._onRecommendButton = this._onRecommendButton.bind(this);
         this._triggerWindowClose = this._triggerWindowClose.bind(this);
@@ -23,6 +24,7 @@ class LocationDetailsActions extends Component {
                 <div className="location-details-actions__recommend">
                     <RaisedButton
                         label="Recommend a dish"
+                        disabled={this.state.isMenuDishesAvailable ? false : true}
                         onClick = {this._onRecommendButton}
                     />
                     <LocationDetailsRecommendDish
@@ -45,7 +47,15 @@ class LocationDetailsActions extends Component {
     _triggerWindowClose() {
         this.setState({
             isRecommendDishOpen: false
-        })
+        });
+    }
+
+    componentWillMount() {
+        if(this.props.locationDetails.menu.length > 0) {
+            this.setState({
+                isMenuDishesAvailable: !this.state.isMenuDishesAvailable
+            });
+        }
     }
 
 }

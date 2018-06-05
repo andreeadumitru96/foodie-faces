@@ -14,7 +14,8 @@ class LocationDetails extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-            locationDetails: props.locationDetails
+            locationDetails: props.locationDetails,
+            menuDishes: props.menuDishes
         };
         
     }
@@ -35,7 +36,7 @@ class LocationDetails extends Component {
                     locationDetails = {this.state.locationDetails}
                 />
                 <LocationDetailsActions
-                    locationDetails = {this.state.locationDetails}     
+                    locationDetails = {this.state.locationDetails}
                 />
 
                 <LocationDetailsMenu

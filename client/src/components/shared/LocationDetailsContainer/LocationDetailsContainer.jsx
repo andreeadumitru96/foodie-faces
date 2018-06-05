@@ -7,13 +7,12 @@ class LocationDetailsContainer extends Component {
         super(props);
         this.state = {
         };
-
     }
 
     render() {
         return (
             <LocationDetails
-                locationDetails={this.props.locationDetails}
+                locationDetails = {this.props.locationDetails}
                 triggeredBody = {this.props.triggeredBody}
             />
 
@@ -27,7 +26,7 @@ class LocationDetailsContainer extends Component {
     componentWillReceiveProps() {
         window.scrollTo(0,0);
     }
-
+    
 }
 
 export default LocationDetailsContainer;
