@@ -77,6 +77,11 @@ class LocationDetailsSimilarLocations extends Component {
         }).then(function (response) {
             if (response.status === 200) {
                 response.json().then((locations) => {
+                    locations.forEach((location, index) => {
+                        if(location._id === this.props.locationDetails._id) {
+                            locations.splice(index, 1);
+                        }
+                    });
                     this.setState({
                         similarLocations: locations
                     });
