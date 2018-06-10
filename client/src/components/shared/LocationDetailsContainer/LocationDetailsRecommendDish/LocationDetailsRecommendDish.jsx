@@ -188,6 +188,8 @@ class LocationDetailsRecommendDish extends Component {
             isDishRecommended: !this.state.isDishRecommended
         })
     }
+
+    
 }
 
 export default LocationDetailsRecommendDish;

@@ -4,6 +4,7 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import Dropzone from 'react-dropzone';
 import ReactStars from 'react-stars';
+import AutoComplete from 'material-ui/AutoComplete';
 
 import './LocationDetailsAddDish.css';
 import { CLOUDINARY_UPLOAD_PRESET, CLOUDINARY_UPLOAD_URL } from '../../../constants';
@@ -18,7 +19,8 @@ class LocationDetailsAddDish extends Component {
             dishImageBlob: null,
             uploadedDishImage: null,
             isAddDishOpen: this.props.isAddDishOpen,
-            isDishAdded: false
+            isDishAdded: false,
+            locationDetails: props.locationDetails
         };
         this._onAddDishImage = this._onAddDishImage.bind(this);
         this._onAddDish = this._onAddDish.bind(this);
@@ -26,6 +28,7 @@ class LocationDetailsAddDish extends Component {
         this._getDishScore = this._getDishScore.bind(this);
         this._handleClose = this._handleClose.bind(this);
         this._onPressAddDish = this._onPressAddDish.bind(this);
+        this._formatMenuCategories = this._formatMenuCategories.bind(this);
     }
 
     render() {
@@ -58,17 +61,25 @@ class LocationDetailsAddDish extends Component {
 
                             <div className="location-details-add-dish__information">
                                 <div className="information-dish-name">
-                                    <TextField
-                                        floatingLabelText="Dish name"
-                                        ref={(inputValue) => { this.dishName = inputValue }}
+                                    <AutoComplete
+                                        hintText="Dish name"
+                                        dataSource={this._formatMenuDishes()}
+                                        filter={AutoComplete.caseInsensitiveFilter}
+                                        onUpdateInput={(inputValue) => { this.dishName = inputValue }}                                        
                                     />
                                 </div>
                                 <div className="information-category">
-                                    <TextField
+                                    <AutoComplete
+                                        hintText="Category"
+                                        dataSource={this._formatMenuCategories()}
+                                        filter={AutoComplete.caseInsensitiveFilter}
+                                        onUpdateInput={(inputValue) => { this.dishCategory = inputValue }}                                        
+                                    />
+                                    {/* <TextField
                                         floatingLabelText="Category"
                                         ref={(inputValue) => { this.dishCategory = inputValue }}
 
-                                    />
+                                    /> */}
                                 </div>
                                 <div className="information-price">
                                     <TextField
@@ -134,7 +145,7 @@ class LocationDetailsAddDish extends Component {
     _onAddDish() {
         if (!this.state.dishImageBlob) {
             notificationError("Please upload a photo");
-        } else if (!this.dishName.getValue() || !this.dishCategory.getValue() || !this.dishPrice.getValue()) {
+        } else if (!this.dishName || !this.dishCategory || !this.dishPrice.getValue()) {
             notificationError("Please complete all the fields");
         } else {
             let file = this.state.dishImageBlob
@@ -152,10 +163,10 @@ class LocationDetailsAddDish extends Component {
             .then((response) => {
                 response.json().then((image) => {
                     let newDish = {
-                        locationId: this.props.locationDetails._id,
-                        name: this.dishName.getValue(),
+                        locationId: this.state.locationDetails._id,
+                        name: this.dishName,
                         score: this._getDishScore(),
-                        category: this.dishCategory.getValue(),
+                        category: this.dishCategory,
                         price: parseFloat(this.dishPrice.getValue()),
                         image: image.secure_url
                     }
@@ -204,6 +215,30 @@ class LocationDetailsAddDish extends Component {
         this.setState({
             isRecommendDishOpen: newProps.isRecommendDishOpen
         })
+    }
+
+    _formatMenuDishes() {
+        let formattedMenuDishes = [];
+
+        this.state.locationDetails.menu.forEach(dish => {
+            formattedMenuDishes.push(dish.name);
+        });
+
+        return formattedMenuDishes;
+    }
+
+    _formatMenuCategories() {
+        let formattedMenuCategories = [];
+
+        this.state.locationDetails.menu.forEach(dish => {
+            formattedMenuCategories.push(dish.category);
+        });
+
+        let uniqueValuesMenuCategories = formattedMenuCategories.filter((item, pos) => {
+            return formattedMenuCategories.indexOf(item) == pos;
+        });
+
+        return uniqueValuesMenuCategories;
     }
 }
 

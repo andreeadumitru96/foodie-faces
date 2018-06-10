@@ -14,10 +14,8 @@ class LocationDetails extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-            locationDetails: props.locationDetails,
-            menuDishes: props.menuDishes
+            locationDetails: props.locationDetails
         };
-        
     }
     
     componentWillReceiveProps(newProps) {
@@ -63,7 +61,6 @@ class LocationDetails extends Component {
 			</div>
 		);
     }
-    
 }
 
 export default LocationDetails;
