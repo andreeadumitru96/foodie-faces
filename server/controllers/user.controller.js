@@ -6,7 +6,6 @@ exports.register = function(req, res) {
         return res.status(400).send({message: req.body});
     }
     let processedUser = req.body;
-    console.log(processedUser);
     processedUser.password = passwordHash.generate(processedUser.password);
 
     let user = new User(processedUser);
@@ -29,7 +28,6 @@ exports.login = function(req, res) {
     if(!req.body) {
         return res.status(400).send({message: req.body});
     }
-    console.log(req.body);
 
     User.findOne({email: req.body.email}, function(err, user) {
         if(err) {
@@ -41,4 +39,24 @@ exports.login = function(req, res) {
             res.status(403).send({message: "Credentials do not match."});
         }
     });
+};
+
+exports.saveLocationWishList = function(req, res) {
+    if(!req.body) {
+        return res.status(400).send({message: req.body});
+    }
+
+    let locationId = req.body.locationId; 
+    
+    let userId = req.body.userId;
+  
+    User.findOneAndUpdate({_id: userId}, {$push: {wishList: locationId} }, {new: true}, function(err, user) {
+        if(err) {
+            console.log(err);
+            res.status(500).send({message: "There was an error trying to add the location to saved for wish list."});
+        } else {
+            res.status(200).send(user);
+        }
+    });
+
 };
