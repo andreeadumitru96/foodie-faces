@@ -58,5 +58,21 @@ exports.saveLocationWishList = function(req, res) {
             res.status(200).send(user);
         }
     });
+};
 
+exports.removeLocationWishList = function(req, res) {
+    if(!req.body) {
+        return res.status(400).send({message: req.body});
+    }
+    let locationId = req.body.locationId;
+    let userId = req.body.userId;
+
+    User.findOneAndUpdate({_id: userId}, {$pull: {wishList: locationId} }, {new: true}, function(err, user) {
+        if(err) {
+            console.log(err);
+            res.status(500).send({message: "There was an error trying to add the location to remove from wish list."});
+        } else {
+            res.status(200).send(user);
+        }
+    }); 
 };
