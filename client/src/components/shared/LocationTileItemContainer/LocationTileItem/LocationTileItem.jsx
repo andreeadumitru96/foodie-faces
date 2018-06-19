@@ -29,7 +29,10 @@ class LocationTileItem extends Component {
                     />}
                 onClick={this.props.onLocationClick}
                 actionIcon={
-                    <IconButton className="location-tile__button">
+                    <IconButton 
+                        className="location-tile__button"
+                        onClick={this.props.saveLocationWishList}
+                    >
                         <StarBorder className="location-tile__button-star" />
                     </IconButton>
                 }
@@ -38,6 +41,8 @@ class LocationTileItem extends Component {
             </GridTile>
         );
     }
+
+    
 }
 
 export default LocationTileItem;

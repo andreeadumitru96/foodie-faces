@@ -56,9 +56,8 @@ class LocationTileListContainer extends Component {
 				this._onScrollEnd();
 			});
 		}
-	}
-
-
+    }
+    
 }
 
 export default LocationTileListContainer;

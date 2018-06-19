@@ -3,22 +3,26 @@ import React, { Component } from 'react';
 import LocationTileItem from './LocationTileItem/LocationTileItem';
 import { notificationError } from '../constants';
 import * as defaultImage from '../../../assets/location-default-image.jpg';
+import { cookies } from '../constants';
 
 class LocationTileItemContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            locationData: props.locationData,
+            isLocationBookmarked: false
         };
         this._setDefaultImage = this._setDefaultImage.bind(this);
         this._onLocationClick = this._onLocationClick.bind(this);
+        this._saveLocationWishList = this._saveLocationWishList.bind(this);
     }
 
     render() {
         return (
             <LocationTileItem
-                locationData = {this.props.locationData}
+                locationData = {this.state.locationData}
                 onLocationClick = {this._onLocationClick}
+                saveLocationWishList = {this._saveLocationWishList}
 
 
             />
@@ -26,8 +30,8 @@ class LocationTileItemContainer extends Component {
     }
 
     _setDefaultImage() {
-        if (this.props.locationData.images.length === 0) {
-            this.props.locationData.images[0] = defaultImage;
+        if (this.state.locationData.images.length === 0) {
+            this.state.locationData.images[0] = defaultImage;
         }
     }
 
@@ -36,7 +40,7 @@ class LocationTileItemContainer extends Component {
     }
 
     _getLocationDetails = async() => {
-        let id = this.props.locationData._id; 
+        let id = this.state.locationData._id; 
         try {
             const response = await fetch(`http://localhost:3001/api/location/getSingleLocation/${id}`, {
                 headers: {
@@ -60,6 +64,40 @@ class LocationTileItemContainer extends Component {
         
         this.props.triggeredBody(mountComponent, locationDetails)
 
+    }
+
+    _saveLocationWishList(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        let data = {
+            userId: cookies.get('user')._id,
+            locationId: this.state.locationData._id
+        };
+
+        fetch('http://localhost:3001/api/saveLocationWishList', {
+			headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+			method: 'post',
+            body: JSON.stringify(data),
+		}).then((response) => {
+			if(response.status === 200) {
+				response.json().then((user) => {
+					// successNotification('The location has been bookmarked.');
+                    cookies.set('user', user);
+                    
+					this.setState({
+                        isLocationBookmarked: true
+                    });
+				})
+			} else {
+				response.json().then((err) => {
+					notificationError(err);
+				})
+			}
+		});
     }
 }
 
