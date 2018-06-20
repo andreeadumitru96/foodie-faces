@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { GridTile } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import Favorite from 'material-ui/svg-icons/action/favorite';
 import ReactStars from 'react-stars';
 
 import './LocationTileItem.css';
@@ -29,11 +30,19 @@ class LocationTileItem extends Component {
                     />}
                 onClick={this.props.onLocationClick}
                 actionIcon={
-                    <IconButton 
+                    <IconButton
                         className="location-tile__button"
-                        onClick={this.props.saveLocationWishList}
+                        onClick={
+                            this.props.isLocationBookmarked ? 
+                                this.props.removeLocationWishList 
+                            : 
+                                this.props.saveLocationWishList}
                     >
-                        <StarBorder className="location-tile__button-star" />
+                        {this.props.isLocationBookmarked ?
+                            <Favorite className="location-tile__button-marked"/>
+                            :
+                            <Favorite className="location-tile__button"/>
+                        }
                     </IconButton>
                 }
             >
@@ -42,7 +51,7 @@ class LocationTileItem extends Component {
         );
     }
 
-    
+
 }
 
 export default LocationTileItem;

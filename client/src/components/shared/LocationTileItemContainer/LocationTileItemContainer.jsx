@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import LocationTileItem from './LocationTileItem/LocationTileItem';
-import { notificationError } from '../constants';
+import { notificationError, successNotification } from '../constants';
 import * as defaultImage from '../../../assets/location-default-image.jpg';
 import { cookies } from '../constants';
 
@@ -15,6 +15,8 @@ class LocationTileItemContainer extends Component {
         this._setDefaultImage = this._setDefaultImage.bind(this);
         this._onLocationClick = this._onLocationClick.bind(this);
         this._saveLocationWishList = this._saveLocationWishList.bind(this);
+        this._isLocationBookmarked = this._isLocationBookmarked.bind(this);
+        this._removeLocationWishList = this._removeLocationWishList.bind(this);
     }
 
     render() {
@@ -23,8 +25,8 @@ class LocationTileItemContainer extends Component {
                 locationData = {this.state.locationData}
                 onLocationClick = {this._onLocationClick}
                 saveLocationWishList = {this._saveLocationWishList}
-
-
+                isLocationBookmarked = {this.state.isLocationBookmarked}
+                removeLocationWishList = {this._removeLocationWishList}
             />
         );
     }
@@ -36,6 +38,9 @@ class LocationTileItemContainer extends Component {
     }
 
     componentWillMount() {
+        this.setState({
+            isLocationBookmarked: this._isLocationBookmarked()
+        });
         this._setDefaultImage();
     }
 
@@ -85,12 +90,57 @@ class LocationTileItemContainer extends Component {
 		}).then((response) => {
 			if(response.status === 200) {
 				response.json().then((user) => {
-					// successNotification('The location has been bookmarked.');
+					successNotification('The location has been added to wish list.');
                     cookies.set('user', user);
                     
 					this.setState({
                         isLocationBookmarked: true
                     });
+				})
+			} else {
+				response.json().then((err) => {
+					notificationError(err);
+				})
+			}
+		});
+    }
+
+    _isLocationBookmarked() {
+		let bookmarksList = cookies.get('user').wishList;
+		let isBookmarked = false;
+
+		bookmarksList.forEach((bookmark) => {
+			if(bookmark.locationId === this.state.locationData._id) {
+				isBookmarked = true;
+			}
+		});
+
+		return isBookmarked;
+    }
+    
+    _removeLocationWishList(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let data = {
+			userId: cookies.get('user')._id,
+			locationId: this.state.locationData._id
+        }
+        
+        fetch('http://localhost:3001/api/removeLocationWishList', {
+			headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+			method: 'post',
+			body: JSON.stringify(data)
+		}).then((response) => {
+			if(response.status === 200) {
+				response.json().then((user) => {
+					successNotification("The locations has been removed from wish list");
+                    cookies.set('user', user);
+                    
+					this.setState({isLocationBookmarked: false});
 				})
 			} else {
 				response.json().then((err) => {
