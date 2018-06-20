@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { GridList, GridTile } from 'material-ui/GridList';
+import { GridList } from 'material-ui/GridList';
 
 import './LocationDetailsGrid.css';
 import FullSizeImage from './FullSizeImage/FullSizeImage';
@@ -38,38 +38,23 @@ class LocationDetailsGrid extends Component {
                     style={styles.gridList}
                 >
                     {this.props.locationDetails.images.map((image) => (
-                        // <GridTile
-                        //     actionPosition="left"
-                        //     titlePosition="top"
-                        //     titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
-                        //     key={image}
-                        // >
-                        <div>
-
-                        
-                            <img src={image} onClick={this._onClickFullSizeImage}/>
-                            <div>
-
-                            
+                        <div className="location-details-grid_image" key={image}>
+                            <img src={image} alt="" onClick={this._onClickFullSizeImage} />
+                            <div className="image-full-size">
                                 {this.state.isFullSizeImageOpen ?
-                                <FullSizeImage 
-                                    image={image}
-                                    isFullSizeImageOpen={this.state.isFullSizeImageOpen}
-                                    triggerWindowClose={this._triggerWindowClose}
-                                />
-                            :
-                                null
-                            }
+                                    <FullSizeImage
+                                        image={image}
+                                        isFullSizeImageOpen={this.state.isFullSizeImageOpen}
+                                        triggerWindowClose={this._triggerWindowClose}
+                                    />
+                                    :
+                                    null
+                                }
                             </div>
-                            
-                        </div>    
-                        // </GridTile>                      
+                        </div>
                     ))}
-
                 </GridList>
             </div>
-
-
         );
     }
 

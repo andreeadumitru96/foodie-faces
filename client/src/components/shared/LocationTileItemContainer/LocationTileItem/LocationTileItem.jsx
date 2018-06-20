@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { GridTile } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
-import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 import Favorite from 'material-ui/svg-icons/action/favorite';
 import ReactStars from 'react-stars';
 
@@ -26,7 +25,7 @@ class LocationTileItem extends Component {
                         size={14}
                         color2={'white'}
                         edit={false}
-                        value={this.props.locationData.tripAdvisorRating}
+                        value={parseFloat(this.props.locationData.tripAdvisorRating)}
                     />}
                 onClick={this.props.onLocationClick}
                 actionIcon={
@@ -46,7 +45,7 @@ class LocationTileItem extends Component {
                     </IconButton>
                 }
             >
-                <img className="location-tile__image" src={this.props.locationData.images[0]} />
+                <img className="location-tile__image" src={this.props.locationData.images[0]} alt="" />
             </GridTile>
         );
     }

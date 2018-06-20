@@ -18,7 +18,7 @@ class FullSizeImage extends Component {
                     onRequestClose={this._handleClose}
                     >
                     <div>
-                        <img src={this.props.image}/>
+                        <img src={this.props.image} alt=""/>
                     </div>
                    
                 </Dialog>

@@ -103,7 +103,7 @@ class LocationDetailsAddDish extends Component {
                             </div>
 
                             <div className="location-details-add-dish__image-preview">
-                                <img src={this.state.dishImagePreview} />
+                                <img src={this.state.dishImagePreview} alt="" />
                             </div>
 
                             <div className="location-details-add-dish__buttons">
@@ -235,7 +235,7 @@ class LocationDetailsAddDish extends Component {
         });
 
         let uniqueValuesMenuCategories = formattedMenuCategories.filter((item, pos) => {
-            return formattedMenuCategories.indexOf(item) == pos;
+            return formattedMenuCategories.indexOf(item) === pos;
         });
 
         return uniqueValuesMenuCategories;

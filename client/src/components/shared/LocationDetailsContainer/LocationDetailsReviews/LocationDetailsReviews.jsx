@@ -40,7 +40,7 @@ class LocationDetailsReviews extends Component {
 
                         <div className="location-details-reviews__list-wrapper">
                             {this.state.initialDisplayedReviews.map((receivedReview) => (
-                                <div className="list--entity">
+                                <div className="list--entity" key={receivedReview._id}>
                                     <div className="list--entity-user">
                                         <div className="list--entity-user-name">
                                             {receivedReview.userName}

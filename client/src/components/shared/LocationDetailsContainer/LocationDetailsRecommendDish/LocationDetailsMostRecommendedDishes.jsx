@@ -26,7 +26,7 @@ class LocationDetailsMostRecommendedDishes extends Component {
                         <div className="list-items">
                             {this.state.mostRecommendedDishes.map(dish => {
                                 return (<Badge
-                                    badgeContent={<img src={dish.image} />}
+                                    badgeContent={<img src={dish.image} alt="" />}
                                     primary={true}
                                     className="list-badge"
                                 >

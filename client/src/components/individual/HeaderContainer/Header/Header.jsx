@@ -37,7 +37,7 @@ class Header extends Component {
                 </div>  
 
                 <div className="header__logo">
-                    <img src={logoImg} className="logo-img" onClick={this._reloadPage}/>
+                    <img src={logoImg} alt="" className="logo-img" onClick={this._reloadPage}/>
                 </div>
             </div>
             
