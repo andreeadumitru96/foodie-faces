@@ -31,48 +31,53 @@ class LocationDetailsReviews extends Component {
     render() {
         return (
             <div className="location-details-reviews">
-
                 <div className="location-details-reviews__list">
                     <p className="location-details-reviews__list-title">
                         Reviews ({this.state.locationDetails.receivedReviews.length})
                     </p>
 
-                    {this.state.initialDisplayedReviews.map((receivedReview) => (
-                        <div className="list--entity">
-                            <div className="list--entity-user">
-                                {/* <div className="list-entity-user-picture">
-                                    {receivedReview.userPic}
-                                </div> */}
-                                <div className="list--entity-user-name">
-                                    {receivedReview.userName}
-                                </div>
-                            </div>
+                    {this.state.locationDetails.receivedReviews.length > 0 ?
 
-                            <div className="list--entity-review">
-                                <div className="list--entity-review-score">
-                                    {receivedReview.score}
-                                    <span> star(s) </span>
+                        <div className="location-details-reviews__list-wrapper">
+                            {this.state.initialDisplayedReviews.map((receivedReview) => (
+                                <div className="list--entity">
+                                    <div className="list--entity-user">
+                                        <div className="list--entity-user-name">
+                                            {receivedReview.userName}
+                                        </div>
+                                    </div>
+
+                                    <div className="list--entity-review">
+                                        <div className="list--entity-review-score">
+                                            {receivedReview.score}
+                                            <span> star(s) </span>
+                                        </div>
+                                        <div className="list--entity--review-title">
+                                            {receivedReview.title}
+                                        </div>
+                                        <div className="list--entity-review-content">
+                                            {receivedReview.content}
+                                        </div>
+                                        <div className="list--entity-review-date">
+                                            {/* {this._parseDate(receivedReview.createdDate)} */}
+                                            {receivedReview.createdDate}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="list--entity--review-title">
-                                    {receivedReview.title}
-                                </div>
-                                <div className="list--entity-review-content">
-                                    {receivedReview.content}
-                                </div>
-                                <div className="list--entity-review-date">
-                                    {/* {this._parseDate(receivedReview.createdDate)} */}
-                                    {receivedReview.createdDate}
-                                </div>
-                            </div>
+                            ))}
+                            {
+                                (this.state.isShowMoreDisplayed && this.state.locationDetails.receivedReviews.length > 4) ?
+                                    <div className="location-details-reviews__show-more" onClick={this._onShowMoreReviews}>
+                                        Show more
+                                    </div>
+                                :
+                                     null
+                            }
                         </div>
-
-                    ))}
-                    { 
-                        (this.state.isShowMoreDisplayed && this.state.locationDetails.receivedReviews.length > 4) ? 
-                            <div className="location-details-reviews__show-more" onClick={this._onShowMoreReviews}>
-                                Show more
-                            </div>
-                        :null
+                        :
+                        <div className="location-details-reviews__list-no-items">
+                            <p> There are no reviews yet </p>
+                        </div>
                     }
                 </div>
 

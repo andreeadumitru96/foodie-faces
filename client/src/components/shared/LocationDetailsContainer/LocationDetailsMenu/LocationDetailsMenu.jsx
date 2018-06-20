@@ -18,30 +18,33 @@ class LocationDetailsMenu extends Component {
         return (
             <div className="location-details-menu">
                 <div className="location-details-menu__title">
-                    Menu
-                </div>
-                <div className="location-details-menu__dishes-list">
-                    <List>
-
-                        {Object.keys(this._getFormattedMenuByCategory()).map((key, index) => {
-                            return (<ListItem
-                                primaryText={key}
-                                initiallyOpen={false}
-                                primaryTogglesNestedList={true}
-                                nestedItems={
-                                    this._getFormattedMenuByCategory()[key].map((item) => {
-                                        return (<ListItem
-                                            leftAvatar={<Avatar icon={<img src={item.image} alt="" />} />}
-                                            key={item.name}
-                                            primaryText={item.name}
-                                            rightIcon={<span>{Math.round(item.price * 10) / 10}€</span>}
-                                        />)
-                                    })
-                                }
-                            >
-                            </ListItem>)
-                        })}
-                    </List>
+                    <p> Menu </p>
+                    {this.props.locationDetails.menu.length > 0 ?
+                        <div className="location-details-menu__dishes-list">
+                            <List>
+                                {Object.keys(this._getFormattedMenuByCategory()).map((key, index) => {
+                                    return (<ListItem
+                                        primaryText={key}
+                                        initiallyOpen={false}
+                                        primaryTogglesNestedList={true}
+                                        nestedItems={
+                                            this._getFormattedMenuByCategory()[key].map((item) => {
+                                                return (<ListItem
+                                                    leftAvatar={<Avatar icon={<img src={item.image} alt="" />} />}
+                                                    key={item.name}
+                                                    primaryText={item.name}
+                                                    rightIcon={<span>{Math.round(item.price * 10) / 10}€</span>}
+                                                />)
+                                            })
+                                        }
+                                    >
+                                    </ListItem>)
+                                })}
+                            </List>
+                        </div>
+                        :
+                        <p className="title-no-items"> There are no items in the menu</p>
+                    }
                 </div>
             </div>
         );

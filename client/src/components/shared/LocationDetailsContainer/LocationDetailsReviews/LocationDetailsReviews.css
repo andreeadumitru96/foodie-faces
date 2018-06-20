@@ -16,8 +16,14 @@
 
 .location-details-reviews__list {
     display: flex;
-    margin: 30px;
+    margin: 30px 30px;
     flex-direction: column;
+}
+
+.location-details-reviews__list-no-items {
+    font-size: 26px;
+    padding-top: 20px;
+    font-style: italic;
 }
 
 .location-details-reviews__show-more {

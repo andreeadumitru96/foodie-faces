@@ -1,14 +1,10 @@
 .location-details-menu__title {
-    /* display: flex;
-    justify-content: center; */
-    /* padding-left: 30px;
-    padding-top: 70px; */
     padding: 70px 0px 30px 30px;
-    font-size: 34px;
-    
-
+    font-size: 34px;   
 }
 
-.location-details-menu__dishes-list {
-    padding-left: 30px;
+.title-no-items {
+    font-size: 26px;
+    padding-top: 20px;
+    font-style: italic;
 }

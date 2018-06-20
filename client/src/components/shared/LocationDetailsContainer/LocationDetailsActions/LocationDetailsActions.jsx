@@ -18,9 +18,6 @@ class LocationDetailsActions extends Component {
     render() {
         return (
             <div className="location-details-actions">
-                <div className="location-details-actions__share">
-                    <RaisedButton label="Share" />
-                </div>
                 <div className="location-details-actions__recommend">
                     <RaisedButton
                         label="Recommend a dish"
