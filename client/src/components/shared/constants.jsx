@@ -15,7 +15,13 @@ export const notificationError = (message) => {
 	});
 }
 
-export const cityList = ['Paris', 'Compiegne', 'Lyon'];
+export const successNotification = (message) => {
+    Alert.success(message, {
+		position: 'bottom-right',
+		effect: 'jelly',
+		timeout: 3000
+	});
+}
 
 export const getTheme = () => {
   let overwrites = {
