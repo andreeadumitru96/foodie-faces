@@ -12,6 +12,7 @@ class LocationSearch extends Component {
         this.state = {
 
         };
+        this._handleHoverTriggered = this._handleHoverTriggered.bind(this);
     }
 
     render() {
@@ -21,25 +22,31 @@ class LocationSearch extends Component {
                     <LocationFiltersContainer
                         onFilterLocationsReceived={this.props.onFilterLocationsReceived}
                         city={this.props.city}
-
                     />
                 </div>
                 <div className="location-search__location-tile-list">
                     <LocationTileListContainer
                         locationsList={this.props.locationsList}
                         triggeredBody={this.props.triggeredBody}
+                        handleHoverTriggered={this._handleHoverTriggered}
+                        isSiblingRendered={true}
                     />
                 </div>
 
                 <div className="location-search__google-map">
                     <GoogleMapContainer
                         locationsList={this.props.locationsList}
+                        ref={(googleMapChild) => {this.googleMapRef = googleMapChild} }
                     />
                 </div>
 
 
             </div>
         );
+    }
+
+    _handleHoverTriggered(isHover, locationId) {
+        this.googleMapRef._triggeredPinPointHovering(isHover, locationId);
     }
 }
 

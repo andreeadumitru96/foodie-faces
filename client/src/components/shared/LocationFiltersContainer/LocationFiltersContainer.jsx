@@ -71,26 +71,29 @@ class LocationFiltersContainer extends Component {
     _onClickFilteredLocations() {
 
         let selectedFilters = this._getAllSelectedFilters();
+        if(selectedFilters.cuisine.length <= 0 || !selectedFilters.goodFor.length <= 0 || selectedFilters.meals.length <= 0) {
+            notificationError("Please choose a filter");
+        } else {
+            fetch('http://localhost:3001/api/location/getFilteredLocations', {
+            headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+            },
+            method: 'post',
+            body: JSON.stringify(selectedFilters)
 
-        fetch('http://localhost:3001/api/location/getFilteredLocations', {
-           headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-           },
-           method: 'post',
-           body: JSON.stringify(selectedFilters)
-
-        }).then(function(response){
-            if(response.status === 200) {
-                response.json().then((data) => {
-                    this.props.onFilterLocationsReceived(data);
-                })
-            } else {
-                response.json().then((data) => {
-                    notificationError(data.message);
-                });
-            }
-        }.bind(this));  
+            }).then(function(response){
+                if(response.status === 200) {
+                    response.json().then((data) => {
+                        this.props.onFilterLocationsReceived(data);
+                    })
+                } else {
+                    response.json().then((data) => {
+                        notificationError(data.message);
+                    });
+                }
+            }.bind(this));  
+        }
 
     }
 

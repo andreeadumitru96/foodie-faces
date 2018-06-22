@@ -24,6 +24,8 @@ class LocationTileListContainer extends Component {
                 triggeredBody = {this.props.triggeredBody}
                 onScrollEnd={this._onScrollEnd}
                 hasMore={this.state.isDataLeftToRender}
+                handleHoverTriggered={this.props.handleHoverTriggered}
+                isSiblingRendered={this.props.isSiblingRendered}
             />
         );
 

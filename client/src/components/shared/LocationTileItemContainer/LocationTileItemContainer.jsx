@@ -17,6 +17,8 @@ class LocationTileItemContainer extends Component {
         this._saveLocationWishList = this._saveLocationWishList.bind(this);
         this._isLocationBookmarked = this._isLocationBookmarked.bind(this);
         this._removeLocationWishList = this._removeLocationWishList.bind(this);
+        this._triggerMouseHoverMapItem = this._triggerMouseHoverMapItem.bind(this);
+        this._triggerMouseUnhoverMapItem = this._triggerMouseUnhoverMapItem.bind(this);
     }
 
     render() {
@@ -27,6 +29,8 @@ class LocationTileItemContainer extends Component {
                 saveLocationWishList = {this._saveLocationWishList}
                 isLocationBookmarked = {this.state.isLocationBookmarked}
                 removeLocationWishList = {this._removeLocationWishList}
+                triggerMouseHoverMapItem = {this._triggerMouseHoverMapItem}
+                triggerMouseUnhoverMapItem = {this._triggerMouseUnhoverMapItem}
             />
         );
     }
@@ -148,6 +152,18 @@ class LocationTileItemContainer extends Component {
 				})
 			}
 		});
+    }
+
+    _triggerMouseHoverMapItem() {
+        if(this.props.isSiblingRendered) {
+            this.props.handleHoverTriggered(true, this.state.locationData._id);
+        }
+    }
+
+    _triggerMouseUnhoverMapItem() {
+        if(this.props.isSiblingRendered) {
+            this.props.handleHoverTriggered(false, null);
+        }
     }
 }
 

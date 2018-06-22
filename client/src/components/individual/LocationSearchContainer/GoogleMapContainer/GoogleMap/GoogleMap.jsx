@@ -8,6 +8,7 @@ class GoogleMap extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            hoveredPinPoint: null
         }
     }
 
@@ -18,22 +19,32 @@ class GoogleMap extends Component {
                 <GoogleMapReact
                     center = {this.props.getCenterCoordinates()}
                     defaultZoom = {this.props.getCenterZoom()}
+                    hoverDistance={30 / 2}
+                    distanceToMouse={this._distanceToMouse}
                     
                 >
                     {this.props.locationsList.map(location => (
 
                         <PinPoint
-                            text = {location.name}
+                            isHovered = {this.state.hoveredPinPoint === location._id ? true : false}
                             lat = {parseFloat(location.coordinates.latitude)}
                             lng = {parseFloat(location.coordinates.longitude)}
-                            key = {location.name}
-                        />
-
+                            key = {location._id}
+                            
+                            
+                        />                    
                     ))}
+                   
 
                 </GoogleMapReact>
             </div>
         );
+    }
+    
+    componentWillReceiveProps(newProps) {
+        this.setState({
+            hoveredPinPoint: newProps.hoveredPinPoint
+        })
     }
     
 }

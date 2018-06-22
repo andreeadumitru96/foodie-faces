@@ -28,6 +28,8 @@ class LocationTileItem extends Component {
                         value={parseFloat(this.props.locationData.tripAdvisorRating)}
                     />}
                 onClick={this.props.onLocationClick}
+                onMouseEnter = {this.props.triggerMouseHoverMapItem}
+                onMouseLeave = {this.props.triggerMouseUnhoverMapItem}
                 actionIcon={
                     <IconButton
                         className="location-tile__button"

@@ -18,7 +18,6 @@ class BodyContainer extends Component {
             locationDetails: null
         };
         this._triggeredBody = this._triggeredBody.bind(this);
-        // this.locationDetails = []
     }
 
     render() {
@@ -57,7 +56,6 @@ class BodyContainer extends Component {
     }
 
     _triggeredBody(componentToMount, data) {
-        // this.locationDetails = data;
         this.setState({
             isLocationDetailsMount: componentToMount === 'LocationDetailsComponent' ? true : false,
             isMostRatedLocationsMount: false,
@@ -65,13 +63,6 @@ class BodyContainer extends Component {
             locationDetails: data
         })
     }
-
-    
-
-    
-
-
-
 }
 
 export default BodyContainer;
