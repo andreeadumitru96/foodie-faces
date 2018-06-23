@@ -15,6 +15,7 @@ import LoginContainer from '../Authentication/LoginContainer/LoginContainer';
 import RegisterContainer from '../Authentication/RegisterContainer/RegisterContainer';
 import PrivateRoute from '../../shared/PrivateRoute/PrivateRoute';
 import HomeContainer from '../HomeContainer/HomeContainer';
+import MyAccountContainer from '../MyAccountContainer/MyAccountContainer';
 // import NotFoundRoute from '../../shared/NotFoundRoute/NotFoundRoute';
 
 class AppContainer extends Component {
@@ -52,6 +53,7 @@ class AppContainer extends Component {
                         <Route exact path='/login' render={(params) => <LoginContainer onLogin={this._onLogin} history={params.history}/>}/>
                         <Route exact path='/register' render={(params) => <RegisterContainer history={params.history}/>}/>
                         <PrivateRoute exact path='/' component={HomeContainer} authenticated={this.state.authenticated} />
+                        <PrivateRoute exact path='/myaccount' component={MyAccountContainer} authenticated={this.state.authenticated}/>
                         
                         {/* { <Route component={NotFoundRoute} /> } */}
                     </Switch>

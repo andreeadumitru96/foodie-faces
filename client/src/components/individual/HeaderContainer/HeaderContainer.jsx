@@ -19,8 +19,9 @@ class HeaderContainer extends Component {
     render() {
         return (
             <Header 
-                citiesList={this.state.citiesList}
-                onSelectCity={this._onSelectCity}
+                citiesList = {this.state.citiesList}
+                onSelectCity = {this._onSelectCity}
+                isMyAccountMount = {this.props.isMyAccountMount}
             />
         );
     }

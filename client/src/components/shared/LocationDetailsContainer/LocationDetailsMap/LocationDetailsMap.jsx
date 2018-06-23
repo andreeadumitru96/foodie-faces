@@ -48,9 +48,4 @@ class LocationDetailsMap extends Component {
 
 }
 
-// LocationDetailsMap.defaultProps = {
-//     center: {lat: 49.348405, lng: 2.9055590000000393},
-//     zoom: 11
-//   };
-
 export default LocationDetailsMap;

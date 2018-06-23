@@ -24,7 +24,6 @@ class GoogleMap extends Component {
                     
                 >
                     {this.props.locationsList.map(location => (
-
                         <PinPoint
                             isHovered = {this.state.hoveredPinPoint === location._id ? true : false}
                             lat = {parseFloat(location.coordinates.latitude)}

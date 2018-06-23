@@ -22,18 +22,24 @@ class Header extends Component {
         return (
             <div className="header">
                 <div className="header__appbar">
-                    <AppBar
-                        iconElementRight={<AvatarMenuContainer/>}
-                        iconElementLeft={
-                            <AutoComplete
-                                hintText="Choose a city..."
-                                dataSource={this.props.citiesList}
-                                filter={AutoComplete.caseInsensitiveFilter}
-                                onNewRequest = {this.props.onSelectCity}                               
-                                className="appbar-autocomplete"          
-                            />
-                        }          
-                    />
+                    {this.props.isMyAccountMount ?
+                        <AppBar
+                            iconElementRight={<AvatarMenuContainer/>}             
+                        />
+                    :
+                        <AppBar
+                            iconElementRight={<AvatarMenuContainer/>}
+                            iconElementLeft={
+                                <AutoComplete
+                                    hintText="Choose a city..."
+                                    dataSource={this.props.citiesList}
+                                    filter={AutoComplete.caseInsensitiveFilter}
+                                    onNewRequest = {this.props.onSelectCity}                               
+                                    className="appbar-autocomplete"          
+                                />
+                            }          
+                        />
+                    }
                 </div>  
 
                 <div className="header__logo">

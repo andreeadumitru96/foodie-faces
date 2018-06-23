@@ -41,7 +41,8 @@ class BodyContainer extends Component {
                         locationDetails = {this.state.locationDetails}
                         triggeredBody = {this._triggeredBody}
                      /> 
-                     : null}
+                     : null
+                }
             </div>
         )
     }
