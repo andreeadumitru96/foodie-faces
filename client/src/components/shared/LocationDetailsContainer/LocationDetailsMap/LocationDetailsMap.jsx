@@ -7,6 +7,8 @@ class LocationDetailsMap extends Component {
         super(props);
         this.state = {
         };
+        this._getCenterCoordinates = this._getCenterCoordinates.bind(this);
+        this._getCenterZoom = this._getCenterZoom.bind(this);
     }
 
     render() {
@@ -16,27 +18,39 @@ class LocationDetailsMap extends Component {
                     defaultCenter={this.props.center}
                     onChange={this._onChange}
                     defaultZoom={this.props.zoom}
+                    center = {this._getCenterCoordinates()}
+                    defaultZoom = {this._getCenterZoom()}
                 >
-
                     <PinPoint
                         text={this.props.locationDetails.name}
                         lat={parseFloat(this.props.locationDetails.coordinates.latitude)}
                         lng={parseFloat(this.props.locationDetails.coordinates.longitude)}
                         key={this.props.locationDetails.name} />
-
-
-
                 </GoogleMapReact>
             </div>
-
         );
+    }
+
+    _getCenterCoordinates() {
+
+        let center = {
+            lat: parseFloat(this.props.locationDetails.coordinates.latitude),
+            lng: parseFloat(this.props.locationDetails.coordinates.longitude)
+        };
+        return center;
+
+    }
+
+    _getCenterZoom() {
+        let centerZoom = 16;
+        return centerZoom;
     }
 
 }
 
-LocationDetailsMap.defaultProps = {
-    center: {lat: 49.348405, lng: 2.9055590000000393},
-    zoom: 11
-  };
+// LocationDetailsMap.defaultProps = {
+//     center: {lat: 49.348405, lng: 2.9055590000000393},
+//     zoom: 11
+//   };
 
 export default LocationDetailsMap;
