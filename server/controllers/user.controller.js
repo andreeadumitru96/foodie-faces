@@ -1,4 +1,6 @@
 var User = require('../models/user.model.js');
+var Location = require('../models/location.model.js');
+
 var passwordHash = require('password-hash');
 
 exports.register = function(req, res) {
@@ -76,3 +78,27 @@ exports.removeLocationWishList = function(req, res) {
         }
     }); 
 };
+
+exports.getLocationsWishList = function(req, res) {
+    if (!req.body) {
+        res.status(400).send({ message: error })
+    }
+
+    let userId = req.params.userId;
+
+    User.find({ _id: userId }, 'wishList', function(err, list) {
+        if(err) {
+            console.log(err);
+            res.status(500).send({message: "There was an error trying to get the wish list"});
+        } else {
+            Location.find({ _id : { $in: list[0].wishList } }, function(err, locations) {
+                if(err) {
+                    console.log(err);
+                    res.status(500).send({message: "There was an error trying to get the wish list"});
+                } else {
+                    res.status(200).send(locations);
+                }
+            });
+        }
+    });
+}
