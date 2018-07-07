@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import HeaderContainer from '../../HeaderContainer/HeaderContainer';
+import { GridList } from 'material-ui';
 
+import HeaderContainer from '../../HeaderContainer/HeaderContainer';
+import LocationTileItemContainer from '../../../shared/LocationTileItemContainer/LocationTileItemContainer';
 import './MyAccount.css';
+import WishList from '../WishList/WishList';
 
 class MyAccount extends Component {
     constructor(props) {
@@ -17,13 +20,9 @@ class MyAccount extends Component {
                     className="my-account__header"
                     isMyAccountMount = {true}
                 />
-                <div>
-                    {this.props.wishList.map(location => (
-                        <ul>
-                            <li> {location.name} </li>
-                        </ul>
-                    ))}
-                </div>
+                <WishList
+                    wishList={this.props.wishList}
+                />
             </div>
         );
     }

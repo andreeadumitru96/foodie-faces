@@ -17,7 +17,7 @@ const styles = {
       flexWrap: 'nowrap',
       overflowX: 'auto',
     }
-  };
+};
   
 
 class LocationDetailsSimilarLocations extends Component {
