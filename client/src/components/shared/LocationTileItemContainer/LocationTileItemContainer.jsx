@@ -111,13 +111,13 @@ class LocationTileItemContainer extends Component {
 
     _isLocationBookmarked() {
 		let bookmarksList = cookies.get('user').wishList;
-		let isBookmarked = false;
-
-		bookmarksList.forEach((bookmark) => {
-			if(bookmark.locationId === this.state.locationData._id) {
+        let isBookmarked = false;
+        
+        for(let bookmarkId of bookmarksList) {
+            if(bookmarkId === this.state.locationData._id) {
 				isBookmarked = true;
 			}
-		});
+        }
 
 		return isBookmarked;
     }
