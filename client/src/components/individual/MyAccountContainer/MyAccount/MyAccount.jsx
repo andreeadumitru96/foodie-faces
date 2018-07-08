@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { GridList } from 'material-ui';
 
 import HeaderContainer from '../../HeaderContainer/HeaderContainer';
-import LocationTileItemContainer from '../../../shared/LocationTileItemContainer/LocationTileItemContainer';
 import './MyAccount.css';
 import WishList from '../WishList/WishList';
 
@@ -20,9 +18,15 @@ class MyAccount extends Component {
                     className="my-account__header"
                     isMyAccountMount = {true}
                 />
-                <WishList
-                    wishList={this.props.wishList}
-                />
+                <div className="my-account__wish-list">
+                    <div className="wish-list-title">
+                        <h1>Your wish list</h1>
+                    </div>
+                    <WishList
+                        wishList={this.props.wishList}
+                    />
+                </div>
+                
             </div>
         );
     }

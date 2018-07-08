@@ -6,7 +6,6 @@ import MenuItem from 'material-ui/MenuItem';
 import { Redirect } from 'react-router';
 
 import './AvatarMenu.css';
-import MyAccountContainer from '../../../MyAccountContainer/MyAccountContainer';
 
 class AvatarMenu extends Component {
     constructor(props) {

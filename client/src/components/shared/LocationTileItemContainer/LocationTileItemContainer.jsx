@@ -64,7 +64,6 @@ class LocationTileItemContainer extends Component {
         } catch(e) {
             notificationError(e.message);
         }
-
     }
 
     _onLocationClick = async() => {
@@ -121,7 +120,7 @@ class LocationTileItemContainer extends Component {
 
 		return isBookmarked;
     }
-    
+     
     _removeLocationWishList(event) {
         event.preventDefault();
         event.stopPropagation();
@@ -143,16 +142,22 @@ class LocationTileItemContainer extends Component {
 				response.json().then((user) => {
 					successNotification("The locations has been removed from wish list");
                     cookies.set('user', user);
-                    
-					this.setState({isLocationBookmarked: false});
+                    this.setState({
+                        isLocationBookmarked: false
+                    });
+                    this.props.updateWishListAfterRemoving(this.state.locationData._id);                
 				})
 			} else {
 				response.json().then((err) => {
 					notificationError(err);
-				})
+				});
 			}
 		});
     }
+
+    // _getLocationRemovedId() {
+    //     return this.state.locationRemovedId;
+    // }
 
     _triggerMouseHoverMapItem() {
         if(this.props.isSiblingRendered) {

@@ -17,9 +17,8 @@ class LocationDetailsMap extends Component {
                 <GoogleMapReact
                     defaultCenter={this.props.center}
                     onChange={this._onChange}
-                    defaultZoom={this.props.zoom}
+                    defaultZoom={this._getCenterZoom()}
                     center = {this._getCenterCoordinates()}
-                    defaultZoom = {this._getCenterZoom()}
                 >
                     <PinPoint
                         text={this.props.locationDetails.name}

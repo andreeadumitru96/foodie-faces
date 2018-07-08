@@ -18,7 +18,7 @@ class MyAccountContainer extends Component {
             />
         );
     }
-
+    
     _getLocationsWishList() {
         let userId = cookies.get('user')._id;
        
