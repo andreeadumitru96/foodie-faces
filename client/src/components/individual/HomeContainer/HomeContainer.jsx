@@ -11,7 +11,8 @@ class HomeContainer extends Component {
 		this.state = {
             userData: cookies.get('user'),
             componentMountInBody: 'MostRatedLocationsComponent',
-            receivedLocationsFromHeader: []
+            receivedLocationsFromHeader: [],
+            urlLocationData: props.urlLocationData
         };
         this._manageBodyComponents = this._manageBodyComponents.bind(this);
 	}
@@ -25,6 +26,7 @@ class HomeContainer extends Component {
                 <BodyContainer 
                     componentToMount = {this.state.componentMountInBody}
                     receivedLocationsFromHeader = {this.state.receivedLocationsFromHeader}    
+                    urlLocationData = {this.state.urlLocationData}
                 />
                
 				<Home userData={this.state.userData} />
@@ -42,6 +44,14 @@ class HomeContainer extends Component {
         }
     }
 
+    componentWillReceiveProps(newProps) {
+        if(newProps.urlLocationData !== null) {
+            this.setState({
+                urlLocationData: newProps.urlLocationData,
+                componentMountInBody: newProps.componentMountInBody
+            });
+        }
+    }
 }
 
 export default HomeContainer;

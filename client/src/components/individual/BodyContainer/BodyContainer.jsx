@@ -48,6 +48,9 @@ class BodyContainer extends Component {
     }
 
     componentWillReceiveProps(newProps) {
+        if(newProps.urlLocationData !== null) {
+            this._triggeredBody(newProps.componentToMount, newProps.urlLocationData);
+        }
         this.setState({
             isMostRatedLocationsMount: newProps.componentToMount === 'MostRatedLocationsComponent' ? true : false,
             isLocationSearchMount: newProps.componentToMount === 'LocationSearchComponent' ? true : false,

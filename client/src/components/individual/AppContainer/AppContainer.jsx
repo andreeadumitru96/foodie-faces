@@ -3,6 +3,7 @@ import Alert from 'react-s-alert';
 import 'react-s-alert/dist/s-alert-default.css';
 import 'react-s-alert/dist/s-alert-css-effects/jelly.css';
 
+import MemoraeLocationById from '../MemoraeLocationById/MemoraeLocationById'; 
 import {cookies} from '../../shared/constants';
 
 import {
@@ -54,6 +55,7 @@ class AppContainer extends Component {
                         <Route exact path='/register' render={(params) => <RegisterContainer history={params.history}/>}/>
                         <PrivateRoute exact path='/' component={HomeContainer} authenticated={this.state.authenticated} />
                         <PrivateRoute exact path='/myaccount' component={MyAccountContainer} authenticated={this.state.authenticated}/>
+                        <Route exact path='/locations/:locationId' render={(params) => <MemoraeLocationById authenticated={this.state.authenticated} {...params}/>}/>
                         
                         {/* { <Route component={NotFoundRoute} /> } */}
                     </Switch>
