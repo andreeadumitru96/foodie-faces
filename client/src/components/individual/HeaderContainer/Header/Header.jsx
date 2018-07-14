@@ -24,7 +24,16 @@ class Header extends Component {
                 <div className="header__appbar">
                     {this.props.isMyAccountMount ?
                         <AppBar
-                            iconElementRight={<AvatarMenuContainer/>}             
+                            iconElementRight={<AvatarMenuContainer/>}
+                            iconElementLeft={
+                                <AutoComplete
+                                    hintText="Find a location..."
+                                    dataSource={this.props.wishList}
+                                    filter={AutoComplete.caseInsensitiveFilter}
+                                    // onNewRequest = {this.props.onSelectCity}                               
+                                    className="appbar-autocomplete-locations"          
+                                />
+                            }             
                         />
                     :
                         <AppBar
@@ -35,7 +44,7 @@ class Header extends Component {
                                     dataSource={this.props.citiesList}
                                     filter={AutoComplete.caseInsensitiveFilter}
                                     onNewRequest = {this.props.onSelectCity}                               
-                                    className="appbar-autocomplete"          
+                                    className="appbar-autocomplete-cities"          
                                 />
                             }          
                         />

@@ -6,15 +6,18 @@ class MyAccountContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            wishList: []
+            wishList: [],
+            wishListFormattedByName: []
         };
         this._getLocationsWishList = this._getLocationsWishList.bind(this);
+        this._formatWishListByName = this._formatWishListByName.bind(this);
     }
 
     render() {
         return (
             <MyAccount
                 wishList = {this.state.wishList}
+                wishListFormattedByName = {this.state.wishListFormattedByName}
             />
         );
     }
@@ -33,7 +36,8 @@ class MyAccountContainer extends Component {
                 response.json().then((locations) => {
                     this.setState({
                         wishList: locations
-                    })
+                    });
+                    this._formatWishListByName();
                 })
             } else {
                 response.json().then((data) => {
@@ -45,6 +49,15 @@ class MyAccountContainer extends Component {
 
     componentWillMount() {
         this._getLocationsWishList();
+    }
+
+    _formatWishListByName() {
+
+        let formattedWishList = this.state.wishList.map(location => location.name);
+
+        this.setState({
+            wishListFormattedByName: formattedWishList
+        });
     }
 }
 

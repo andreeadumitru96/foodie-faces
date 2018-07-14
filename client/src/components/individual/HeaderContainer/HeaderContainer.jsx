@@ -22,6 +22,7 @@ class HeaderContainer extends Component {
                 citiesList = {this.state.citiesList}
                 onSelectCity = {this._onSelectCity}
                 isMyAccountMount = {this.props.isMyAccountMount}
+                wishList = {this.props.wishList}
             />
         );
     }

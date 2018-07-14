@@ -9,6 +9,7 @@ class MyAccount extends Component {
         super(props);
         this.state = {
         };
+        
     }
 
     render() {
@@ -17,13 +18,14 @@ class MyAccount extends Component {
                 <HeaderContainer
                     className="my-account__header"
                     isMyAccountMount = {true}
+                    wishList = {this.props.wishListFormattedByName}
                 />
                 <div className="my-account__wish-list">
                     <div className="wish-list-title">
                         <h1>Your wish list</h1>
                     </div>
                     <WishList
-                        wishList={this.props.wishList}
+                        wishList = {this.props.wishList}
                     />
                 </div>
                 

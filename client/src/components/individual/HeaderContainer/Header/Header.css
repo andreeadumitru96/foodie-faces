@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-.appbar-autocomplete {
+.appbar-autocomplete-cities, .appbar-autocomplete-locations {
     left: 60px;
     border-color: white;
     background-color: white !important;
