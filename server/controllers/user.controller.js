@@ -102,3 +102,28 @@ exports.getLocationsWishList = function(req, res) {
         }
     });
 }
+
+// exports.getLocationWishListByName = function(req, res) {
+//     if(!req.body) {
+//         res.status(400).send({ message: error})0000000000
+//     }
+
+//     let userId = req.params.userId;
+//     let locationName = req.body.locationName;
+
+//     User.find({ _id: userId }, function(err, list) {
+//         if(err) {
+//             console.log(err);
+//             res.status(500).send({message: "There was an error trying to find the user"});
+//         } else {
+//             Location.findOne({ name: locationName }, function (err, location) {
+//                 if (err) {
+//                     res.status(500).send({ message: err });
+//                 } else {
+//                     res.status(200).send(location);
+//                 }
+//             });
+//         }
+//     });
+    
+// }

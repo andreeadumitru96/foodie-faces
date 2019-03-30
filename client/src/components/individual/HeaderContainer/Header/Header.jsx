@@ -28,9 +28,9 @@ class Header extends Component {
                             iconElementLeft={
                                 <AutoComplete
                                     hintText="Find a location..."
-                                    dataSource={this.props.wishList}
+                                    dataSource={this.props.wishListFormattedByName}
                                     filter={AutoComplete.caseInsensitiveFilter}
-                                    // onNewRequest = {this.props.onSelectCity}                               
+                                    onNewRequest = {this.props.onSelectLocation}                               
                                     className="appbar-autocomplete-locations"          
                                 />
                             }             

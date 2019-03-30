@@ -6,7 +6,7 @@ const googleGeoCoder = geoCoder.nodeGeocoder(geoCoder.options);
 exports.saveLocationFromFile = function (req, res) {
 
     let fs = require('fs');
-    let locations = JSON.parse(fs.readFileSync('assets/locationsData/parisCrawledFormatted.json', 'utf8'));
+    let locations = JSON.parse(fs.readFileSync('assets/locationsData/compiegneCrawledFormatted.json', 'utf8'));
     let googleReqTimeout = 500;
 
     locations = locations.filter((location, index, self) =>

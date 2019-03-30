@@ -78,11 +78,7 @@ let LocationSchema = new Schema({
         price : Number,
         image: String,
         score: Number,
-        category: String,
-        // addedBy: [{
-        //     type: Schema.Types.ObjectId,
-        //     ref: 'User'
-        // }]
+        category: String
    }],
    recommendedDishes: [{
         name: String,

@@ -155,9 +155,9 @@ class LocationTileItemContainer extends Component {
 		});
     }
 
-    // _getLocationRemovedId() {
-    //     return this.state.locationRemovedId;
-    // }
+    _getLocationRemovedId() {
+        return this.state.locationRemovedId;
+    }
 
     _triggerMouseHoverMapItem() {
         if(this.props.isSiblingRendered) {

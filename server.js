@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var dbConfig = require('./config/database.config.js');
 var cors = require('cors');
+const path = require('path');
 
 const app = express();
 
@@ -16,6 +17,18 @@ app.use(cors());
 require('./server/routes/user.routes')(app);
 require('./server/routes/utils/utils.routes')(app);
 require('./server/routes/location.routes')(app);
+
+
+//Serve static assets if in  production
+
+if(process.env.NODE_ENV === 'production'){
+    // Set static folder
+    app.use(express.static('client/build'));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+}
 
 mongoose.Promise = global.Promise;
 

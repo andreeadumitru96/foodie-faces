@@ -7,7 +7,8 @@ class MyAccountContainer extends Component {
         super(props);
         this.state = {
             wishList: [],
-            wishListFormattedByName: []
+            wishListFormattedByName: [],
+            isLocationDetailsMount: false
         };
         this._getLocationsWishList = this._getLocationsWishList.bind(this);
         this._formatWishListByName = this._formatWishListByName.bind(this);
@@ -18,6 +19,7 @@ class MyAccountContainer extends Component {
             <MyAccount
                 wishList = {this.state.wishList}
                 wishListFormattedByName = {this.state.wishListFormattedByName}
+                isLocationDetailsMount = {this.state.isLocationDetailsMount}
             />
         );
     }

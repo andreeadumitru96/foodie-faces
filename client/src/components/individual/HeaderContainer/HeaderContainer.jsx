@@ -7,12 +7,15 @@ class HeaderContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            citiesList: []
+            citiesList: [],
+            wishList: props.wishList
         };
         this.fetchedLocationsData = [];
         this._getLocationsCities = this._getLocationsCities.bind(this);
         this._onSelectCity = this._onSelectCity.bind(this);
         this._setDefaultCoordinates = this._setDefaultCoordinates.bind(this);
+        // this._onSelectLocation = this._onSelectLocation.bind(this);
+        this._findLocationByName = this._findLocationByName.bind(this);
 
     }
 
@@ -21,9 +24,12 @@ class HeaderContainer extends Component {
             <Header 
                 citiesList = {this.state.citiesList}
                 onSelectCity = {this._onSelectCity}
+                onSelectLocation = {this._onSelectLocation}
                 isMyAccountMount = {this.props.isMyAccountMount}
-                wishList = {this.props.wishList}
+                wishListFormattedByName = {this.props.wishListFormattedByName}
             />
+            
+            
         );
     }
 
@@ -90,6 +96,26 @@ class HeaderContainer extends Component {
             }
         }.bind(this))
     }
+
+    _findLocationByName(){
+        // let searchedLocation = {};
+        // this.state.wishList.forEach((location) => {
+        //     if(location.name === locationName) {
+        //         searchedLocation = Object.assign({}, location);
+        //         console.log(location);
+        //     }
+        // });
+        // return location;
+    }
+
+    // _onSelectLocation(locationName, index) {
+
+        
+
+    //     this.setState({
+
+    //     });
+    // }
 }
 
 export default HeaderContainer;
