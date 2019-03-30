@@ -32,7 +32,9 @@ if(process.env.NODE_ENV === 'production'){
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect(dbConfig.url, {
+const MONGODB_URL = process.env.MONGODB_URL || 'mongodb://localhost:27017/foodie-faces'
+
+mongoose.connect(MONGODB_URL, {
     useMongoClient: true
 });
 
